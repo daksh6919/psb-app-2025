@@ -1,0 +1,114 @@
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/rootLayout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".first_page">
+
+
+
+
+
+<LinearLayout
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img10"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/appicon" />
+
+
+\
+
+
+    <Button
+        android:id="@+id/signinButton"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/transparent_button_border"
+        android:text="SIGN IN"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/transparent_button_border"
+        android:text="SIGN UP"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <!-- Divider line with "or sign in with" in center -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="194dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="or sign in with"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+    <!-- Google Sign In Button -->
+    <LinearLayout
+        android:id="@+id/googleSignInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/google"
+            android:contentDescription="Google logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Google"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+
+</RelativeLayout>

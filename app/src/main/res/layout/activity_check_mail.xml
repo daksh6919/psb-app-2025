@@ -1,0 +1,123 @@
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/rootLayout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".check_mail">
+
+
+<!-- White Curved Container -->
+
+
+<LinearLayout
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img10"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Forgot"
+        android:textColor="#ffff"
+        android:textSize="45sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Password?"
+        android:textColor="#ffff"
+        android:textSize="45sp" />
+
+
+</LinearLayout>
+
+<!-- White Curved Container (Card-like look) -->
+<LinearLayout
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="280dp"
+    android:orientation="vertical"
+    android:background="@drawable/white_curved_top"
+    android:padding="24dp"
+    >
+
+
+
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/tickmark"
+            android:layout_gravity="center"
+            android:tint="#2ECC71" />
+
+        <TextView
+            android:id="@+id/emailTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="#000"
+            android:text=" We just sent an E-Mail to\n"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/emailTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= " Click the secure link we sent you to reset\n your password. If you didn’t receive an\n E-Mail check your spam folder."
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="italic"/>
+
+        <!-- Phone Field -->
+
+
+        <Button
+            android:id="@+id/openGmailButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/round_green_button"
+            android:text="CHECK MAIL"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <!-- Sign Up Option -->
+
+
+    </LinearLayout>
+</LinearLayout>
+
+</RelativeLayout>
