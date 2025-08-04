@@ -93,15 +93,6 @@
                         android:textColor="#666666"/>
 
 
-                    <ImageView
-                        android:id="@+id/cardImage"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_toRightOf="@+id/subText"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/spam" />
-
-
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -325,6 +316,13 @@
                         android:layout_toRightOf="@+id/subText5"
                         android:scaleType="centerInside"
                         android:src="@drawable/loan" />
+
+                    <ImageView
+                        android:id="@+id/cardImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/spam" />
 
 
                 </RelativeLayout>

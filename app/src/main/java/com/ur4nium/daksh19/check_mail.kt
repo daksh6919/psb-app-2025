@@ -29,7 +29,9 @@ class check_mail : AppCompatActivity() {
                 val webIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://mail.google.com"))
                 startActivity(webIntent)
             }
+
         }
+
 
     }
 

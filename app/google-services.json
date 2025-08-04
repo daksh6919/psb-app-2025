@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "388031792857",
+    "project_id": "bachat-guru",
+    "storage_bucket": "bachat-guru.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:388031792857:android:756c0de22194e7f54360c8",
+        "android_client_info": {
+          "package_name": "com.ur4nium.daksh19"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoTF-UbRsfIgVHJssqsSSdqHSO-qjqWug"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

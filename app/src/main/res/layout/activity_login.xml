@@ -14,7 +14,7 @@
         android:id="@+id/layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/img10"
+        android:background="@drawable/gradient_background2"
         android:orientation="vertical">
 
         <TextView
@@ -75,8 +75,9 @@
                 <ImageView
                     android:layout_width="34dp"
                     android:layout_height="34dp"
-                    android:src="@drawable/img13"
-                    android:tint="#6BBD93" />
+                    android:src="@drawable/email"
+                    android:tint="#17BAD3"/>
+
 
                 <EditText
                     android:id="@+id/phoneEditText"
@@ -84,8 +85,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@android:color/transparent"
-                    android:hint="+91 88727-XXXXX"
-                    android:inputType="phone"
+                    android:hint="domain@gmail.com"
+                    android:inputType="textEmailAddress"
                     android:paddingHorizontal="12dp"
                     android:textColorHint="#999" />
 
@@ -111,7 +112,7 @@
                     android:layout_width="34dp"
                     android:layout_height="34dp"
                     android:src="@drawable/img15"
-                    android:tint="#6BBD93" />
+                    android:tint="#17BAD3" />
 
                 <EditText
                     android:id="@+id/passwordEditText"
@@ -151,10 +152,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="36dp"
-                android:background="@drawable/round_green_button"
                 android:text="SIGN IN"
+                android:backgroundTint="#17BAD3"
                 android:textColor="@android:color/white"
-                android:textSize="18sp" />
+                android:textSize="25sp" />
 
             <!-- Sign Up Option -->
             <LinearLayout
