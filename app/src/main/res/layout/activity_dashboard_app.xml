@@ -50,7 +50,7 @@
 
             <!-- Row 2 -->
             <LinearLayout
-                android:layout_width="419dp"
+                android:layout_width="match_parent"
                 android:layout_height="102dp"
                 android:layout_marginTop="0dp"
                 android:gravity="center"
@@ -63,7 +63,7 @@
 
                 <RelativeLayout
                     android:id="@+id/customButton1"
-                    android:layout_width="198dp"
+                    android:layout_width="172dp"
                     android:layout_height="78dp"
                     android:orientation="vertical"
                     android:elevation="5dp"
@@ -97,7 +97,7 @@
 
                 <RelativeLayout
                     android:id="@+id/customButton2"
-                    android:layout_width="198dp"
+                    android:layout_width="172dp"
                     android:layout_height="78dp"
                     android:orientation="vertical"
                     android:gravity="center"
@@ -149,7 +149,7 @@
 
 
             <LinearLayout
-                android:layout_width="419dp"
+                android:layout_width="match_parent"
                 android:layout_height="102dp"
                 android:layout_marginTop="0dp"
                 android:gravity="center"
@@ -158,7 +158,7 @@
 
                 <RelativeLayout
                     android:id="@+id/customButton3"
-                    android:layout_width="198dp"
+                    android:layout_width="172dp"
                     android:layout_height="78dp"
                     android:orientation="vertical"
                     android:elevation="5dp"
@@ -202,7 +202,7 @@
 
                 <RelativeLayout
                     android:id="@+id/customButton4"
-                    android:layout_width="198dp"
+                    android:layout_width="172dp"
                     android:layout_height="78dp"
                     android:orientation="vertical"
                     android:gravity="center"
@@ -270,7 +270,7 @@
 
 
             <LinearLayout
-                android:layout_width="419dp"
+                android:layout_width="match_parent"
                 android:layout_height="102dp"
                 android:layout_marginTop="0dp"
                 android:gravity="center"
@@ -279,7 +279,7 @@
 
                 <RelativeLayout
                     android:id="@+id/customButton5"
-                    android:layout_width="198dp"
+                    android:layout_width="172dp"
                     android:layout_height="78dp"
                     android:orientation="vertical"
                     android:elevation="5dp"
@@ -323,7 +323,7 @@
 
                 <RelativeLayout
                     android:id="@+id/customButton6"
-                    android:layout_width="198dp"
+                    android:layout_width="172dp"
                     android:layout_height="78dp"
                     android:orientation="vertical"
                     android:gravity="center"
@@ -371,7 +371,7 @@
                 android:layout_height="10dp" />
 
             <LinearLayout
-                android:layout_width="419dp"
+                android:layout_width="match_parent"
                 android:layout_height="102dp"
                 android:layout_marginTop="0dp"
                 android:gravity="center"
@@ -380,7 +380,7 @@
 
                 <RelativeLayout
                     android:id="@+id/customButton7"
-                    android:layout_width="198dp"
+                    android:layout_width="172dp"
                     android:layout_height="78dp"
                     android:orientation="vertical"
                     android:gravity="center"
@@ -423,7 +423,7 @@
 
                 <RelativeLayout
                     android:id="@+id/customButton8"
-                    android:layout_width="198dp"
+                    android:layout_width="172dp"
                     android:layout_height="78dp"
                     android:orientation="vertical"
                     android:gravity="center"
@@ -488,8 +488,7 @@
 
 
 
-            <!-- ✅ Now paste ALL your content inside here -->
-            <!-- Cards, views, all your RelativeLayouts, etc. -->
+
 
         </LinearLayout>
     </ScrollView>
