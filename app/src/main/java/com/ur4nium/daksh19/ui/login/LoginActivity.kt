@@ -9,17 +9,17 @@ import androidx.appcompat.app.AppCompatActivity
 import com.ur4nium.daksh19.ForgotPasswordActivity
 import com.ur4nium.daksh19.dashboard_app
 import com.ur4nium.daksh19.databinding.ActivityLoginBinding
-import com.google.firebase.auth.FirebaseAuth
+
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityLoginBinding
-    private lateinit var firebaseauth: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
-       firebaseauth = FirebaseAuth.getInstance()
+
         // Access views directly using binding
 
 
@@ -30,14 +30,6 @@ class LoginActivity : AppCompatActivity() {
             val password = binding.passwordEditText.text.toString()
 
             if (phone.isEmpty() || password.isEmpty()) {
-                firebaseauth.signInWithEmailAndPassword(phone, password).addOnCompleteListener {
-                    if (it.isSuccessful) {
-                        val intent = Intent(this, dashboard_app::class.java)
-                        startActivity(intent)
-                    } else {
-                        Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
-                    }
-                }
                 Toast.makeText(this, "Please enter email and password", Toast.LENGTH_SHORT).show()
             } else if (!android.util.Patterns.EMAIL_ADDRESS.matcher(phone).matches()) {
                 Toast.makeText(this, "Please enter a valid email", Toast.LENGTH_SHORT).show()
