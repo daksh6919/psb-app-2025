@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.ur4nium.daksh19.ForgotPasswordActivity
+import com.ur4nium.daksh19.dashboard_app
 import com.ur4nium.daksh19.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
@@ -29,13 +30,13 @@ class LoginActivity : AppCompatActivity() {
             val password = binding.passwordEditText.text.toString()
 
             if (phone.isEmpty() || password.isEmpty()) {
-                Toast.makeText(this, "Please enter phone and password", Toast.LENGTH_SHORT).show()
-            } else if (phone.length != 10 || !phone.all { it.isDigit() }) {
-                Toast.makeText(this, "Phone number must be exactly 10 digits", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Please enter email and password", Toast.LENGTH_SHORT).show()
+            } else if (!android.util.Patterns.EMAIL_ADDRESS.matcher(phone).matches()) {
+                Toast.makeText(this, "Please enter a valid email", Toast.LENGTH_SHORT).show()
             }
             else {
-                Toast.makeText(this, "Signing in with:\nPhone: $phone\nPassword: $password", Toast.LENGTH_LONG).show()
-                // Add actual sign-in logic here
+                val intent = Intent(this, dashboard_app::class.java)
+                startActivity(intent)
             }
         }
 
@@ -69,6 +70,9 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
             finish() //
         }
+
+
+
 
     }
 }

@@ -14,7 +14,7 @@ tools:context=".check_mail">
     android:id="@+id/layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/img10"
+    android:background="@drawable/gradient_background2"
     android:orientation="vertical">
 
     <TextView
@@ -66,7 +66,7 @@ tools:context=".check_mail">
             android:layout_height="72dp"
             android:src="@drawable/tickmark"
             android:layout_gravity="center"
-            android:tint="#2ECC71" />
+            android:tint="#17BAD3" />
 
         <TextView
             android:id="@+id/emailTextView2"
@@ -109,7 +109,7 @@ tools:context=".check_mail">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="36dp"
-            android:background="@drawable/round_green_button"
+            android:backgroundTint="#17BAD3"
             android:text="CHECK MAIL"
             android:textColor="@android:color/white"
             android:textSize="18sp" />

@@ -15,7 +15,7 @@ tools:context=".first_page">
     android:id="@+id/layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/img10"
+    android:background="@drawable/gradient_background3"
     android:orientation="vertical">
 
 
@@ -27,7 +27,7 @@ tools:context=".first_page">
         app:srcCompat="@drawable/appicon" />
 
 
-\
+
 
 
     <Button
@@ -35,7 +35,7 @@ tools:context=".first_page">
         android:layout_width="230dp"
         android:layout_height="60dp"
         android:layout_gravity="center"
-        android:background="@drawable/transparent_button_border"
+        android:backgroundTint="#17BAD3"
         android:text="SIGN IN"
         android:textColor="@android:color/white"
         android:textSize="30sp" />
@@ -46,7 +46,7 @@ tools:context=".first_page">
         android:layout_height="60dp"
         android:layout_gravity="center"
         android:layout_marginTop="24dp"
-        android:background="@drawable/transparent_button_border"
+        android:backgroundTint="#17BAD3"
         android:text="SIGN UP"
         android:textColor="@android:color/white"
         android:textSize="30sp" />
