@@ -29,6 +29,10 @@ class AccountActivity : AppCompatActivity() {
             val password = binding.passwordEditText.text.toString()
             val confirmPassword = binding.confirmPasswordEditText.text.toString()
 
+            // Regex for STRONG password
+            val strongPasswordRegex =
+                Regex("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@#\$%^&+=!]).{8,}\$")
+
             when {
                 username.isEmpty() -> {
                     Toast.makeText(this, "Username cannot be empty", Toast.LENGTH_SHORT).show()
@@ -39,6 +43,11 @@ class AccountActivity : AppCompatActivity() {
                 password.isEmpty() || confirmPassword.isEmpty() -> {
                     Toast.makeText(this, "Password and Confirm Password cannot be empty", Toast.LENGTH_SHORT).show()
                 }
+                !strongPasswordRegex.matches(password) -> {
+                    Toast.makeText(this,
+                        "Password must be 8+ chars & include uppercase, lowercase, number & special character",
+                        Toast.LENGTH_LONG).show()
+                }
                 password != confirmPassword -> {
                     Toast.makeText(this, "Passwords do not match", Toast.LENGTH_SHORT).show()
                 }
@@ -47,8 +56,7 @@ class AccountActivity : AppCompatActivity() {
                         .addOnCompleteListener { task ->
                             if (task.isSuccessful) {
                                 Toast.makeText(this, "Registration successful", Toast.LENGTH_SHORT).show()
-                                val intent = Intent(this, dashboard_app::class.java)
-                                startActivity(intent)
+                                startActivity(Intent(this, dashboard_app::class.java))
                                 finish()
                             } else {
                                 Toast.makeText(this, "Registration failed: ${task.exception?.message}", Toast.LENGTH_LONG).show()
@@ -92,10 +100,10 @@ class AccountActivity : AppCompatActivity() {
 
         // 🔄 Navigate to LoginActivity
         binding.signInTextView.setOnClickListener {
-            val intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
+            startActivity(Intent(this, LoginActivity::class.java))
             finish()
         }
     }
 }
+
 
