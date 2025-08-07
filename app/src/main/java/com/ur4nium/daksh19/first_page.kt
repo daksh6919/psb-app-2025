@@ -40,7 +40,7 @@ class first_page : AppCompatActivity() {
         googleSignInClient = GoogleSignIn.getClient(this, gso)
 
         // Buttons
-        val signInButton = findViewById<Button>(R.id.signinButton)
+        val signInButton = findViewById<Button>(R.id.signInButton)
         val signUpButton = findViewById<Button>(R.id.signUpButton)
         val googleSignInButton = findViewById<LinearLayout>(R.id.googleSignInButton)
 
@@ -82,7 +82,7 @@ class first_page : AppCompatActivity() {
                     Toast.makeText(this, "Signed in as: ${user?.displayName}", Toast.LENGTH_SHORT).show()
 
                     // 🔁 Navigate to MainActivity after successful login
-                    val intent = Intent(this, MainActivity::class.java)
+                    val intent = Intent(this, dashboard_app::class.java)
                     startActivity(intent)
                     finish() // to prevent returning to login screen
                 } else {
@@ -91,3 +91,4 @@ class first_page : AppCompatActivity() {
             }
     }
 }
+// chnage in google login hi
