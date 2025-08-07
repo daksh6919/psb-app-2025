@@ -1,15 +1,12 @@
 package com.ur4nium.daksh19
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import android.content.Intent
 import android.widget.Button
 import com.ur4nium.daksh19.ui.login.LoginActivity
 import com.ur4nium.daksh19.ui.login.AccountActivity
-
+import com.google.firebase.auth.FirebaseAuth
 
 class first_page : AppCompatActivity() {
 
@@ -17,7 +14,19 @@ class first_page : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_first_page)
 
-        val signInButton = findViewById<Button>(R.id.signinButton)
+        // Check if user is already logged in
+        val currentUser = FirebaseAuth.getInstance().currentUser
+
+        if (currentUser != null) {
+            // Already logged in → Go to Dashboard/HomeActivity
+            val intent = Intent(this, dashboard_app::class.java)
+            startActivity(intent)
+            finish() // Prevent back to welcome screen
+            return
+        }
+
+        // Not logged in → Setup buttons
+        val signInButton = findViewById<Button>(R.id.signInButton)
         val signUpButton = findViewById<Button>(R.id.signUpButton)
 
         signInButton.setOnClickListener {
@@ -29,7 +38,5 @@ class first_page : AppCompatActivity() {
             val intent = Intent(this, AccountActivity::class.java)
             startActivity(intent)
         }
-
-
     }
 }

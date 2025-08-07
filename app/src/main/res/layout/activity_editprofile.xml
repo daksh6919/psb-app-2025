@@ -1,0 +1,220 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/editprofile"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/gradient_background2">
+
+<!-- Scrollable Content -->
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:layout_above="@+id/bottom_navigation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:gravity="center_horizontal">
+
+        <!-- Back and Title -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingBottom="12dp">
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:src="@drawable/back" />
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_gravity="center"
+                android:text="Edit Profile"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#090909" />
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#040404" />
+
+        <!-- Profile Image -->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/circle_bg"
+            android:padding="4dp" />
+
+
+
+
+
+
+        <!-- Options -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/rounded_edittext"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="16dp"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:src="@drawable/img17"
+                    android:tint="#17BAD3"/>
+
+                <EditText
+                    android:id="@+id/usernameEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Full Name"
+                    android:background="@android:color/transparent"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#999"
+                    android:paddingHorizontal="12dp"/>
+
+                <ImageView
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:src="@drawable/img14"
+                    android:tint="#999999"/>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/rounded_edittext"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="16dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="24dp">
+
+                <ImageView
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:src="@drawable/img13"
+                    android:tint="#17BAD3"/>
+
+                <EditText
+                    android:id="@+id/phoneEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="+91 8878X-XXXXX"
+                    android:inputType=""
+                    android:textColorHint="#999"
+                    android:paddingHorizontal="12dp"/>
+
+                <ImageView
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:src="@drawable/img14"
+                    android:tint="#999"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/rounded_edittext"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="16dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="24dp">
+
+                <ImageView
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:src="@drawable/calendar"
+                    android:tint="#17BAD3"/>
+
+                <EditText
+                    android:id="@+id/birthDateEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="Select Birthdate"
+                    android:inputType="none"
+                    android:textColorHint="#999"
+                    android:paddingHorizontal="12dp"/>
+
+                <ImageView
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:src="@drawable/img14"
+                    android:tint="#999"/>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#17BAD3"/>
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+<!-- Bottom Navigation -->
+<com.google.android.material.bottomnavigation.BottomNavigationView
+    android:id="@+id/bottom_navigation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/rounded_background2"
+    android:elevation="20dp"
+    app:itemIconTint="@color/black"
+    app:itemTextColor="@color/black"
+    app:itemBackground="@drawable/bottom_nav_item_background"
+    app:labelVisibilityMode="labeled"
+    app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

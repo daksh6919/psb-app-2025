@@ -241,9 +241,11 @@
                         android:src="@drawable/logout" />
 
                     <TextView
+                        android:id="@+id/LogoutButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Log Out"
+                        android:clickable="true"
                         android:textStyle="bold"
                         android:textColor="#090909"
                         android:layout_marginStart="16dp"

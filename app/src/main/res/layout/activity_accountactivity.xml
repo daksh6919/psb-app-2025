@@ -195,10 +195,10 @@
 
         <LinearLayout
             android:id="@+id/signIn"
-            android:layout_width="365dp"
+            android:layout_width="match_parent"
             android:layout_height="75dp"
-            android:gravity="center"
-            android:layout_marginTop="0dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="8dp"
             android:orientation="vertical">
 
             <TextView
