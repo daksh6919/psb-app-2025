@@ -5,20 +5,23 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.ur4nium.daksh19.databinding.ActivityDashboardAppBinding
+import com.ur4nium.daksh19.databinding.ActivityCalculatorBinding
 
-class dashboard_app : AppCompatActivity() {
+class Calculator : AppCompatActivity() {
 
-    private lateinit var binding: ActivityDashboardAppBinding
+    private lateinit var binding: ActivityCalculatorBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        // ✅ Correct View Binding setup
-        binding = ActivityDashboardAppBinding.inflate(layoutInflater)
+        binding = ActivityCalculatorBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // 🔘 Custom Button Click Listeners
+        // Back button
+        binding.backButton.setOnClickListener {
+            finish()
+        }
+
+        // Custom buttons
         binding.customButton1.setOnClickListener {
             Toast.makeText(this, "Spam clicked", Toast.LENGTH_SHORT).show()
         }
@@ -36,40 +39,30 @@ class dashboard_app : AppCompatActivity() {
         }
 
         binding.customButton5.setOnClickListener {
-            Toast.makeText(this, "Loan clicked", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Calculator clicked", Toast.LENGTH_SHORT).show()
         }
 
-        binding.customButton6.setOnClickListener {
-            Toast.makeText(this, "Saving clicked", Toast.LENGTH_SHORT).show()
-        }
+        // Bottom navigation
+        val bottomNavigation = findViewById<BottomNavigationView>(R.id.bottom_navigation)
 
-        binding.customButton7.setOnClickListener {
-            val intent = Intent(this, Calculator::class.java)
-            startActivity(intent)
-            true
-        }
-
-        binding.customButton8.setOnClickListener {
-            Toast.makeText(this, "Advisor clicked", Toast.LENGTH_SHORT).show()
-        }
-
-        // 🔘 Bottom Navigation
-        binding.bottomNavigation.setOnItemSelectedListener { item ->
+        bottomNavigation.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.nav_points -> {
-                    Toast.makeText(this, "Points clicked", Toast.LENGTH_SHORT).show()
+                    // Navigate to Points
                     true
                 }
                 R.id.nav_search -> {
-                    Toast.makeText(this, "Search clicked", Toast.LENGTH_SHORT).show()
+                    // Navigate to Search
                     true
                 }
                 R.id.nav_home -> {
-                    Toast.makeText(this, "home clicked", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this, dashboard_app::class.java)
+                    startActivity(intent)
+                    true
                     true
                 }
                 R.id.nav_alerts -> {
-                    Toast.makeText(this, "Alerts clicked", Toast.LENGTH_SHORT).show()
+                    // Navigate to Alerts
                     true
                 }
                 R.id.nav_settings -> {
@@ -77,10 +70,9 @@ class dashboard_app : AppCompatActivity() {
                     startActivity(intent)
                     true
                 }
+
                 else -> false
             }
         }
     }
 }
-
-//<!--daksh-->

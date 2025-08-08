@@ -138,8 +138,10 @@
                 <!-- Sign In Button -->
                 <Button
                     android:id="@+id/signinButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="250dp"
+                    android:layout_height="57dp"
+                    android:layout_gravity="center"
+                    android:elevation="40dp"
                     android:layout_marginTop="36dp"
                     android:text="SIGN IN"
                     android:backgroundTint="#17BAD3"
@@ -176,3 +178,5 @@
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
+
+    <!--daksh-->

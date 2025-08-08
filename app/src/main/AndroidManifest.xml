@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:icon="@drawable/applogo"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -9,7 +11,7 @@
         android:theme="@style/Theme.Daksh19"
         tools:targetApi="31">
         <activity
-            android:name=".first_page"
+            android:name=".Calculator"
             android:exported="true" >
 
             <intent-filter>
@@ -17,8 +19,15 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+
         </activity>
 
+        <activity
+            android:name=".first_page"
+            android:exported="true">
+
+        </activity>
         <activity
             android:name=".ProfileActivity"
             android:exported="true" />

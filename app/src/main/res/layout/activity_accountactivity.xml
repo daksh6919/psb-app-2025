@@ -185,12 +185,13 @@
 
         <Button
             android:id="@+id/signinButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="250dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
             android:text="SIGN UP"
             android:textColor="@android:color/white"
             android:backgroundTint="#17BAD3"
-            android:textSize="18sp"
+            android:textSize="24sp"
             android:layout_marginTop="24dp"/>
 
         <LinearLayout
@@ -221,4 +222,6 @@
     </LinearLayout>
 
 </RelativeLayout>
+
+<!--daksh-->
 

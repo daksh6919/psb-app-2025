@@ -106,18 +106,21 @@ tools:context=".check_mail">
 
         <Button
             android:id="@+id/openGmailButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="250dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
             android:layout_marginTop="36dp"
             android:backgroundTint="#17BAD3"
             android:text="CHECK MAIL"
             android:textColor="@android:color/white"
-            android:textSize="18sp" />
+            android:textSize="24sp" />
 
-        <!-- Sign Up Option -->
+
 
 
     </LinearLayout>
 </LinearLayout>
 
 </RelativeLayout>
+
+    <!--daksh-->
