@@ -51,6 +51,8 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.annotation)
+    implementation("com.github.denzcoskun:ImageSlideshow:0.1.0")
+
 
     // Lifecycle
     implementation(libs.androidx.lifecycle.livedata.ktx)

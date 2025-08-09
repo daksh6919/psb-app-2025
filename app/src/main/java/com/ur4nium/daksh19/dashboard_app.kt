@@ -4,7 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-
+import com.denzcoskun.imageslider.constants.ScaleTypes
+import com.denzcoskun.imageslider.models.SlideModel
 import com.ur4nium.daksh19.databinding.ActivityDashboardAppBinding
 
 class dashboard_app : AppCompatActivity() {
@@ -14,15 +15,17 @@ class dashboard_app : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // ✅ Correct View Binding setup
+        // ✅ Correct View Binding setup first
         binding = ActivityDashboardAppBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // 🔘 Setup Image Slider
-
-
-
-
+        // ✅ Image slider setup after layout is set
+        val slideModels = arrayListOf(
+            SlideModel(R.drawable.test1, ScaleTypes.FIT),
+            SlideModel(R.drawable.test2, ScaleTypes.FIT),
+            SlideModel(R.drawable.test3, ScaleTypes.FIT)
+        )
+        binding.imageSlider.setImageList(slideModels, ScaleTypes.FIT)
 
         // 🔘 Custom Button Click Listeners
         binding.customButton1.setOnClickListener {
@@ -38,8 +41,7 @@ class dashboard_app : AppCompatActivity() {
         }
 
         binding.customButton4.setOnClickListener {
-            val intent = Intent(this, GameActivity::class.java)
-            startActivity(intent)
+            startActivity(Intent(this, GameActivity::class.java))
         }
 
         binding.customButton5.setOnClickListener {
@@ -51,9 +53,7 @@ class dashboard_app : AppCompatActivity() {
         }
 
         binding.customButton7.setOnClickListener {
-            val intent = Intent(this, Calculator::class.java)
-            startActivity(intent)
-            true
+            startActivity(Intent(this, Calculator::class.java))
         }
 
         binding.customButton8.setOnClickListener {
@@ -72,7 +72,7 @@ class dashboard_app : AppCompatActivity() {
                     true
                 }
                 R.id.nav_home -> {
-                    Toast.makeText(this, "home clicked", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Home clicked", Toast.LENGTH_SHORT).show()
                     true
                 }
                 R.id.nav_alerts -> {
@@ -80,8 +80,7 @@ class dashboard_app : AppCompatActivity() {
                     true
                 }
                 R.id.nav_settings -> {
-                    val intent = Intent(this, ProfileActivity::class.java)
-                    startActivity(intent)
+                    startActivity(Intent(this, ProfileActivity::class.java))
                     true
                 }
                 else -> false
