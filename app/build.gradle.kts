@@ -1,7 +1,10 @@
+
+
+// File: app/build.gradle.kts
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.google.gms.google.services) // ✅ Needed for Firebase
+    alias(libs.plugins.google.gms.google.services)
 }
 
 android {
@@ -14,7 +17,6 @@ android {
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -41,9 +43,8 @@ android {
         viewBinding = true
     }
 }
-
 dependencies {
-    // ✅ Core AndroidX
+    // Core AndroidX
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -51,26 +52,21 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.annotation)
 
-    // ✅ Lifecycle
+    // Lifecycle
     implementation(libs.androidx.lifecycle.livedata.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
 
-    implementation("com.google.android.gms:play-services-auth:21.1.1")
-    implementation("com.google.firebase:firebase-auth:22.3.1")
-// or latest
+    // Firebase BoM (import it first, no version needed here)
+    implementation(platform(libs.firebase.bom))
 
-    // ✅ Firebase Auth
+    // Firebase Auth and Firestore without versions (managed by BoM)
     implementation(libs.firebase.auth)
+    implementation(libs.firebase.firestore)
 
-    // ✅ Google Sign-In (Important for GoogleAuthProvider)
-    implementation("com.google.android.gms:play-services-auth:20.7.0")
+    // Google Sign-In
+    implementation(libs.play.services.auth)
 
-    // OPTIONAL - If you're using Credentials API (can be removed if unused)
-    implementation(libs.androidx.credentials)
-    implementation(libs.androidx.credentials.play.services.auth)
-    implementation(libs.googleid)
-
-    // ✅ Testing
+    // Testing
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

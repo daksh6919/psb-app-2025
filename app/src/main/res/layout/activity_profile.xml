@@ -4,7 +4,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background2">
 
-    <!-- Scrollable Content -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -18,7 +17,6 @@
             android:padding="30dp"
             android:gravity="center_horizontal">
 
-            <!-- Back and Title -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -46,7 +44,6 @@
                 android:layout_height="1dp"
                 android:background="#040404" />
 
-            <!-- Profile Image -->
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
@@ -54,8 +51,8 @@
                 android:background="@drawable/circle_bg"
                 android:padding="4dp" />
 
-            <!-- Name -->
             <TextView
+                android:id="@+id/usernameTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Vinayak Aggarwal"
@@ -63,14 +60,20 @@
                 android:textStyle="bold"
                 android:layout_marginTop="12dp" />
 
-            <!-- Phone -->
             <TextView
+                android:id="@+id/phoneTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="+91 88727-XXXX"
                 android:textColor="#666666" />
 
-            <!-- Edit Profile -->
+            <TextView
+                android:id="@+id/birthdateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth"
+                android:textColor="#666666" />
+
             <Button
                 android:id="@+id/editProfileButton"
                 android:layout_width="wrap_content"
@@ -86,14 +89,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="30dp" />
 
-            <!-- Options -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_marginTop="24dp">
 
-                <!-- Language -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -116,7 +117,6 @@
                         android:textSize="19sp" />
                 </LinearLayout>
 
-                <!-- Saved -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -139,7 +139,6 @@
                         android:textSize="19sp" />
                 </LinearLayout>
 
-                <!-- Privacy -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -162,7 +161,6 @@
                         android:textSize="19sp" />
                 </LinearLayout>
 
-                <!-- Customer Support -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -189,7 +187,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="70dp" />
 
-                <!-- Dark Mode Toggle -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -225,7 +222,6 @@
                         android:checked="true" />
                 </LinearLayout>
 
-                <!-- Log Out -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -257,7 +253,6 @@
         </LinearLayout>
     </ScrollView>
 
-    <!-- Bottom Navigation -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
@@ -272,5 +267,3 @@
         app:menu="@menu/bottom_nav_menu" />
 
 </RelativeLayout>
-
-    <!--daksh-->

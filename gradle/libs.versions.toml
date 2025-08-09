@@ -1,44 +1,58 @@
 [versions]
-agp = "8.12.0"
-kotlin = "2.0.21"
-coreKtx = "1.16.0"
-junit = "4.13.2"
-junitVersion = "1.2.1"
-espressoCore = "3.6.1"
-appcompat = "1.7.0"
+# PLUGINS
+agp = "8.4.1"
+kotlin = "1.9.23"
+googleGmsGoogleServices = "4.4.1"
+
+# ANDROIDX
+coreKtx = "1.13.1"
+appcompat = "1.6.1"
+activity = "1.9.0"
+constraintlayout = "2.1.4"
+lifecycle = "2.7.0"
+annotation = "1.7.1"
+
+# MATERIAL
 material = "1.12.0"
-activity = "1.10.1"
-constraintlayout = "2.2.1"
-playServicesMaps = "19.2.0"
-annotation = "1.9.1"
-lifecycleLivedataKtx = "2.9.1"
-lifecycleViewmodelKtx = "2.9.1"
-googleGmsGoogleServices = "4.4.3"
-firebaseAuth = "24.0.0"
-credentials = "1.5.0"
-credentialsPlayServicesAuth = "1.5.0"
-googleid = "1.1.1"
+
+# FIREBASE
+firebaseBom = "33.0.0"
+playServicesAuth = "21.2.0"
+
+# TESTING
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
 
 [libraries]
+# ANDROIDX CORE & UI
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-annotation = { group = "androidx.annotation", name = "annotation", version.ref = "annotation" }
+
+# MATERIAL DESIGN
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+# ANDROIDX LIFECYCLE
+androidx-lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycle" }
+androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+
+# FIREBASE (Using the Bill of Materials - BoM)
+firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBom" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth-ktx" } # No version needed here
+firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore-ktx" } # No version needed here
+
+# GOOGLE PLAY SERVICES
+play-services-auth = { group = "com.google.android.gms", name = "play-services-auth", version.ref = "playServicesAuth" }
+
+# TESTING
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
-androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
-androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
-androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
-play-services-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "playServicesMaps" }
-androidx-annotation = { group = "androidx.annotation", name = "annotation", version.ref = "annotation" }
-androidx-lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycleLivedataKtx" }
-androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
-firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
-androidx-credentials = { group = "androidx.credentials", name = "credentials", version.ref = "credentials" }
-androidx-credentials-play-services-auth = { group = "androidx.credentials", name = "credentials-play-services-auth", version.ref = "credentialsPlayServicesAuth" }
-googleid = { group = "com.google.android.libraries.identity.googleid", name = "googleid", version.ref = "googleid" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }
-

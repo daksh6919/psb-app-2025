@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.material.bottomnavigation.BottomNavigationView
+
 import com.ur4nium.daksh19.databinding.ActivityDashboardAppBinding
 
 class dashboard_app : AppCompatActivity() {
@@ -17,6 +17,12 @@ class dashboard_app : AppCompatActivity() {
         // ✅ Correct View Binding setup
         binding = ActivityDashboardAppBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        // 🔘 Setup Image Slider
+
+
+
+
 
         // 🔘 Custom Button Click Listeners
         binding.customButton1.setOnClickListener {
@@ -32,7 +38,8 @@ class dashboard_app : AppCompatActivity() {
         }
 
         binding.customButton4.setOnClickListener {
-            Toast.makeText(this, "Simulation clicked", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, GameActivity::class.java)
+            startActivity(intent)
         }
 
         binding.customButton5.setOnClickListener {
@@ -82,5 +89,3 @@ class dashboard_app : AppCompatActivity() {
         }
     }
 }
-
-//<!--daksh-->

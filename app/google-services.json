@@ -12,7 +12,20 @@
           "package_name": "com.ur4nium.daksh19"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "388031792857-tnp4e7ktdpmodris4dnjpu8cmfdhq013.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ur4nium.daksh19",
+            "certificate_hash": "100287738568a6cafdca95419d99de60de3040c6"
+          }
+        },
+        {
+          "client_id": "388031792857-nqlsgb5ppls9tlbnjci4p78o0f17fe1p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyDoTF-UbRsfIgVHJssqsSSdqHSO-qjqWug"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "388031792857-nqlsgb5ppls9tlbnjci4p78o0f17fe1p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
