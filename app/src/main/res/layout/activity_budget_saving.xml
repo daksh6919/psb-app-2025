@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BudgetSavingActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:contentInsetStartWithNavigation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_arrow_back" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Saving &amp; Budgeting"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="8dp"/>
+
+            <ImageView
+                android:id="@+id/share_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_share"
+                android:padding="8dp"/>
+
+            <ImageView
+                android:id="@+id/notes_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_notes"
+                android:padding="8dp"/>
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your guide to creating a budget plan"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Budgeting puts you in charge of your money. Follow these steps to get started."
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="16dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_book_open"
+                    app:tint="#666666"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Read, 12 minutes"
+                    android:textColor="#666666"
+                    android:layout_marginStart="8dp"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Most people need some way of seeing where their money is going each month. Budgeting can help you feel more in control of your finances and make it easier to save money for your goals. The trick is to figure out a way to track your finances that works for you. The following steps can help you create a budget plan."
+                android:textColor="@android:color/black"
+                android:lineSpacingExtra="4dp"
+                android:textSize="16sp"
+                android:layout_marginBottom="32dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/testimage2"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="Description of the image"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DDDDDD"
+                    android:layout_gravity="center_vertical"/>
+                <View
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:background="@drawable/red_dot_background"
+                    android:layout_gravity="center_horizontal|center_vertical"/>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Step 1: Calculate your net income"
+                android:textSize="22sp"
+                android:textColor="#C70039"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="18dp"
+                android:text="Creating a practical budget begins with understanding your net income — the amount you actually take home after taxes, retirement contributions, and deductions like health insurance premiums. This is the figure that shows up in your bank account each pay period, not the gross amount listed on your paycheck.
+
+Avoid basing your budget on your total salary, as it can give a misleading picture of what you truly have to spend and may lead to overspending. For freelancers, gig workers, contractors, or anyone with irregular earnings, it’s especially important to track each payment and contract carefully. Keeping organized records will help you plan more accurately and avoid financial surprises.
+"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/testimage3"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="Description of the second image"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Step 2: Track your spending"
+                android:textSize="22sp"
+                android:textColor="#C70039"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Once you have a clear picture of your income, the next step is to understand exactly where it’s going. Start by tracking and categorizing your expenses to see which areas consume most of your money and where there’s room to save. The more specific you can be, the more useful your insights will be. For a few weeks, jot down every expense—whether you use a budgeting app, a spreadsheet, an online template, or simply pen and paper. Reviewing your bank and credit card statements can also be helpful, as they list each transaction and often group them into broad categories like utilities, groceries, or entertainment.
+
+After collecting your data, separate your *fixed expenses—those consistent monthly bills like rent or mortgage, utilities, and car payments—from your **variable expenses*, which fluctuate, such as food, fuel, or leisure activities. Variable costs are often the easiest to adjust, making them a good place to look for potential savings.
+"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="18dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Step 3: Set realistic goals"
+                android:textSize="22sp"
+                android:textColor="#C70039"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Before diving into the spending data you’ve collected, take time to outline your financial goals—both short-term and long-term. Short-term goals, which typically take one to three years to accomplish, might include building an emergency fund or paying off credit card debt. Long-term goals, such as saving for retirement or funding your child’s education, can span decades. If you’re unsure whether to prioritize debt repayment, saving, or investing, using a financial planning tool can help you strike the right balance.
+
+Be clear and specific when defining these goals, and make them part of your budget as dedicated line items. Aim to contribute toward them every month, just as you would for regular expenses. Your priorities will naturally evolve over time, but having them clearly defined can provide motivation to stick with your plan. For instance, it’s often easier to scale back discretionary spending when you know that money is going toward something meaningful—like an upcoming vacation. "
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="18dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Step 4: Make a budget plan"
+                android:textSize="22sp"
+                android:textColor="#C70039"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This is the stage where all your work comes together—comparing what you’re actually spending with what you’d like to spend. Begin with your take-home income, then list your fixed and variable expenses based on the tracking you’ve done. Don’t forget to include your savings goals as their own line items.
+
+A well-structured budget gives you a clear view of how your earnings match up with your spending. If the numbers don’t align, you’ll know where adjustments are needed—whether that means trimming costs to cover essentials or making room for savings. Setting specific, realistic spending limits for each category can help you stay on track and make your budget more effective.
+"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="18dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Step 5: Pick a budgeting method"
+                android:textSize="22sp"
+                android:textColor="#C70039"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="There’s no single “right” way to put your budget into action—the best approach is the one you’ll actually stick with. Here are two popular methods to consider:"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="18dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" 1. The 50/30/20 Budget"
+                android:textSize="20dp"
+                android:textColor="#C70039"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Best for:    Almost anyone, especially those just starting to manage their money.                                   How it works:     Begin by separating your expenses into needs and wants. For example, if you commute by car, gas is a need, while a music streaming subscription is a want. This distinction becomes key when you’re looking to free up money for your goals. Then, divide your take-home pay into three parts: 50% for needs (housing, utilities, groceries, transportation) 30% for wants (entertainment, dining out, hobbies) 20% for savings or extra debt payments beyond the minimum You can adjust these percentages based on your situation. If you live in a high-cost area, your needs portion might be higher; if you’re saving aggressively—say, for a home down payment—you might increase the savings percentage instead. "
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="18dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" 2. The Envelope Budget"
+                android:textSize="20dp"
+                android:textColor="#C70039"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Best for: People who tend to overspend or struggle with impulse purchases.
+How it works: Assign each expense category its own envelope and fill it with the cash you’ve budgeted for the month. Once an envelope is empty, you stop spending in that category. Many find that paying with cash naturally helps curb spending. If managing physical cash feels inconvenient, you can adapt this method by creating separate bank accounts for each category and using debit cards instead."
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="18dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" 3. The Zero-Based Budget"
+                android:textSize="20dp"
+                android:textColor="#C70039"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Best for: Those with a steady monthly income who don’t mind keeping detailed financial records.      *How it works:* With this approach, every dollar you earn is assigned a specific role—whether it’s paying bills, covering living expenses, saving, or repaying debt. The goal is for your income minus expenses to equal zero by the end of the month. This doesn’t mean you’ve run out of money; rather, it ensures that every dollar is working for you and accounted for, leaving no unplanned spending."
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="18dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" 4. The Pay-Yourself-First Budget"
+                android:textSize="20dp"
+                android:textColor="#C70039"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Best for: Individuals who want to prioritize saving, feel confident they can cover essential expenses, and prefer a simple approach without detailed tracking.
+How it works: At the start of each month, set aside a fixed amount for savings before paying any bills or making purchases. This could go toward an emergency fund, retirement account, or other savings goals. Once your savings are secured, cover your essential needs—such as housing, groceries, utilities, and debt obligations. Whatever remains can be spent on nonessential wants. This method ensures that saving is a priority, not an afterthought. "
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="18dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Step 6: Adjust your spending to stay on budget"
+                android:textSize="22sp"
+                android:textColor="#C70039"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Now that you’ve recorded your income and expenses, it’s time to make adjustments so you can consistently fund your goals without overspending. One way to identify opportunities is by comparing your spending patterns with broader averages to see where you might be outpacing others. Start by reviewing your *wants—these are often the easiest places to trim. For example, are you paying for both cable and multiple streaming services? Do you eat out more than you realize? If you’ve already tightened your discretionary spending, take a closer look at your **monthly obligations. Sometimes what feels like a “need” is simply something you’re reluctant to give up. If you still can’t make the numbers work, consider adjusting your **fixed expenses*. Could you reduce costs by shopping around for lower insurance premiums or renegotiating service rates? Keep in mind that changes in this category often involve trade-offs, so weigh the pros and cons carefully. Even small adjustments can have a big impact over time. A single, modest change—applied consistently—can lead to a surprising amount of extra money in your budget. "
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="18dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Step 7: Review your budget regularly"
+                android:textSize="22sp"
+                android:textColor="#C70039"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Once your budget is in place, make it a habit to review it regularly alongside your actual spending to ensure you’re staying on course. A budget isn’t fixed forever—your income might increase, your expenses could shift, or you may achieve one goal and decide to pursue another. Whatever the reason, periodic check-ins help you adapt your plan to your current circumstances. By following the same steps you used to create your budget, you can keep it relevant, realistic, and aligned with your financial priorities."
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="18dp"/>
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

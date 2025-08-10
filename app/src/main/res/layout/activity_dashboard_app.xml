@@ -58,7 +58,7 @@
                         android:layout_height="wrap_content"
                         android:text="Spam"
                         android:textColor="#000000"
-                        android:textSize="14dp"
+                        android:textSize="14sp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -91,7 +91,7 @@
                         android:layout_height="wrap_content"
                         android:text=" Cyber Help"
                         android:textColor="#000000"
-                        android:textSize="14dp"
+                        android:textSize="14sp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -145,7 +145,7 @@
                         android:layout_height="wrap_content"
                         android:text="Headlines"
                         android:textColor="#000000"
-                        android:textSize="14dp"
+                        android:textSize="14sp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -259,7 +259,7 @@
                         android:layout_height="wrap_content"
                         android:text="Loan"
                         android:textColor="#000000"
-                        android:textSize="14dp"
+                        android:textSize="14sp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -299,9 +299,9 @@
                         android:id="@+id/titleText6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Savings"
+                        android:text="Budget and Saving"
                         android:textColor="#000000"
-                        android:textSize="14dp"
+                        android:textSize="14sp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -355,7 +355,7 @@
                         android:layout_height="wrap_content"
                         android:text="Calculator"
                         android:textColor="#000000"
-                        android:textSize="14dp"
+                        android:textSize="14sp"
                         android:textStyle="bold" />
 
                     <TextView
