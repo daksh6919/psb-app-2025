@@ -16,6 +16,7 @@ tools:context=".Calculator">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:padding="15dp"
         android:orientation="vertical">
 
@@ -209,20 +210,20 @@ tools:context=".Calculator">
                 android:id="@+id/customButton3"
                 android:layout_width="172dp"
                 android:layout_height="78dp"
-                android:orientation="vertical"
-                android:elevation="5dp"
-                android:gravity="center"
-                android:padding="12dp"
                 android:layout_margin="8dp"
                 android:background="@drawable/rounded_background_calculator"
                 android:clickable="true"
-                android:focusable="true">
+                android:elevation="5dp"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="12dp">
 
                 <TextView
                     android:id="@+id/titleText3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Loan Eligibility"
+                    android:text="GST"
                     android:textColor="#000000"
                     android:textSize="14dp"
                     android:textStyle="bold" />
@@ -232,7 +233,7 @@ tools:context=".Calculator">
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/titleText3"
-                    android:text="Check Eligibity"
+                    android:text="GST Estimate"
                     android:textColor="#666666"
                     android:textSize="14sp" />
 
@@ -243,30 +244,29 @@ tools:context=".Calculator">
                     android:layout_height="match_parent"
                     android:layout_toRightOf="@+id/subText3"
                     android:scaleType="centerInside"
-                    android:src="@drawable/loan2"/>
+                    android:src="@drawable/gst1" />
 
 
             </RelativeLayout>
-
 
             <RelativeLayout
                 android:id="@+id/customButton4"
                 android:layout_width="172dp"
                 android:layout_height="78dp"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:elevation="5dp"
-                android:padding="12dp"
                 android:layout_margin="8dp"
                 android:background="@drawable/rounded_background_calculator"
                 android:clickable="true"
-                android:focusable="true">
+                android:elevation="5dp"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="12dp">
 
                 <TextView
                     android:id="@+id/titleText4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Savings"
+                    android:text="Goals"
                     android:textColor="#000000"
                     android:textSize="14dp"
                     android:textStyle="bold" />
@@ -276,16 +276,15 @@ tools:context=".Calculator">
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/titleText4"
-                    android:text="Planner"
+                    android:text="Saving Planner"
                     android:textColor="#666666"
                     android:textSize="14sp" />
 
 
                 <ImageView
                     android:id="@+id/cardImage4"
-                    android:layout_width="82dp"
-                    android:layout_height="68dp"
-                    android:layout_marginLeft="35dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_toRightOf="@+id/subText4"
                     android:scaleType="centerInside"
                     android:src="@drawable/savings2" />
@@ -294,68 +293,11 @@ tools:context=".Calculator">
             </RelativeLayout>
 
 
-        </LinearLayout>
-
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="16dp" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="102dp"
-            android:layout_marginTop="0dp"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:padding="0dp">
-
-            <RelativeLayout
-                android:id="@+id/customButton5"
-                android:layout_width="172dp"
-                android:layout_height="78dp"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:elevation="5dp"
-                android:padding="12dp"
-                android:layout_margin="8dp"
-                android:background="@drawable/rounded_background_calculator"
-                android:clickable="true"
-                android:focusable="true">
-
-                <TextView
-                    android:id="@+id/titleText7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="GST"
-                    android:textColor="#000000"
-                    android:textSize="14dp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/subText7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/titleText7"
-                    android:text="GST Estimate"
-                    android:textColor="#666666"
-                    android:textSize="14sp" />
-
-
-                <ImageView
-                    android:id="@+id/cardImage5"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_toRightOf="@+id/subText7"
-                    android:scaleType="centerInside"
-                    android:src="@drawable/gst"/>
-
-            </RelativeLayout>
-
-
-
 
 
         </LinearLayout>
+
+
 
         <View
             android:layout_width="match_parent"

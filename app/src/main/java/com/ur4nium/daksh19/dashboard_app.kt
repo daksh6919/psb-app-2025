@@ -48,12 +48,10 @@ class dashboard_app : AppCompatActivity() {
             Toast.makeText(this, "Loan clicked", Toast.LENGTH_SHORT).show()
         }
 
-        // 🟢 THIS IS THE UPDATED CODE FOR YOUR "SAVING" BUTTON
         binding.customButton6.setOnClickListener {
-            // Create an Intent to open the new BudgetSavingActivity
             val intent = Intent(this, BudgetSavingActivity::class.java)
-            // Start the new activity
             startActivity(intent)
+            true
         }
 
         binding.customButton7.setOnClickListener {

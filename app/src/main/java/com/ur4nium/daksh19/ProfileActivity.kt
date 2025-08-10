@@ -4,6 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.ur4nium.daksh19.databinding.ActivityProfileBinding
@@ -26,29 +28,44 @@ class ProfileActivity : AppCompatActivity() {
 
         // 📝 Edit Profile Button
         binding.editProfileButton.setOnClickListener {
-            val intent = Intent(this, EditProfileActivity::class.java)
-            startActivity(intent)
+            startActivity(Intent(this, EditProfileActivity::class.java))
         }
 
         // 🌗 Dark Mode Switch
         val sharedPref = getSharedPreferences("Settings", MODE_PRIVATE)
         val isDarkMode = sharedPref.getBoolean("dark_mode", false)
         binding.darkModeSwitch.isChecked = isDarkMode
-
         binding.darkModeSwitch.setOnCheckedChangeListener { _, isChecked ->
-            val editor = sharedPref.edit()
-            editor.putBoolean("dark_mode", isChecked)
-            editor.apply()
-            Toast.makeText(this, if (isChecked) "Dark Mode ON" else "Dark Mode OFF", Toast.LENGTH_SHORT).show()
+            sharedPref.edit().putBoolean("dark_mode", isChecked).apply()
+            Toast.makeText(
+                this,
+                if (isChecked) "Dark Mode ON" else "Dark Mode OFF",
+                Toast.LENGTH_SHORT
+            ).show()
         }
 
         // 🚪 Logout
         binding.LogoutButton.setOnClickListener {
+            // Sign out from Firebase
             FirebaseAuth.getInstance().signOut()
-            val intent = Intent(this, LoginActivity::class.java)
-            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-            startActivity(intent)
-            finish()
+
+            // Sign out from Google
+            val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestIdToken(getString(R.string.default_web_client_id))
+                .requestEmail()
+                .build()
+
+            val googleSignInClient = GoogleSignIn.getClient(this, gso)
+            googleSignInClient.signOut().addOnCompleteListener {
+                // Optional: revoke access too
+                googleSignInClient.revokeAccess().addOnCompleteListener {
+                    // Redirect to login and clear activity stack
+                    val intent = Intent(this, LoginActivity::class.java)
+                    intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                    startActivity(intent)
+                    finish()
+                }
+            }
         }
     }
 
@@ -64,28 +81,53 @@ class ProfileActivity : AppCompatActivity() {
             db.collection("users").document(currentUser.uid)
                 .get()
                 .addOnSuccessListener { document ->
-                    // Check if the document exists before trying to read from it
                     if (document != null && document.exists()) {
                         val name = document.getString("first")
                         val phone = document.getString("mobileno")
                         val dob = document.getString("born")
 
-                        // Update your TextViews with the fetched data
                         binding.usernameTextView.text = name
                         binding.phoneTextView.text = phone
                         binding.birthdateTextView.text = dob
 
                         Toast.makeText(this, "Profile data loaded!", Toast.LENGTH_SHORT).show()
                     } else {
-                        // Handle the case where the user document does not exist
                         Toast.makeText(this, "User profile not found.", Toast.LENGTH_SHORT).show()
                     }
                 }
                 .addOnFailureListener { e ->
-                    Toast.makeText(this, "Failed to load profile data: $e", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(
+                        this,
+                        "Failed to load profile data: $e",
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
+        }
+
+        binding.bottomNavigation.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.nav_points -> {
+                    Toast.makeText(this, "Points clicked", Toast.LENGTH_SHORT).show()
+                    true
+                }
+                R.id.nav_search -> {
+                    Toast.makeText(this, "Search clicked", Toast.LENGTH_SHORT).show()
+                    true
+                }
+                R.id.nav_home -> {
+                    startActivity(Intent(this, dashboard_app::class.java))
+                    true
+                }
+                R.id.nav_alerts -> {
+                    Toast.makeText(this, "Alerts clicked", Toast.LENGTH_SHORT).show()
+                    true
+                }
+                R.id.nav_settings -> {
+                    Toast.makeText(this, "Settings clicked", Toast.LENGTH_SHORT).show()
+                    true
+                }
+                else -> false
+            }
         }
     }
 }
-
-//hitesh 9.8.25

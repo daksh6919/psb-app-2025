@@ -56,6 +56,34 @@ class EditProfileActivity : AppCompatActivity() {
             datePicker.show()
         }
 
+        binding.bottomNavigation.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.nav_points -> {
+                    Toast.makeText(this, "Points clicked", Toast.LENGTH_SHORT).show()
+                    true
+                }
+                R.id.nav_search -> {
+                    Toast.makeText(this, "Search clicked", Toast.LENGTH_SHORT).show()
+                    true
+                }
+                R.id.nav_home -> {
+                    val intent = Intent(this, dashboard_app::class.java)
+                    startActivity(intent)
+                    true
+                }
+                R.id.nav_alerts -> {
+                    Toast.makeText(this, "Alerts clicked", Toast.LENGTH_SHORT).show()
+                    true
+                }
+                R.id.nav_settings -> {
+                    val intent = Intent(this, ProfileActivity::class.java)
+                    startActivity(intent)
+                    true
+                }
+                else -> false
+            }
+        }
+
         // 💾 Save button logic with phone number validation
         binding.saveButton.setOnClickListener {
             val name = binding.usernameEditText.text.toString().trim()
@@ -100,5 +128,6 @@ class EditProfileActivity : AppCompatActivity() {
                 Toast.makeText(this, "User not authenticated.", Toast.LENGTH_SHORT).show()
             }
         }
+
     }
 }

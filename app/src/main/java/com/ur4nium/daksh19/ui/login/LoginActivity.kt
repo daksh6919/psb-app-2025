@@ -43,6 +43,12 @@ class LoginActivity : AppCompatActivity() {
                             val intent = Intent(this, dashboard_app::class.java)
                             startActivity(intent)
                             finish()
+                            // Save login state
+                            getSharedPreferences("MyAppPrefs", MODE_PRIVATE).edit().apply {
+                                putBoolean("isLoggedIn", true)
+                                apply()
+                            }
+
                         } else {
                             Toast.makeText(this, "Authentication failed: ${task.exception?.message}", Toast.LENGTH_LONG).show()
                         }
@@ -81,6 +87,8 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
             finish() //
         }
+
+
 
 
 

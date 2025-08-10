@@ -17,30 +17,37 @@ class Calculator : AppCompatActivity() {
         setContentView(binding.root)
 
         // Back button
-        binding.backButton.setOnClickListener {
-            finish()
+        binding.backButton.setOnClickListener { finish() 
         }
 
         // Custom buttons
         binding.customButton1.setOnClickListener {
-            Toast.makeText(this, "Spam clicked", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, TaxOnIncome::class.java)
+            startActivity(intent)
+            true
         }
 
         binding.customButton2.setOnClickListener {
-            Toast.makeText(this, "Cyber Help clicked", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, Emi::class.java)
+            startActivity(intent)
+            true
         }
 
         binding.customButton3.setOnClickListener {
-            Toast.makeText(this, "Headlines clicked", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, GST::class.java)
+            startActivity(intent)
+            true
         }
 
         binding.customButton4.setOnClickListener {
-            Toast.makeText(this, "Simulation clicked", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, SavingsActivity::class.java)
+            startActivity(intent)
+            true
         }
 
-        binding.customButton5.setOnClickListener {
-            Toast.makeText(this, "Calculator clicked", Toast.LENGTH_SHORT).show()
-        }
+
+
+
 
         // Bottom navigation
         val bottomNavigation = findViewById<BottomNavigationView>(R.id.bottom_navigation)
