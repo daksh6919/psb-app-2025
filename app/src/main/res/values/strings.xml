@@ -18,5 +18,19 @@
         <item>New Regime</item>
     </string-array>
 
+    <string name="spam">Spam</string>
+    <string name="check_spams">Check Spams</string>
+    <string name="cyber_help">Cyber Help</string>
+    <string name="online_support">Online Support</string>
+    <string name="cyber_help_image">cyber_help_image</string>
+    <string name="headlines">Headlines</string>
+    <string name="latest_news">Latest News</string>
+    <string name="headlines_image">headlines_image</string>
+    <string name="simulation">Simulation</string>
+    <string name="practice_scenarios">Practice Scenarios</string>
+    <string name="simulation_image">simulation_image</string>
+
+
+
 </resources>
 

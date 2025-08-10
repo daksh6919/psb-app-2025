@@ -115,13 +115,12 @@
                 android:textSize="16sp"
                 android:layout_marginBottom="32dp"/>
 
+
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:src="@drawable/testimage2"
-                android:scaleType="centerCrop"
-                android:layout_marginBottom="16dp"
-                android:contentDescription="Description of the image"/>
+                android:id="@+id/budgetImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Budget image" />
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -161,13 +160,11 @@ Avoid basing your budget on your total salary, as it can give a misleading pictu
                 android:textSize="16sp" />
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:src="@drawable/testimage3"
-                android:scaleType="fitCenter"
+                android:id="@+id/savingImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:layout_marginBottom="16dp"
-                android:contentDescription="Description of the second image"/>
+                android:contentDescription="Saving image" />
 
             <TextView
                 android:layout_width="match_parent"

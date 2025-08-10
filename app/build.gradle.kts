@@ -5,7 +5,10 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.google.gms.google.services)
+
 }
+
+
 
 android {
     namespace = "com.ur4nium.daksh19"
@@ -64,6 +67,7 @@ dependencies {
     // Firebase Auth and Firestore without versions (managed by BoM)
     implementation(libs.firebase.auth)
     implementation(libs.firebase.firestore)
+    implementation("io.coil-kt:coil:2.6.0")
 
     // Google Sign-In
     implementation(libs.play.services.auth)

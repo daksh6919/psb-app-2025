@@ -31,7 +31,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="NEWS/UPDATES#" />
+                    android:text="@string/latest_news" />
 
 
             </LinearLayout>
@@ -78,16 +78,16 @@
                         android:id="@+id/titleText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Spam"
+                        android:text="@string/spam"
                         android:textColor="#000000"
-                        android:textSize="14dp"
+                        android:textSize="14sp"
                         android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/subText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Check spams"
+                        android:text="@string/check_spams"
                         android:layout_below="@+id/titleText"
                         android:textSize="14sp"
                         android:textColor="#666666"/>
@@ -97,7 +97,7 @@
                         android:id="@+id/cardImage"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_toRightOf="@+id/subText"
+                        android:layout_toEndOf="@+id/subText"
                         android:scaleType="centerInside"
                         android:src="@drawable/spam" />
 
@@ -121,16 +121,16 @@
                         android:id="@+id/titleText2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text=" Cyber Help"
+                        android:text="@string/cyber_help"
                         android:textColor="#000000"
-                        android:textSize="14dp"
+                        android:textSize="14sp"
                         android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/subText2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text=" Online Support"
+                        android:text="@string/online_support"
                         android:layout_below="@+id/titleText2"
                         android:textSize="14sp"
                         android:textColor="#666666"/>
@@ -140,7 +140,7 @@
                         android:id="@+id/cardImage2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_toRightOf="@+id/subText2"
+                        android:layout_toEndOf="@+id/subText2"
                         android:scaleType="centerInside"
                         android:src="@drawable/cyber" />
 

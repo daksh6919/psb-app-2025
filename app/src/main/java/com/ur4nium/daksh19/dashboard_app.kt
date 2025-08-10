@@ -2,10 +2,13 @@ package com.ur4nium.daksh19
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.models.SlideModel
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 import com.ur4nium.daksh19.databinding.ActivityDashboardAppBinding
 
 class dashboard_app : AppCompatActivity() {
@@ -14,20 +17,38 @@ class dashboard_app : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        // ✅ Correct View Binding setup first
         binding = ActivityDashboardAppBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // ✅ Image slider setup after layout is set
-        val slideModels = arrayListOf(
-            SlideModel(R.drawable.test1, ScaleTypes.FIT),
-            SlideModel(R.drawable.test2, ScaleTypes.FIT),
-            SlideModel(R.drawable.test3, ScaleTypes.FIT)
-        )
-        binding.imageSlider.setImageList(slideModels, ScaleTypes.FIT)
+        // --- NEW FIREBASE IMAGE SLIDER CODE STARTS HERE ---
+        // This block replaces your old static image list.
+        val imageList = ArrayList<SlideModel>()
+        val db = Firebase.firestore
 
-        // 🔘 Custom Button Click Listeners
+        db.collection("dashboard_slider")
+            .get()
+            .addOnSuccessListener { documents ->
+                if (documents.isEmpty) {
+                    Log.d("Firestore", "No images found in the collection.")
+                    return@addOnSuccessListener
+                }
+                // Loop through documents and add URLs to the list
+                for (document in documents) {
+                    val imageUrl = document.getString("url")
+                    if (imageUrl != null) {
+                        imageList.add(SlideModel(imageUrl, ScaleTypes.CENTER_CROP))
+                    }
+                }
+                // Set the fetched images to the slider
+                binding.imageSlider.setImageList(imageList)
+            }
+            .addOnFailureListener { exception ->
+                Log.w("Firestore", "Error getting documents: ", exception)
+            }
+        // --- NEW FIREBASE IMAGE SLIDER CODE ENDS HERE ---
+
+
+        // ✅ ALL YOUR EXISTING BUTTON LISTENERS ARE KEPT BELOW
         binding.customButton1.setOnClickListener {
             Toast.makeText(this, "Spam clicked", Toast.LENGTH_SHORT).show()
         }
@@ -51,7 +72,6 @@ class dashboard_app : AppCompatActivity() {
         binding.customButton6.setOnClickListener {
             val intent = Intent(this, BudgetSavingActivity::class.java)
             startActivity(intent)
-            true
         }
 
         binding.customButton7.setOnClickListener {
@@ -62,7 +82,7 @@ class dashboard_app : AppCompatActivity() {
             Toast.makeText(this, "Advisor clicked", Toast.LENGTH_SHORT).show()
         }
 
-        // 🔘 Bottom Navigation
+        // ✅ YOUR EXISTING BOTTOM NAVIGATION CODE IS KEPT
         binding.bottomNavigation.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.nav_points -> {
