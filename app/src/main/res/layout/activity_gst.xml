@@ -50,6 +50,7 @@ android:background="@drawable/gradient_background2">
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
+            android:textColor="@color/black"
             android:layout_marginRight="145dp"
             android:text="Enter Amount :"
             android:textSize="14sp" />
@@ -59,6 +60,7 @@ android:background="@drawable/gradient_background2">
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="8dp"
+            android:textColor="@color/black"
             android:background="@drawable/rounded_background_calculator"
             android:hint="e.g. 500000"
             android:inputType="number"
@@ -70,9 +72,13 @@ android:background="@drawable/gradient_background2">
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:textColor="@color/black"
             android:layout_marginRight="137dp"
             android:text="GST Persentage :"
             android:textSize="14sp" />
+
+
+        <!-- Calculate Button -->
 
         <RelativeLayout
             android:id="@+id/regime_selector_layout"
@@ -108,8 +114,6 @@ android:background="@drawable/gradient_background2">
 
         </RelativeLayout>
 
-
-        <!-- Calculate Button -->
         <Button
             android:id="@+id/calculateButton"
             android:layout_width="250dp"
@@ -129,6 +133,7 @@ android:background="@drawable/gradient_background2">
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
+            android:textColor="@color/black"
             android:textSize="20dp"
             android:text="GST Amount:" />
 
@@ -136,6 +141,7 @@ android:background="@drawable/gradient_background2">
             android:id="@+id/resultTotal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:textSize="20dp"
             android:text="Total Amount:" />
 

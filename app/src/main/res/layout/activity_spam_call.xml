@@ -51,6 +51,7 @@ android:background="@drawable/gradient_background2">
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:layout_marginRight="105dp"
+            android:textColor="@color/black"
             android:text="Enter Suspected Phone Number :"
             android:textSize="14sp" />
 
@@ -58,9 +59,10 @@ android:background="@drawable/gradient_background2">
             android:id="@+id/phoneEditText"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:textColor="@color/black"
             android:layout_marginTop="8dp"
             android:background="@drawable/rounded_background_calculator"
-            android:hint="+91 45616 XXXXX"
+            android:hint="+CC 45616 XXXXX   ( CC = Country Code )"
             android:inputType="phone"
             android:padding="12dp" />
 
@@ -69,6 +71,8 @@ android:background="@drawable/gradient_background2">
 
 
         <!-- Calculate Button -->
+
+
         <Button
             android:id="@+id/CheckButton"
             android:layout_width="250dp"
@@ -82,6 +86,75 @@ android:background="@drawable/gradient_background2">
             android:textAllCaps="false"
             android:textColor="@android:color/white"
             android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="0dp"
+            android:textColor="@color/black"
+            android:text="Result :"
+            android:textSize="14sp" />
+
+
+        <EditText
+            android:id="@+id/ResultEditText"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_background_calculator"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="0dp">
+
+            <RelativeLayout
+                android:id="@+id/customButton2"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/rounded_background_calculator"
+                android:clickable="true"
+                android:elevation="5dp"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/titleText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="REPORT SPAM"
+                    android:textColor="#000000"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:id="@+id/cardImage3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/titleText1"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/megaphone"
+                    app:tint="#F00404"/>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"

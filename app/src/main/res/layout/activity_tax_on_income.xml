@@ -58,6 +58,7 @@
                 android:id="@+id/incomeEditText"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:textColor="@color/black"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/rounded_background_calculator"
                 android:hint="e.g. 500000"
@@ -70,6 +71,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:textColor="@color/black"
                 android:layout_marginRight="92dp"
                 android:text="Select Tax Regime on your Income :"
                 android:textSize="14sp" />

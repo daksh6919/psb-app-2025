@@ -59,6 +59,7 @@ android:background="@drawable/gradient_background2">
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:layout_marginRight="115dp"
+            android:textColor="@color/black"
             android:text="Enter your Loan Amount :"
             android:textSize="14sp" />
 
@@ -67,6 +68,7 @@ android:background="@drawable/gradient_background2">
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="8dp"
+            android:textColor="@color/black"
             android:background="@drawable/rounded_background_calculator"
             android:hint="amount"
             android:inputType="number"
@@ -78,6 +80,7 @@ android:background="@drawable/gradient_background2">
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:textColor="@color/black"
             android:layout_marginRight="92dp"
             android:text="Enter Annual Interest Rate ( in %)  :"
             android:textSize="14sp" />
@@ -86,6 +89,7 @@ android:background="@drawable/gradient_background2">
             android:id="@+id/InterestEditText"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:textColor="@color/black"
             android:layout_marginTop="8dp"
             android:background="@drawable/rounded_background_calculator"
             android:hint="%"
@@ -96,21 +100,23 @@ android:background="@drawable/gradient_background2">
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:textColor="@color/black"
             android:layout_marginRight="92dp"
             android:text="Enter Loan Tenure ( in years ) :"
             android:textSize="14sp" />
 
+        <!-- Calculate Button -->
         <EditText
             android:id="@+id/TenureEditText"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:textColor="@color/black"
             android:layout_marginTop="8dp"
             android:background="@drawable/rounded_background_calculator"
             android:hint="Years"
             android:inputType="number"
             android:padding="12dp" />
 
-        <!-- Calculate Button -->
         <Button
             android:id="@+id/calculateButton"
             android:layout_width="250dp"
@@ -130,6 +136,7 @@ android:background="@drawable/gradient_background2">
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:textColor="@color/black"
             android:textSize="20dp"
             android:text="EMI Per Month:" />
 

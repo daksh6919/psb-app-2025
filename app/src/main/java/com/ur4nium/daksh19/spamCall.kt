@@ -6,7 +6,7 @@ import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
-
+import android.graphics.Color
 class SpamCallActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,6 +41,44 @@ class SpamCallActivity : AppCompatActivity() {
             toggleVisibility(faq3Answer)
         }
 
+        val phoneNumberEditText: EditText = findViewById(R.id.phoneEditText)
+        val checkButton: Button = findViewById(R.id.CheckButton)
+        val resultTextView: TextView = findViewById(R.id.ResultEditText)
+
+        // A hardcoded list of "spam" numbers for demonstration
+        val spamNumbers = setOf(
+            "6283231120",
+            "9876543210",
+            "5551234567"
+        )
+
+        // Set up the button click listener
+        checkButton.setOnClickListener {
+            // Get the text from the EditText and trim whitespace
+            val enteredNumber = phoneNumberEditText.text.toString().trim()
+
+            if (enteredNumber.isEmpty()) {
+                resultTextView.text = "Please enter a number."
+                resultTextView.setTextColor(Color.parseColor("#FFA500")) // Orange
+                return@setOnClickListener
+            }
+
+            // Check if the entered number is in our spam list
+            if (spamNumbers.contains(enteredNumber)) {
+                resultTextView.text = "Verified as a SPAM Number."
+                resultTextView.setTextColor(Color.parseColor("#FF0000")) // Red
+            } else {
+                resultTextView.text = "NOT a SPAM Number."
+                resultTextView.setTextColor(Color.parseColor("#008000")) // Green
+            }
+        }
+
+        val customButton2: RelativeLayout = findViewById(R.id.customButton2)
+
+        customButton2.setOnClickListener {
+            val intent = Intent(this, ReportSpamPhone::class.java)
+            startActivity(intent)
+        }
         // Bottom Navigation
         val bottomNav: BottomNavigationView = findViewById(R.id.bottom_navigation)
         bottomNav.setOnItemSelectedListener { item ->

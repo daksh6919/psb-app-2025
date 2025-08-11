@@ -62,11 +62,12 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Full Name"
                 android:background="@android:color/transparent"
+                android:textColor="@color/black"
+                android:hint="Full Name"
                 android:inputType="textPersonName"
-                android:textColorHint="#999"
-                android:paddingHorizontal="12dp"/>
+                android:paddingHorizontal="12dp"
+                android:textColorHint="#999" />
 
             <ImageView
                 android:layout_width="34dp"
@@ -96,6 +97,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textColor="@color/black"
                 android:background="@android:color/transparent"
                 android:hint="domain@gmail.com"
                 android:inputType="textEmailAddress"
@@ -131,6 +133,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="Password"
+                android:textColor="@color/black"
                 android:background="@android:color/transparent"
                 android:inputType="textPassword"
                 android:textColorHint="#999"
@@ -169,6 +172,7 @@
                 android:layout_weight="1"
                 android:hint="Confirm Password"
                 android:inputType="textPassword"
+                android:textColor="@color/black"
                 android:background="@android:color/transparent"
                 android:textColorHint="#999"
                 android:paddingHorizontal="12dp"/>

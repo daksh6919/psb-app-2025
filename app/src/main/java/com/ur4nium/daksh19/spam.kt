@@ -60,7 +60,7 @@ class Spam : AppCompatActivity() {
         }
 
         customButton2.setOnClickListener {
-            Toast.makeText(this, "Report Spam card clicked", Toast.LENGTH_SHORT).show()
+
         }
 
         // ---- Bottom Navigation Handling ----
