@@ -59,7 +59,7 @@ class dashboard_app : AppCompatActivity() {
         }
 
         binding.customButton3.setOnClickListener {
-            Toast.makeText(this, "Headlines clicked", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, QuizActivity::class.java))
         }
 
         binding.customButton4.setOnClickListener {

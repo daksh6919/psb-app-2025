@@ -19,7 +19,7 @@ class SpamCallActivity : AppCompatActivity() {
             finish()
         }
 
-        // Income EditText & Calculate Button
+
 
 
         // FAQ toggle logic
