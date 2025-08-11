@@ -71,6 +71,14 @@
                         android:textColor="#666666"
                         android:textSize="14sp" />
 
+                    <ImageView
+                        android:id="@+id/cardImage1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/subText"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/spam" />
+
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -447,7 +455,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/rounded_background2"
+        android:background="@drawable/gradient_background4"
         android:elevation="20dp"
         app:itemBackground="@drawable/bottom_nav_item_background"
         app:itemIconTint="@color/black"

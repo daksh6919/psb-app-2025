@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:app="http://schemas.android.com/apk/res-auto"
-android:id="@+id/tax_root3"
+android:id="@+id/tax_root"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:background="@drawable/gradient_background2">
@@ -19,11 +19,7 @@ android:background="@drawable/gradient_background2">
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
-
-
         <!-- Title -->
-
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -41,16 +37,11 @@ android:background="@drawable/gradient_background2">
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="95dp"
-                android:text="Savings"
+                android:text="Spam(Call)"
                 android:textColor="#090909"
                 android:textSize="30sp"
                 android:textStyle="bold" />
         </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#040404" />
 
 
         <!-- Income Input -->
@@ -58,83 +49,85 @@ android:background="@drawable/gradient_background2">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="115dp"
-            android:text="Enter your Monthly Income :"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="105dp"
+            android:text="Enter Suspected Phone Number :"
             android:textSize="14sp" />
 
         <EditText
-            android:id="@+id/incomeEditText"
+            android:id="@+id/phoneEditText"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="8dp"
             android:background="@drawable/rounded_background_calculator"
-            android:hint="e.g. 500000"
-            android:inputType="number"
+            android:hint="+91 45616 XXXXX"
+            android:inputType="phone"
             android:padding="12dp" />
 
         <!-- Tax Regime Dropdown -->
         <!-- Tax Regime Dropdown -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="92dp"
-            android:text="Enter Your Monthly Expense :"
-            android:textSize="14sp" />
 
-        <EditText
-            android:id="@+id/ExpenseEditText"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/rounded_background_calculator"
-            android:hint="e.g. 500000"
-            android:inputType="number"
-            android:padding="12dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="92dp"
-            android:text="Enter Your Saving Goal :"
-            android:textSize="14sp" />
-
-        <EditText
-            android:id="@+id/SavingEditText"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/rounded_background_calculator"
-            android:hint="e.g. 500000"
-            android:inputType="number"
-            android:padding="12dp" />
 
         <!-- Calculate Button -->
         <Button
-            android:id="@+id/calculateButton"
+            android:id="@+id/CheckButton"
             android:layout_width="250dp"
             android:layout_height="58dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="24dp"
             android:backgroundTint="#17BAD3"
             android:elevation="6dp"
             android:paddingLeft="32dp"
             android:paddingRight="32dp"
-            android:text="Calculate"
+            android:text="check"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
             android:textSize="25dp" />
 
         <TextView
-            android:id="@+id/resultGST"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginTop="16dp"
+            android:lineSpacingExtra="2dp"
+            android:text="What is Vishing?\n "
+            android:textColor="#050505"
+            android:textSize="24sp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:textSize="20dp"
-            android:text="Months Required:" />
+            android:layout_marginTop="1dp"
+            android:textSize="14sp"
+            android:textColor="#050505"
+            android:lineSpacingExtra="2dp"
+            android:text="Vishing, short for voice phishing, is a type of cybercrime where scammers use phone calls to trick people into revealing personal and financial information. It's the voice equivalent of email phishing.\n
+             How It Typically Works:\n
+            - The Disguise: Scammers impersonate trusted entities—your bank, credit card company, government agency, or even your company’s IT support.\n
+            - The Urgency: They create panic or urgency, claiming your account is compromised, you owe money, or you've won a prize. This pressure is meant to make you act quickly.\n
+            - The Goal: To steal sensitive information like:\n
+            - Bank account details\n
+            - Credit/debit card numbers and CVVs\n
+            - Passwords\n
+            - Aadhaar or PAN numbers\n
+            - One-Time Passwords (OTPs)\n
+            Key Tactics Used in Vishing:\n
+            - Caller ID Spoofing: They fake caller IDs to appear as legitimate numbers.\n
+            - Robocalls: Automated systems make thousands of calls.\n
+            - Social Engineering: Psychological tricks to gain trust—often using bits of your real info.\n
+             How to Protect Yourself:\n
+            - Be Skeptical of Unsolicited Calls: Always question unexpected calls asking for personal info.\n
+            - Never Share Sensitive Info Over the Phone: Real organizations won’t ask for passwords, OTPs, or full card numbers.\n
+            - Verify Independently: Hang up and call the official number from a trusted source.\n
+            - Don’t Be Pressured: Urgency is a red flag. Pause, think, and verify.\n
+
+            Want help creating a poster or awareness message based on this?">
+
+        </TextView>
 
 
+
+        />
 
 
         <!-- FAQ Card -->
@@ -146,7 +139,7 @@ android:background="@drawable/gradient_background2">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="22dp"
+                android:layout_marginTop="32dp"
                 android:layout_marginBottom="100dp"
                 android:background="@drawable/rounded_background_calculator"
                 android:orientation="vertical"
@@ -178,7 +171,7 @@ android:background="@drawable/gradient_background2">
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="15dp"
-                        android:text=".What does this savings planner do?"
+                        android:text="What is a spam call?"
                         android:textSize="17dp">
 
                     </TextView>
@@ -193,14 +186,14 @@ android:background="@drawable/gradient_background2">
                         android:contentDescription="Plus icon"
                         android:padding="4dp"
                         android:src="@drawable/add_sharp"
-                        android:tint="#000000" />
+                        app:tint="#000000" />
                 </RelativeLayout>
 
                 <TextView
                     android:id="@+id/faq1_answer"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="It helps you decide how much money to save every month to reach your goal."
+                    android:text="It’s an unwanted phone call, usually from telemarketers, robocalls, or scammers, trying to sell something or trick you."
                     android:visibility="gone"
                     android:padding="8dp" />
 
@@ -217,7 +210,7 @@ android:background="@drawable/gradient_background2">
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="15dp"
-                        android:text="How do I know my monthly saving amount?"
+                        android:text="How do they get my number?"
                         android:textSize="17dp">
 
                     </TextView>
@@ -231,14 +224,14 @@ android:background="@drawable/gradient_background2">
                         android:contentDescription="Plus icon"
                         android:padding="4dp"
                         android:src="@drawable/add_sharp"
-                        android:tint="#000000" />
+                        app:tint="#000000" />
                 </RelativeLayout>
 
                 <TextView
                     android:id="@+id/faq2_answer"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Enter your goal amount, how many months you have, and it will calculate it for you."
+                    android:text="Numbers are collected from leaked data, marketing lists, online forms, social media, or generated randomly by autodialers."
                     android:visibility="gone"
                     android:padding="8dp" />
 
@@ -255,7 +248,7 @@ android:background="@drawable/gradient_background2">
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="15dp"
-                        android:text="Can I change my goal later?"
+                        android:text="How can I block or reduce them?"
                         android:textSize="17dp">
 
                     </TextView>
@@ -269,94 +262,20 @@ android:background="@drawable/gradient_background2">
                         android:contentDescription="Plus icon"
                         android:padding="4dp"
                         android:src="@drawable/add_sharp"
-                        android:tint="#000000" />
+                        app:tint="#000000" />
                 </RelativeLayout>
 
                 <TextView
                     android:id="@+id/faq3_answer"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Yes, you can edit your goal or time anytime if your plan changes."
+                    android:text="Use your phone’s “block” option, install spam-call blocking apps like Truecaller, or register with a Do Not Call list (if available in your country)."
                     android:visibility="gone"
                     android:padding="8dp" />
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/rounded_background_calculator"
-                    android:paddingEnd="12dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="15dp"
-                        android:text=".What if I already have some savings?"
-                        android:textSize="17dp">
-
-                    </TextView>
-
-                    <ImageView
-                        android:id="@+id/plus_icon4"
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:contentDescription="Plus icon"
-                        android:padding="4dp"
-                        android:src="@drawable/add_sharp"
-                        android:tint="#000000" />
-                </RelativeLayout>
-
-                <TextView
-                    android:id="@+id/faq4_answer"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Just add your current savings, and the planner will adjust the monthly amount."
-                    android:visibility="gone"
-                    android:padding="8dp" />
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/rounded_background_calculator"
-                    android:paddingEnd="12dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="15dp"
-                        android:text="Does this include interest from the bank?"
-                        android:textSize="17dp">
-
-                    </TextView>
-
-                    <ImageView
-                        android:id="@+id/plus_icon5"
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:contentDescription="Plus icon"
-                        android:padding="4dp"
-                        android:src="@drawable/add_sharp"
-                        android:tint="#000000" />
-                </RelativeLayout>
-
-                <TextView
-                    android:id="@+id/faq5_answer"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="f you want, you can add an interest rate; otherwise, it calculates only the basic savings needed."
-                    android:visibility="gone"
-                    android:padding="8dp" />
-
 
 
             </LinearLayout>
+
 
         </ScrollView>
 
@@ -364,17 +283,21 @@ android:background="@drawable/gradient_background2">
 </ScrollView>
 
 
-<com.google.android.material.bottomnavigation.BottomNavigationView
-    android:id="@+id/bottom_navigation"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_alignParentBottom="true"
-    android:background="@drawable/gradient_background2"
-    android:elevation="20dp"
-    app:itemIconTint="@color/black"
-    app:itemTextColor="@color/black"
-    app:itemBackground="@drawable/bottom_nav_item_background"
-    app:labelVisibilityMode="labeled"
-    app:menu="@menu/bottom_nav_menu" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradient_background4"
+        android:elevation="20dp"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        app:itemBackground="@drawable/bottom_nav_item_background"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu" />
+
+
 
 </RelativeLayout>

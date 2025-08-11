@@ -135,219 +135,226 @@ android:background="@drawable/gradient_background2">
 
 
         <!-- FAQ Card -->
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="22dp"
-            android:background="@drawable/rounded_background_calculator"
-            android:orientation="vertical"
-            android:padding="16dp">
+            android:layout_height="match_parent">
 
-            <TextView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="FAQ’s"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <!-- FAQ Items -->
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="12dp"
-                android:background="#DDDDDD" />
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="100dp"
                 android:background="@drawable/rounded_background_calculator"
-                android:paddingEnd="12dp">
+                android:orientation="vertical"
+                android:padding="16dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="15dp"
-                    android:text="What is EMI?"
-                    android:textSize="17dp">
+                    android:text="FAQ’s"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
-                </TextView>
+                <!-- FAQ Items -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="12dp"
+                    android:background="#DDDDDD" />
 
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_background_calculator"
+                    android:paddingEnd="12dp">
 
-                <ImageView
-                    android:id="@+id/plus_icon1"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
-                    android:contentDescription="Plus icon"
-                    android:padding="4dp"
-                    android:src="@drawable/add_sharp"
-                    android:tint="#000000" />
-            </RelativeLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:text="What is EMI?"
+                        android:textSize="17dp">
 
-            <TextView
-                android:id="@+id/faq1_answer"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="EMI (Equated Monthly Installment) is a fixed monthly payment made towards loan repayment, including both principal and interest."
-                android:visibility="gone"
-                android:padding="8dp" />
-
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/rounded_background_calculator"
-                android:paddingEnd="12dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="15dp"
-                    android:text="How is EMI calculated?"
-                    android:textSize="17dp">
-
-                </TextView>
-
-                <ImageView
-                    android:id="@+id/plus_icon2"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
-                    android:contentDescription="Plus icon"
-                    android:padding="4dp"
-                    android:src="@drawable/add_sharp"
-                    android:tint="#000000" />
-            </RelativeLayout>
-
-            <TextView
-                android:id="@+id/faq2_answer"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="EMI is calculated using the formula:\nEMI = (P × R × (1+R)ⁿ) / ((1+R)ⁿ – 1),\nwhere P = principal, R = monthly interest rate, n = number of months."
-                android:visibility="gone"
-                android:padding="8dp" />
+                    </TextView>
 
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/rounded_background_calculator"
-                android:paddingEnd="12dp">
+                    <ImageView
+                        android:id="@+id/plus_icon1"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="Plus icon"
+                        android:padding="4dp"
+                        android:src="@drawable/add_sharp"
+                        android:tint="#000000" />
+                </RelativeLayout>
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:id="@+id/faq1_answer"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="15dp"
-                    android:text="Does EMI change during the loan period?"
-                    android:textSize="17dp">
+                    android:text="EMI (Equated Monthly Installment) is a fixed monthly payment made towards loan repayment, including both principal and interest."
+                    android:visibility="gone"
+                    android:padding="8dp" />
 
-                </TextView>
 
-                <ImageView
-                    android:id="@+id/plus_icon3"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
-                    android:contentDescription="Plus icon"
-                    android:padding="4dp"
-                    android:src="@drawable/add_sharp"
-                    android:tint="#000000" />
-            </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_background_calculator"
+                    android:paddingEnd="12dp">
 
-            <TextView
-                android:id="@+id/faq3_answer"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="For fixed-rate loans, EMI stays the same. For floating rates, EMI or tenure may change with interest rate fluctuations."
-                android:visibility="gone"
-                android:padding="8dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:text="How is EMI calculated?"
+                        android:textSize="17dp">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/rounded_background_calculator"
-                android:paddingEnd="12dp">
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/plus_icon2"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="Plus icon"
+                        android:padding="4dp"
+                        android:src="@drawable/add_sharp"
+                        android:tint="#000000" />
+                </RelativeLayout>
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:id="@+id/faq2_answer"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="13dp"
-                    android:layout_marginTop="15dp"
-                    android:text="What details do I need to use this calculator?"
-                    android:textSize="17dp">
+                    android:text="EMI is calculated using the formula:\nEMI = (P × R × (1+R)ⁿ) / ((1+R)ⁿ – 1),\nwhere P = principal, R = monthly interest rate, n = number of months."
+                    android:visibility="gone"
+                    android:padding="8dp" />
 
-                </TextView>
 
-                <ImageView
-                    android:id="@+id/plus_icon4"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
-                    android:contentDescription="Plus icon"
-                    android:padding="4dp"
-                    android:src="@drawable/add_sharp"
-                    android:tint="#000000" />
-            </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_background_calculator"
+                    android:paddingEnd="12dp">
 
-            <TextView
-                android:id="@+id/faq4_answer"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="You need the loan amount, interest rate, and loan tenure to get the EMI result."
-                android:visibility="gone"
-                android:padding="8dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Does EMI change during the loan period?"
+                        android:textSize="17dp">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/rounded_background_calculator"
-                android:paddingEnd="12dp">
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/plus_icon3"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="Plus icon"
+                        android:padding="4dp"
+                        android:src="@drawable/add_sharp"
+                        android:tint="#000000" />
+                </RelativeLayout>
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:id="@+id/faq3_answer"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="15dp"
-                    android:text="Does the EMI calculator show total payment?"
-                    android:textSize="17dp">
+                    android:text="For fixed-rate loans, EMI stays the same. For floating rates, EMI or tenure may change with interest rate fluctuations."
+                    android:visibility="gone"
+                    android:padding="8dp" />
 
-                </TextView>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_background_calculator"
+                    android:paddingEnd="12dp">
 
-                <ImageView
-                    android:id="@+id/plus_icon5"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
-                    android:contentDescription="Plus icon"
-                    android:padding="4dp"
-                    android:src="@drawable/add_sharp"
-                    android:tint="#000000" />
-            </RelativeLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="15dp"
+                        android:text="What details do I need to use this calculator?"
+                        android:textSize="17dp">
 
-            <TextView
-                android:id="@+id/faq5_answer"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Yes, it can display your monthly EMI, total interest payable, and total amount payable over the loan period."
-                android:visibility="gone"
-                android:padding="8dp" />
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/plus_icon4"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="Plus icon"
+                        android:padding="4dp"
+                        android:src="@drawable/add_sharp"
+                        android:tint="#000000" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/faq4_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="You need the loan amount, interest rate, and loan tenure to get the EMI result."
+                    android:visibility="gone"
+                    android:padding="8dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_background_calculator"
+                    android:paddingEnd="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Does the EMI calculator show total payment?"
+                        android:textSize="17dp">
+
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/plus_icon5"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="Plus icon"
+                        android:padding="4dp"
+                        android:src="@drawable/add_sharp"
+                        android:tint="#000000" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/faq5_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yes, it can display your monthly EMI, total interest payable, and total amount payable over the loan period."
+                    android:visibility="gone"
+                    android:padding="8dp" />
 
 
 
-        </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
 
     </LinearLayout>
 </ScrollView>
@@ -358,7 +365,7 @@ android:background="@drawable/gradient_background2">
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_alignParentBottom="true"
-    android:background="@drawable/rounded_background2"
+    android:background="@drawable/gradient_background4"
     android:elevation="20dp"
     app:itemIconTint="@color/black"
     app:itemTextColor="@color/black"

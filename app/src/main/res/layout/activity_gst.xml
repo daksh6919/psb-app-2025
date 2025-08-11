@@ -142,220 +142,225 @@ android:background="@drawable/gradient_background2">
 
         <!-- FAQ Card -->
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:background="@drawable/rounded_background_calculator"
-            android:orientation="vertical"
-            android:padding="16dp">
+            android:layout_height="match_parent">
 
-            <TextView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="FAQ’s"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <!-- FAQ Items -->
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="12dp"
-                android:background="#DDDDDD" />
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="100dp"
                 android:background="@drawable/rounded_background_calculator"
-                android:paddingEnd="12dp">
+                android:orientation="vertical"
+                android:padding="16dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="15dp"
-                    android:text="What does this GST calculator do?"
-                    android:textSize="17dp">
+                    android:text="FAQ’s"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
-                </TextView>
+                <!-- FAQ Items -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="12dp"
+                    android:background="#DDDDDD" />
 
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_background_calculator"
+                    android:paddingEnd="12dp">
 
-                <ImageView
-                    android:id="@+id/plus_icon1"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
-                    android:contentDescription="Plus icon"
-                    android:padding="4dp"
-                    android:src="@drawable/add_sharp"
-                    android:tint="#000000" />
-            </RelativeLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:text="What does this GST calculator do?"
+                        android:textSize="17dp">
 
-            <TextView
-                android:id="@+id/faq1_answer"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="It helps you quickly find out how much GST is added to or included in a price."
-                android:visibility="gone"
-                android:padding="8dp" />
-
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/rounded_background_calculator"
-                android:paddingEnd="12dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="15dp"
-                    android:text="How do I use it?"
-                    android:textSize="17dp">
-
-                </TextView>
-
-                <ImageView
-                    android:id="@+id/plus_icon2"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
-                    android:contentDescription="Plus icon"
-                    android:padding="4dp"
-                    android:src="@drawable/add_sharp"
-                    android:tint="#000000" />
-            </RelativeLayout>
-
-            <TextView
-                android:id="@+id/faq2_answer"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Just enter the amount and GST rate, and it will show the GST amount and total price etc."
-                android:visibility="gone"
-                android:padding="8dp" />
+                    </TextView>
 
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/rounded_background_calculator"
-                android:paddingEnd="12dp">
+                    <ImageView
+                        android:id="@+id/plus_icon1"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="Plus icon"
+                        android:padding="4dp"
+                        android:src="@drawable/add_sharp"
+                        android:tint="#000000" />
+                </RelativeLayout>
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:id="@+id/faq1_answer"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="15dp"
-                    android:text="Can I check GST for any item or service?"
-                    android:textSize="17dp">
+                    android:text="It helps you quickly find out how much GST is added to or included in a price."
+                    android:visibility="gone"
+                    android:padding="8dp" />
 
-                </TextView>
 
-                <ImageView
-                    android:id="@+id/plus_icon3"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
-                    android:contentDescription="Plus icon"
-                    android:padding="4dp"
-                    android:src="@drawable/add_sharp"
-                    android:tint="#000000" />
-            </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_background_calculator"
+                    android:paddingEnd="12dp">
 
-            <TextView
-                android:id="@+id/faq3_answer"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Yes, you can use it for both products and services, as long as you know the GST rate."
-                android:visibility="gone"
-                android:padding="8dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:text="How do I use it?"
+                        android:textSize="17dp">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/rounded_background_calculator"
-                android:paddingEnd="12dp">
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/plus_icon2"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="Plus icon"
+                        android:padding="4dp"
+                        android:src="@drawable/add_sharp"
+                        android:tint="#000000" />
+                </RelativeLayout>
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:id="@+id/faq2_answer"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="15dp"
-                    android:text="What if I only know the total price?"
-                    android:textSize="17dp">
+                    android:text="Just enter the amount and GST rate, and it will show the GST amount and total price etc."
+                    android:visibility="gone"
+                    android:padding="8dp" />
 
-                </TextView>
 
-                <ImageView
-                    android:id="@+id/plus_icon4"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
-                    android:contentDescription="Plus icon"
-                    android:padding="4dp"
-                    android:src="@drawable/add_sharp"
-                    android:tint="#000000" />
-            </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_background_calculator"
+                    android:paddingEnd="12dp">
 
-            <TextView
-                android:id="@+id/faq4_answer"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="You can find the GST amount from the total price using the reverse calculation option."
-                android:visibility="gone"
-                android:padding="8dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Can I check GST for any item or service?"
+                        android:textSize="17dp">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/rounded_background_calculator"
-                android:paddingEnd="12dp">
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/plus_icon3"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="Plus icon"
+                        android:padding="4dp"
+                        android:src="@drawable/add_sharp"
+                        android:tint="#000000" />
+                </RelativeLayout>
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:id="@+id/faq3_answer"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="15dp"
-                    android:text="Does it use the latest GST rates?"
-                    android:textSize="17dp">
+                    android:text="Yes, you can use it for both products and services, as long as you know the GST rate."
+                    android:visibility="gone"
+                    android:padding="8dp" />
 
-                </TextView>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_background_calculator"
+                    android:paddingEnd="12dp">
 
-                <ImageView
-                    android:id="@+id/plus_icon5"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
-                    android:contentDescription="Plus icon"
-                    android:padding="4dp"
-                    android:src="@drawable/add_sharp"
-                    android:tint="#000000" />
-            </RelativeLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:text="What if I only know the total price?"
+                        android:textSize="17dp">
 
-            <TextView
-                android:id="@+id/faq5_answer"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Yes, but you can also enter your own rate if needed."
-                android:visibility="gone"
-                android:padding="8dp" />
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/plus_icon4"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="Plus icon"
+                        android:padding="4dp"
+                        android:src="@drawable/add_sharp"
+                        android:tint="#000000" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/faq4_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="You can find the GST amount from the total price using the reverse calculation option."
+                    android:visibility="gone"
+                    android:padding="8dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_background_calculator"
+                    android:paddingEnd="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Does it use the latest GST rates?"
+                        android:textSize="17dp">
+
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/plus_icon5"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="Plus icon"
+                        android:padding="4dp"
+                        android:src="@drawable/add_sharp"
+                        android:tint="#000000" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/faq5_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yes, but you can also enter your own rate if needed."
+                    android:visibility="gone"
+                    android:padding="8dp" />
 
 
 
-        </LinearLayout>
-
+            </LinearLayout>
+        </ScrollView>
 
     </LinearLayout>
 </ScrollView>
@@ -366,7 +371,7 @@ android:background="@drawable/gradient_background2">
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_alignParentBottom="true"
-    android:background="@drawable/rounded_background2"
+    android:background="@drawable/gradient_background4"
     android:elevation="20dp"
     app:itemIconTint="@color/black"
     app:itemTextColor="@color/black"

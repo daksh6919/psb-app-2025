@@ -4,5 +4,5 @@
     <solid android:color="#FFFFFF"/> <!-- Button background color -->
     <stroke
         android:width="2dp"
-        android:color="#000000"/>  <!-- Optional border -->
+        android:color="#17BAD3"/>  <!-- Optional border -->
 </shape>

@@ -50,7 +50,8 @@ class dashboard_app : AppCompatActivity() {
 
         // ✅ ALL YOUR EXISTING BUTTON LISTENERS ARE KEPT BELOW
         binding.customButton1.setOnClickListener {
-            Toast.makeText(this, "Spam clicked", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, Spam::class.java)
+            startActivity(intent)
         }
 
         binding.customButton2.setOnClickListener {

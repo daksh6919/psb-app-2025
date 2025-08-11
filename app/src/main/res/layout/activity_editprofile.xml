@@ -198,7 +198,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/rounded_background2"
+        android:background="@drawable/gradient_background4"
         android:elevation="20dp"
         app:itemIconTint="@color/black"
         app:itemTextColor="@color/black"
