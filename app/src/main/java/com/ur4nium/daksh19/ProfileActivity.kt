@@ -30,6 +30,8 @@ class ProfileActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+
+
         // 🌗 Dark Mode Switch
         val sharedPref = getSharedPreferences("Settings", MODE_PRIVATE)
         val isDarkMode = sharedPref.getBoolean("dark_mode", false)
@@ -51,6 +53,8 @@ class ProfileActivity : AppCompatActivity() {
             finish()
         }
     }
+
+
 
     // ⭐ Fetch data every time the screen becomes visible
     override fun onResume() {
