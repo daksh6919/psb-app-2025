@@ -14,7 +14,7 @@
             android:name=".ReportSpamPhone"
             android:exported="true" />
         <activity
-            android:name=".SpamCallActivity"
+            android:name=".SpamCall"
             android:exported="true">
 
         </activity>

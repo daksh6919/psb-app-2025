@@ -42,7 +42,7 @@ class Spam : AppCompatActivity() {
 
         // ---- Click Listeners ----
         icon1.setOnClickListener {
-            val intent = Intent(this, SpamCallActivity::class.java)
+            val intent = Intent(this, SpamCall::class.java)
             startActivity(intent)
         }
         icon2.setOnClickListener {

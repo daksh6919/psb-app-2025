@@ -1,4 +1,5 @@
 package com.ur4nium.daksh19
+
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -6,47 +7,61 @@ import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import kotlinx.coroutines.launch
 
 class ReportSpamPhone : AppCompatActivity() {
 
+    // 1. Create an instance of the repository to talk to the database
+    private val spamRepository = SpamRepository()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        // Link the Kotlin code to your XML layout file
         setContentView(R.layout.activity_reportspamphone)
 
-        // 1. Get references to the UI elements
+        // Get references to the UI elements
         val backButton: ImageView = findViewById(R.id.backButton)
         val phoneEditText: EditText = findViewById(R.id.phoneEditText)
         val reportButton: Button = findViewById(R.id.ReportButton)
-        val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottom_navigation)
 
-        // 2. Set up the back button's click listener
         backButton.setOnClickListener {
-            // This will simply close the current activity and go back
             finish()
         }
 
-        // 3. Set up the "Report" button's click listener
+        // 2. Set up the "Report" button's click listener
         reportButton.setOnClickListener {
-            // Get the phone number from the EditText and trim any whitespace
-            val phoneNumber = phoneEditText.text.toString().trim()
+            // Get the phone number that the user typed on THIS screen
+            var phoneNumber = phoneEditText.text.toString().trim()
 
             if (phoneNumber.isNotEmpty()) {
-                // Here is where you would add your logic to report the number.
-                // For this example, we'll just show a Toast message.
-                // You would replace this with an API call to a backend service.
-                Toast.makeText(this, "Reporting spam number: $phoneNumber", Toast.LENGTH_SHORT).show()
+                // Standardize the number to match Firestore's format (+91...)
+                if (!phoneNumber.startsWith("+")) {
+                    phoneNumber = "+91$phoneNumber"
+                }
+
+                // Use lifecycleScope to call the repository function
+                lifecycleScope.launch {
+                    try {
+                        spamRepository.reportNumber(phoneNumber)
+                        Toast.makeText(this@ReportSpamPhone, "Report successful!", Toast.LENGTH_LONG).show()
+                        finish() // Close this screen and go back
+                    } catch (e: Exception) {
+                        Toast.makeText(this@ReportSpamPhone, "Report failed: ${e.message}", Toast.LENGTH_LONG).show()
+                    }
+                }
             } else {
-                // If the EditText is empty, show a warning to the user.
                 Toast.makeText(this, "Please enter a phone number to report.", Toast.LENGTH_SHORT).show()
             }
         }
 
-        // 4. Handle clicks on the bottom navigation bar
+        setupBottomNav()
+    }
+
+    private fun setupBottomNav() {
+        val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottom_navigation)
         bottomNavigationView.setOnItemSelectedListener { item ->
             when (item.itemId) {
-                // Add cases for each menu item in your bottom_nav_menu
                 R.id.nav_home -> {
                     startActivity(Intent(this, dashboard_app::class.java))
                     true
@@ -55,7 +70,6 @@ class ReportSpamPhone : AppCompatActivity() {
                     startActivity(Intent(this, ProfileActivity::class.java))
                     true
                 }
-                // Add more cases for other menu items
                 else -> false
             }
         }
