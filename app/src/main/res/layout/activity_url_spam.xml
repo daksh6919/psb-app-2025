@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tax_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <!-- Title -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="12dp">
+
+                <ImageView
+                    android:id="@+id/backButton"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="95dp"
+                    android:text="Spam(URL)"
+                    android:textColor="#090909"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <!-- Income Input -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="130dp"
+                android:textColor="@color/black"
+                android:text="Enter Suspected URL :"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/UrlEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_background_calculator"
+                android:hint="https://example.com"
+                android:inputType="textUri"
+                android:padding="12dp" />
+
+            <!-- Tax Regime Dropdown -->
+            <!-- Tax Regime Dropdown -->
+
+
+            <!-- Calculate Button -->
+
+
+            <Button
+                android:id="@+id/CheckButton"
+                android:layout_width="250dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#17BAD3"
+                android:elevation="6dp"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:text="check"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="0dp"
+                android:textColor="@color/black"
+                android:text="Result :"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/ResultEditText"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:textSize="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_background_calculator"
+                android:inputType="phone"
+                android:padding="12dp"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="0dp">
+
+                <RelativeLayout
+                    android:id="@+id/customButton2"
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/rounded_background_calculator"
+                    android:clickable="true"
+                    android:elevation="5dp"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:id="@+id/titleText1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="REPORT SPAM"
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+
+                    <ImageView
+                        android:id="@+id/cardImage3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/titleText1"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/megaphone"
+                        app:tint="#F00404"/>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="2dp"
+                android:text="What is Phishing?\n "
+                android:textColor="#050505"
+                android:textSize="24sp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:textSize="14sp"
+                android:textColor="#050505"
+                android:lineSpacingExtra="2dp"
+                android:text="A URL scam isn't a single type of scam, but rather a collection of techniques that scammers use to trick you into visiting malicious websites. These websites are designed to steal your personal information, infect your computer with malware, or trick you into sending money.
+
+Here's a breakdown of the most common types of URL scams and how to spot them:
+
+1. URL Phishing  Spoofing
+This is the most common type of URL scam, where the link leads to a fake website that looks identical to a legitimate one (like your bank, a social media site, or an online store).
+
+How it Works: You receive an email, text message (smishing), or social media message with a link. The message creates a sense of urgency, like Your account has been compromised, click here to reset your password. When you click the link, you're taken to a fake login page where the scammers steal your credentials.
+
+            What to Look For:
+
+            Typosquatting: The URL will have a very subtle misspelling of a popular website. For example:
+
+            www.sbi-bank.co.in might be faked as www.sbi-bannk.co.in
+
+            amazon.in might be faked as amaz0n.in (with a zero instead of an 'o')
+
+            Deceptive Subdomains: The real domain is hidden at the end of a long URL. For example:
+
+            www.amazon.in.secure-login-page.com - The real website here is secure-login-page.com, not amazon.in.
+
+            2. Link Masking and URL Shorteners
+            Scammers often hide the true destination of a URL to make it look less suspicious.
+
+            How it Works: They use URL shortening services (like Bitly or TinyURL) or embed the malicious link within text or a button (like a Click Here button).
+
+            What to Look For:
+
+            Shortened URLs: Be cautious of links from services like bit.ly or tinyurl.com, especially if you receive them unexpectedly. You have no way of knowing where they lead until you click them.
+
+            Hover Before You Click: On a computer, you can hover your mouse over a link (without clicking) to see the actual URL in the bottom corner of your browser. If the destination URL looks different from what you expect, don't click it.
+
+            3. Malicious Redirects
+            These URLs might initially take you to a legitimate-looking website, but then quickly redirect you to a malicious one.
+
+            How it Works: You might click on what seems like a normal link, but the website has code that automatically sends you to a different, often harmful, site.
+
+            What to Look For: Pay attention to the URL in your browser's address bar. If it suddenly changes to something completely different and unexpected, close the tab immediately.
+
+            How to Protect Yourself from URL Scams:
+            Always Double-Check the URL: Before entering any personal information, carefully examine the website's address. Look for misspellings, extra characters, or unusual domain extensions.
+
+            Don't Trust Display Names: In an email, the sender's name can be easily faked. Always check the actual email address it came from.
+
+            Go Directly to the Source: If you receive a suspicious message from a company you do business with, don't click the link in the message. Instead, open a new browser tab and type in the company's official website address yourself, or use their official app.
+
+            Look for HTTPS: A legitimate website that asks for sensitive information should have a URL that starts with https:// (the 's' stands for secure) and a padlock icon in the address bar. However, be aware that even some scam sites now use HTTPS, so this isn't a foolproof guarantee of safety.
+
+            Use Security Software: A good antivirus program or internet security suite will often include features that block malicious websites and warn you about suspicious links.
+                                                                                    ">
+
+            </TextView>
+
+
+
+            />
+
+
+            <!-- FAQ Card -->
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="100dp"
+                    android:background="@drawable/rounded_background_calculator"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FAQ’s"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <!-- FAQ Items -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="12dp"
+                        android:background="#DDDDDD" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/rounded_background_calculator"
+                        android:paddingEnd="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:text="What is a malicious URL?"
+                            android:textSize="17dp">
+
+                        </TextView>
+
+
+                        <ImageView
+                            android:id="@+id/plus_icon1"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="Plus icon"
+                            android:padding="4dp"
+                            android:src="@drawable/add_sharp"
+                            app:tint="#000000" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/faq1_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A harmful website link designed to steal your information, spread malware, or trick you into scams."
+                        android:visibility="gone"
+                        android:padding="8dp" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/rounded_background_calculator"
+                        android:paddingEnd="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:text=" How do people get such links?"
+                            android:textSize="17dp">
+
+                        </TextView>
+
+                        <ImageView
+                            android:id="@+id/plus_icon2"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="Plus icon"
+                            android:padding="4dp"
+                            android:src="@drawable/add_sharp"
+                            app:tint="#000000" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/faq2_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Through spam emails, fake SMS messages, pop-up ads, or social media scams."
+                        android:visibility="gone"
+                        android:padding="8dp" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/rounded_background_calculator"
+                        android:paddingEnd="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:text="How can I protect myself?"
+                            android:textSize="17dp">
+
+                        </TextView>
+
+                        <ImageView
+                            android:id="@+id/plus_icon3"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="Plus icon"
+                            android:padding="4dp"
+                            android:src="@drawable/add_sharp"
+                            app:tint="#000000" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/faq3_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Enable browser security features, keep antivirus software updated, and hover over links to preview their actual address."
+                        android:visibility="gone"
+                        android:padding="8dp" />
+
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradient_background4"
+        android:elevation="20dp"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        app:itemBackground="@drawable/bottom_nav_item_background"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu" />
+
+
+
+</RelativeLayout>

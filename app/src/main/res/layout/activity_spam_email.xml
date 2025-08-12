@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tax_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <!-- Title -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="12dp">
+
+                <ImageView
+                    android:id="@+id/backButton"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="95dp"
+                    android:text="Spam(Email)"
+                    android:textColor="#090909"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <!-- Income Input -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="105dp"
+                android:textColor="@color/black"
+                android:text="Enter Suspected Email-Address :"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/EmailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_background_calculator"
+                android:hint="Domain@gmail.com "
+                android:inputType="textEmailAddress"
+                android:padding="12dp" />
+
+            <!-- Tax Regime Dropdown -->
+            <!-- Tax Regime Dropdown -->
+
+
+            <!-- Calculate Button -->
+
+
+            <Button
+                android:id="@+id/CheckButton"
+                android:layout_width="250dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#17BAD3"
+                android:elevation="6dp"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:text="check"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="0dp"
+                android:textColor="@color/black"
+                android:text="Result :"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/ResultEditText"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:textSize="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_background_calculator"
+                android:inputType="phone"
+                android:padding="12dp"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="0dp">
+
+                <RelativeLayout
+                    android:id="@+id/customButton2"
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/rounded_background_calculator"
+                    android:clickable="true"
+                    android:elevation="5dp"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:id="@+id/titleText1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="REPORT SPAM"
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+
+                    <ImageView
+                        android:id="@+id/cardImage3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/titleText1"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/megaphone"
+                        app:tint="#F00404"/>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="2dp"
+                android:text="What is Phishing?\n "
+                android:textColor="#050505"
+                android:textSize="24sp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:textSize="14sp"
+                android:textColor="#050505"
+                android:lineSpacingExtra="2dp"
+                android:text="Phishing is a type of cybercrime where attackers send fraudulent emails that appear to be from legitimate and trusted sources, such as banks, e-commerce sites, or even government agencies. The goal is to trick the recipient into revealing sensitive personal information.
+
+                                The term phishing is a play on the word fishing because these scammers are essentially fishing for your private data.
+
+                                How an Email Phishing Attack Works:
+                                The Bait: The attacker crafts a convincing email that looks like it's from a company you know and trust. They will often use official logos, branding, and a similar writing style to make it look authentic.
+
+                                The Hook: The email will typically create a sense of urgency, fear, or curiosity to get you to act quickly without thinking. Common tactics include:
+
+                                Claiming there’s a problem with your account or payment information.
+
+                                Threatening to close or suspend your account.
+
+                                Offering a prize, a refund, or an unbelievable discount.
+
+                                Including a fake invoice or a notice of a delivery.
+
+                                The Catch: The email will contain a malicious link or an attachment.
+
+                                Malicious Links: If you click the link, it will take you to a fake website that looks identical to the real one (e.g., a fake net banking login page). When you enter your username and password, the attackers steal your credentials.
+
+                                Infected Attachments: If you download and open the attachment, it can install malware (like viruses, spyware, or ransomware) on your computer, which can steal your information or lock your files.
+
+                                Common Signs of a Phishing Email:
+                                Urgent or Threatening Language: Phrases like Urgent Action Required, Your Account will be Suspended, or Suspicious Activity Detected are common red flags.
+
+                                Generic Greetings: Instead of using your name, the email might start with a generic greeting like Dear Customer or Dear Valued Member. Legitimate companies usually address you by your name.
+
+                                Spelling and Grammar Mistakes: Professional companies proofread their emails. Obvious spelling or grammatical errors are a strong indicator of a scam.
+
+                                Mismatched Email Addresses: Hover your mouse over the sender's email address (without clicking). The address that pops up might be different from what is displayed, or it might be a public domain like @gmail.com instead of the company's official domain (e.g., @psb.co.in or @amazon.in).
+
+                                Suspicious Links: Hover over any links in the email to see the actual web address. The link might look legitimate, but the preview will often show a completely different and suspicious URL.
+
+                                Unexpected Attachments: Be wary of emails with attachments you weren't expecting, especially if they are in formats like .zip or .exe.
+
+                                How to Protect Yourself:
+                                Be Skeptical: Always treat unsolicited emails asking for personal information with caution.
+
+                                Don't Click, Don't Download: Avoid clicking on suspicious links or downloading attachments from unknown senders.
+
+                                Verify Independently: If you receive a suspicious email from your bank, for example, do not use the contact information provided in the email. Instead, go to the bank's official website or call the customer service number on the back of your card to verify the request.
+
+                                Check for HTTPS: Before entering any sensitive information on a website, ensure the URL starts with https:// and has a padlock symbol in the address bar. This indicates a secure connection, though even some phishing sites can have this.
+
+                                Use Multi-Factor Authentication (MFA): Enable MFA on all your important accounts. This adds an extra layer of security, as even if a scammer steals your password, they won't be able to log in without the second verification step (like an OTP sent to your phone).
+                                                                                    ">
+
+        </TextView>
+
+
+
+            />
+
+
+            <!-- FAQ Card -->
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="100dp"
+                    android:background="@drawable/rounded_background_calculator"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FAQ’s"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <!-- FAQ Items -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="12dp"
+                        android:background="#DDDDDD" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/rounded_background_calculator"
+                        android:paddingEnd="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:text="What is email spam?"
+                            android:textSize="17dp">
+
+                        </TextView>
+
+
+                        <ImageView
+                            android:id="@+id/plus_icon1"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="Plus icon"
+                            android:padding="4dp"
+                            android:src="@drawable/add_sharp"
+                            app:tint="#000000" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/faq1_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Unwanted or unsolicited emails, often promoting products, fake offers, or containing phishing links."
+                        android:visibility="gone"
+                        android:padding="8dp" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/rounded_background_calculator"
+                        android:paddingEnd="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:text="How do spammers get my email address?"
+                            android:textSize="17dp">
+
+                        </TextView>
+
+                        <ImageView
+                            android:id="@+id/plus_icon2"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="Plus icon"
+                            android:padding="4dp"
+                            android:src="@drawable/add_sharp"
+                            app:tint="#000000" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/faq2_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="From data leaks, mailing lists, online sign-ups, or web scraping."
+                        android:visibility="gone"
+                        android:padding="8dp" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/rounded_background_calculator"
+                        android:paddingEnd="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:text="How can I reduce spam emails?"
+                            android:textSize="17dp">
+
+                        </TextView>
+
+                        <ImageView
+                            android:id="@+id/plus_icon3"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="Plus icon"
+                            android:padding="4dp"
+                            android:src="@drawable/add_sharp"
+                            app:tint="#000000" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/faq3_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Use your email service’s “mark as spam” feature, unsubscribe from unwanted newsletters, and avoid posting your email publicly."
+                        android:visibility="gone"
+                        android:padding="8dp" />
+
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradient_background4"
+        android:elevation="20dp"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        app:itemBackground="@drawable/bottom_nav_item_background"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu" />
+
+
+
+</RelativeLayout>

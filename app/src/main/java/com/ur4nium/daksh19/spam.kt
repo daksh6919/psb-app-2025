@@ -35,7 +35,7 @@ class Spam : AppCompatActivity() {
         val customButton1: RelativeLayout = findViewById(R.id.customButton1)
 
         // Second card
-        val customButton2: RelativeLayout = findViewById(R.id.customButton2)
+
 
         // Bottom navigation
         val bottomNav: BottomNavigationView = findViewById(R.id.bottom_navigation)
@@ -46,10 +46,12 @@ class Spam : AppCompatActivity() {
             startActivity(intent)
         }
         icon2.setOnClickListener {
-            Toast.makeText(this, "Email icon clicked", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, SpamEmailActivity::class.java)
+            startActivity(intent)
         }
         icon3.setOnClickListener {
-            Toast.makeText(this, "Link icon clicked", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, SpamUrlActivity::class.java)
+            startActivity(intent)
         }
         icon4.setOnClickListener {
             Toast.makeText(this, "Message icon clicked", Toast.LENGTH_SHORT).show()
@@ -59,9 +61,9 @@ class Spam : AppCompatActivity() {
             Toast.makeText(this, "Check Spam card clicked", Toast.LENGTH_SHORT).show()
         }
 
-        customButton2.setOnClickListener {
 
-        }
+
+
 
         // ---- Bottom Navigation Handling ----
         bottomNav.setOnItemSelectedListener { item ->
