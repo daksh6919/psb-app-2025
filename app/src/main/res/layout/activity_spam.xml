@@ -35,7 +35,7 @@ tools:context=".Calculator">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="135dp"
+                android:layout_marginLeft="120dp"
                 android:text="Spam"
                 android:textColor="#090909"
                 android:textSize="30sp"
@@ -44,10 +44,7 @@ tools:context=".Calculator">
 
 
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#040404" />
+
 
 
         <LinearLayout
@@ -75,6 +72,7 @@ tools:context=".Calculator">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="All-in-One Spam Check Hub"
+            android:textStyle="bold"
             android:gravity="center_horizontal"
             android:textSize="14dp">
 
@@ -178,19 +176,7 @@ tools:context=".Calculator">
                         android:src="@drawable/link"
                         app:tint="#17BAD3" />
 
-                    <ImageButton
-                        android:id="@+id/icon4"
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:layout_below="@id/title"
-                        android:layout_marginStart="28dp"
-                        android:layout_toRightOf="@id/icon3"
-                        android:background="@drawable/circle_bg"
-                        android:contentDescription="Message"
-                        android:padding="8dp"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/message"
-                        app:tint="#17BAD3" />
+
                 </LinearLayout>
 
 

@@ -29,7 +29,7 @@ class Spam : AppCompatActivity() {
         val icon1: ImageButton = findViewById(R.id.icon1) // Call
         val icon2: ImageButton = findViewById(R.id.icon2) // Email
         val icon3: ImageButton = findViewById(R.id.icon3) // Link
-        val icon4: ImageButton = findViewById(R.id.icon4) // Message
+
 
         // First big card
         val customButton1: RelativeLayout = findViewById(R.id.customButton1)
@@ -53,17 +53,9 @@ class Spam : AppCompatActivity() {
             val intent = Intent(this, SpamUrlActivity::class.java)
             startActivity(intent)
         }
-        icon4.setOnClickListener {
-            Toast.makeText(this, "Message icon clicked", Toast.LENGTH_SHORT).show()
-        }
-
         customButton1.setOnClickListener {
             Toast.makeText(this, "Check Spam card clicked", Toast.LENGTH_SHORT).show()
         }
-
-
-
-
 
         // ---- Bottom Navigation Handling ----
         bottomNav.setOnItemSelectedListener { item ->

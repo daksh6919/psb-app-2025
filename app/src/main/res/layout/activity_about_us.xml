@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background2"
-    tools:context=".Calculator">
+    tools:context=".AboutUs">
 
 
     <ScrollView
@@ -32,11 +32,13 @@
                     android:layout_height="28dp"
                     android:src="@drawable/back" />
 
+
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="95dp"
-                    android:text="Savings History"
+                    android:layout_marginLeft="115dp"
+                    android:text="About Us"
                     android:textColor="#090909"
                     android:textSize="30sp"
                     android:textStyle="bold" />
@@ -47,74 +49,37 @@
 
 
 
-
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="718dp"
+                android:layout_height="518dp"
                 android:layout_marginTop="24dp"
                 android:elevation="5dp"
                 android:background="@drawable/rounded_background"
                 android:orientation="horizontal"
                 android:padding="8dp">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Our mission is to empower every Indian to navigate the digital financial world with confidence and security.\n\nIn an era where online transactions and services are becoming a part of daily life, we believe that knowledge is the best protection. We saw a need for a single platform where individuals can not only learn about financial products but also shield themselves from the growing risks of spam and cyber fraud. We are here to bridge that gap.\n\nTrishulX is your dedicated partner for financial literacy and digital safety. We are committed to simplifying complex topics—from understanding loans to planning your savings—while providing robust tools to help you identify and report online threats.\n\nTrishulX is a brand owned by Team Ur4nium. Our platform is designed for educational and informational purposes to help you make smarter, safer decisions in the digital world.\n\n\n\nFor any questions or feedback, please contact us at ."
+                    android:textSize="14dp"
+                    android:textStyle="bold">
 
+                </TextView>
 
-                <RelativeLayout
-                    android:id="@+id/toolbar"
-                    android:layout_width="match_parent"
-                    android:layout_height="118dp"
-                    android:layout_marginTop="24dp"
-                    android:elevation="5dp"
-                    android:background="@drawable/rounded_background"
-                    android:orientation="horizontal"
-                    android:padding="8dp">
+                <TextView
+                    android:id="@+id/AboutUsTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-340dp"
+                    android:layout_marginTop="400dp"
+                    android:text="">
 
-
-
-
-                    <TextView
-                        android:id="@+id/incomeText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Income:        $0"
-                        android:layout_marginTop="16dp" />
-
-                    <TextView
-                        android:id="@+id/expenseText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/incomeText"
-                        android:text="Expense:      $0" />
-
-                    <TextView
-                        android:id="@+id/goalText"
-                        android:layout_width="wrap_content"
-                        android:layout_below="@+id/expenseText"
-                        android:layout_height="wrap_content"
-                        android:text="Goal:           $0" />
-
-                    <TextView
-                        android:id="@+id/monthsText"
-                        android:layout_width="wrap_content"
-                        android:layout_below="@+id/goalText"
-                        android:layout_height="wrap_content"
-                        android:text="Months Required:   0 months" />
-
-                </RelativeLayout>
-
-
-
-
+                </TextView>
 
 
             </LinearLayout>
-
-            <!-- Spacer -->
-
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp" />
 
 
         </LinearLayout>

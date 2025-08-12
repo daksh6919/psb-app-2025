@@ -36,7 +36,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="95dp"
+                    android:layout_marginLeft="85dp"
                     android:text="Spam(Email)"
                     android:textColor="#090909"
                     android:textSize="30sp"
@@ -50,7 +50,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:layout_marginRight="105dp"
+                android:layout_marginRight="87dp"
                 android:textColor="@color/black"
                 android:text="Enter Suspected Email-Address :"
                 android:textSize="14sp" />
@@ -63,7 +63,7 @@
                 android:layout_marginTop="8dp"
                 android:background="@drawable/rounded_background_calculator"
                 android:hint="Domain@gmail.com "
-                android:inputType="textEmailAddress"
+                android:inputType="textWebEmailAddress"
                 android:padding="12dp" />
 
             <!-- Tax Regime Dropdown -->
@@ -198,30 +198,7 @@
 
                                 Infected Attachments: If you download and open the attachment, it can install malware (like viruses, spyware, or ransomware) on your computer, which can steal your information or lock your files.
 
-                                Common Signs of a Phishing Email:
-                                Urgent or Threatening Language: Phrases like Urgent Action Required, Your Account will be Suspended, or Suspicious Activity Detected are common red flags.
-
-                                Generic Greetings: Instead of using your name, the email might start with a generic greeting like Dear Customer or Dear Valued Member. Legitimate companies usually address you by your name.
-
-                                Spelling and Grammar Mistakes: Professional companies proofread their emails. Obvious spelling or grammatical errors are a strong indicator of a scam.
-
-                                Mismatched Email Addresses: Hover your mouse over the sender's email address (without clicking). The address that pops up might be different from what is displayed, or it might be a public domain like @gmail.com instead of the company's official domain (e.g., @psb.co.in or @amazon.in).
-
-                                Suspicious Links: Hover over any links in the email to see the actual web address. The link might look legitimate, but the preview will often show a completely different and suspicious URL.
-
-                                Unexpected Attachments: Be wary of emails with attachments you weren't expecting, especially if they are in formats like .zip or .exe.
-
-                                How to Protect Yourself:
-                                Be Skeptical: Always treat unsolicited emails asking for personal information with caution.
-
-                                Don't Click, Don't Download: Avoid clicking on suspicious links or downloading attachments from unknown senders.
-
-                                Verify Independently: If you receive a suspicious email from your bank, for example, do not use the contact information provided in the email. Instead, go to the bank's official website or call the customer service number on the back of your card to verify the request.
-
-                                Check for HTTPS: Before entering any sensitive information on a website, ensure the URL starts with https:// and has a padlock symbol in the address bar. This indicates a secure connection, though even some phishing sites can have this.
-
-                                Use Multi-Factor Authentication (MFA): Enable MFA on all your important accounts. This adds an extra layer of security, as even if a scammer steals your password, they won't be able to log in without the second verification step (like an OTP sent to your phone).
-                                                                                    ">
+                               ">
 
         </TextView>
 
@@ -249,6 +226,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="FAQ’s"
+                        android:textColor="@color/black"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -271,6 +249,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:layout_marginTop="15dp"
+                            android:textColor="@color/black"
                             android:text="What is email spam?"
                             android:textSize="17dp">
 
@@ -300,7 +279,7 @@
 
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
+                        android:layout_height="60dp"
                         android:layout_marginTop="8dp"
                         android:background="@drawable/rounded_background_calculator"
                         android:paddingEnd="12dp">
@@ -310,6 +289,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:layout_marginTop="15dp"
+                            android:textColor="@color/black"
                             android:text="How do spammers get my email address?"
                             android:textSize="17dp">
 
@@ -348,6 +328,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:layout_marginTop="15dp"
+                            android:textColor="@color/black"
                             android:text="How can I reduce spam emails?"
                             android:textSize="17dp">
 
@@ -370,6 +351,82 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Use your email service’s “mark as spam” feature, unsubscribe from unwanted newsletters, and avoid posting your email publicly."
+                        android:visibility="gone"
+                        android:padding="8dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/rounded_background_calculator"
+                        android:paddingEnd="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:textColor="@color/black"
+                            android:text="Check Your Own Email?"
+                            android:textSize="17dp">
+
+                        </TextView>
+
+                        <ImageView
+                            android:id="@+id/plus_icon4"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="Plus icon"
+                            android:padding="4dp"
+                            android:src="@drawable/add_sharp"
+                            app:tint="#000000" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/faq4_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="You should review your email, as sometimes it may be marked as spam due to potential leaks from data breaches."
+                        android:visibility="gone"
+                        android:padding="8dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/rounded_background_calculator"
+                        android:paddingEnd="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:textColor="@color/black"
+                            android:text="Why Your Email is Marked Spam?"
+                            android:textSize="17dp">
+
+                        </TextView>
+
+                        <ImageView
+                            android:id="@+id/plus_icon5"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="Plus icon"
+                            android:padding="4dp"
+                            android:src="@drawable/add_sharp"
+                            app:tint="#000000" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/faq5_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Your email likely went to spam because the content or subject looked suspicious (spammy words, too many links), your email/domain lacked proper authentication (SPF/DKIM/DMARC), or your address has a low sender reputation from past reports or bulk sending. Ensuring clean content, proper setup, and a good reputation helps avoid this."
                         android:visibility="gone"
                         android:padding="8dp" />
 

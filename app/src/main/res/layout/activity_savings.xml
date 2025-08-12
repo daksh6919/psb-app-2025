@@ -40,28 +40,22 @@ android:background="@drawable/gradient_background2">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="95dp"
+                android:layout_marginLeft="100dp"
                 android:text="Savings"
                 android:textColor="#090909"
                 android:textSize="30sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#040404" />
-
-
         <!-- Income Input -->
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
             android:layout_marginTop="15dp"
-            android:layout_marginRight="115dp"
+            android:layout_marginRight="90dp"
             android:text="Enter your Monthly Income :"
+            android:textColor="@color/black"
             android:textSize="14sp" />
 
         <EditText
@@ -102,7 +96,7 @@ android:background="@drawable/gradient_background2">
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:textColor="@color/black"
-            android:layout_marginRight="92dp"
+            android:layout_marginRight="100dp"
             android:text="Enter Your Saving Goal :"
             android:textSize="14sp" />
 
@@ -162,6 +156,7 @@ android:background="@drawable/gradient_background2">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/black"
                     android:text="FAQ’s"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -184,8 +179,9 @@ android:background="@drawable/gradient_background2">
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
+                        android:textColor="@color/black"
                         android:layout_marginTop="15dp"
-                        android:text=".What does this savings planner do?"
+                        android:text="What does this savings planner do?"
                         android:textSize="17dp">
 
                     </TextView>
@@ -214,7 +210,7 @@ android:background="@drawable/gradient_background2">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="57dp"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/rounded_background_calculator"
                     android:paddingEnd="12dp">
@@ -223,6 +219,7 @@ android:background="@drawable/gradient_background2">
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
+                        android:textColor="@color/black"
                         android:layout_marginTop="15dp"
                         android:text="How do I know my monthly saving amount?"
                         android:textSize="17dp">
@@ -262,6 +259,7 @@ android:background="@drawable/gradient_background2">
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="15dp"
+                        android:textColor="@color/black"
                         android:text="Can I change my goal later?"
                         android:textSize="17dp">
 
@@ -299,7 +297,8 @@ android:background="@drawable/gradient_background2">
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="15dp"
-                        android:text=".What if I already have some savings?"
+                        android:text="What if I already have some savings?"
+                        android:textColor="@color/black"
                         android:textSize="17dp">
 
                     </TextView>
@@ -326,7 +325,7 @@ android:background="@drawable/gradient_background2">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="57dp"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/rounded_background_calculator"
                     android:paddingEnd="12dp">
@@ -336,6 +335,7 @@ android:background="@drawable/gradient_background2">
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="15dp"
+                        android:textColor="@color/black"
                         android:text="Does this include interest from the bank?"
                         android:textSize="17dp">
 

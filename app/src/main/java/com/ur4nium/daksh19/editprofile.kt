@@ -58,14 +58,8 @@ class EditProfileActivity : AppCompatActivity() {
 
         binding.bottomNavigation.setOnItemSelectedListener { item ->
             when (item.itemId) {
-                R.id.nav_points -> {
-                    Toast.makeText(this, "Points clicked", Toast.LENGTH_SHORT).show()
-                    true
-                }
-                R.id.nav_search -> {
-                    Toast.makeText(this, "Search clicked", Toast.LENGTH_SHORT).show()
-                    true
-                }
+
+
                 R.id.nav_home -> {
                     val intent = Intent(this, dashboard_app::class.java)
                     startActivity(intent)

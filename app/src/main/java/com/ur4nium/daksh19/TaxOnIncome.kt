@@ -121,8 +121,7 @@ class TaxOnIncome : AppCompatActivity() {
         // Bottom Navigation
         bottomNavigation.setOnItemSelectedListener { item ->
             when (item.itemId) {
-                R.id.nav_points -> true
-                R.id.nav_search -> true
+
                 R.id.nav_home -> {
                     startActivity(Intent(this, dashboard_app::class.java))
                     true

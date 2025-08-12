@@ -40,17 +40,14 @@ android:background="@drawable/gradient_background2">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="145dp"
+                android:layout_marginLeft="130dp"
                 android:text="EMI"
                 android:textColor="#090909"
                 android:textSize="30sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#040404" />
+
 
 
 
@@ -58,7 +55,7 @@ android:background="@drawable/gradient_background2">
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:layout_marginRight="115dp"
+            android:layout_marginRight="105dp"
             android:textColor="@color/black"
             android:text="Enter your Loan Amount :"
             android:textSize="14sp" />
@@ -81,7 +78,7 @@ android:background="@drawable/gradient_background2">
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:textColor="@color/black"
-            android:layout_marginRight="92dp"
+            android:layout_marginRight="75dp"
             android:text="Enter Annual Interest Rate ( in %)  :"
             android:textSize="14sp" />
 
@@ -96,16 +93,17 @@ android:background="@drawable/gradient_background2">
             android:inputType="number"
             android:padding="12dp" />
 
+        <!-- Calculate Button -->
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:textColor="@color/black"
-            android:layout_marginRight="92dp"
+            android:layout_marginRight="84dp"
             android:text="Enter Loan Tenure ( in years ) :"
+            android:textColor="@color/black"
             android:textSize="14sp" />
 
-        <!-- Calculate Button -->
         <EditText
             android:id="@+id/TenureEditText"
             android:layout_width="match_parent"
@@ -159,6 +157,7 @@ android:background="@drawable/gradient_background2">
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="FAQ’s"
+                    android:textColor="@color/black"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -180,6 +179,7 @@ android:background="@drawable/gradient_background2">
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
+                        android:textColor="@color/black"
                         android:layout_marginTop="15dp"
                         android:text="What is EMI?"
                         android:textSize="17dp">
@@ -219,6 +219,7 @@ android:background="@drawable/gradient_background2">
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
+                        android:textColor="@color/black"
                         android:layout_marginTop="15dp"
                         android:text="How is EMI calculated?"
                         android:textSize="17dp">
@@ -248,7 +249,7 @@ android:background="@drawable/gradient_background2">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="57dp"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/rounded_background_calculator"
                     android:paddingEnd="12dp">
@@ -257,6 +258,7 @@ android:background="@drawable/gradient_background2">
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
+                        android:textColor="@color/black"
                         android:layout_marginTop="15dp"
                         android:text="Does EMI change during the loan period?"
                         android:textSize="17dp">
@@ -285,7 +287,7 @@ android:background="@drawable/gradient_background2">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="57dp"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/rounded_background_calculator"
                     android:paddingEnd="12dp">
@@ -294,6 +296,7 @@ android:background="@drawable/gradient_background2">
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="13dp"
+                        android:textColor="@color/black"
                         android:layout_marginTop="15dp"
                         android:text="What details do I need to use this calculator?"
                         android:textSize="17dp">
@@ -322,7 +325,7 @@ android:background="@drawable/gradient_background2">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="57dp"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/rounded_background_calculator"
                     android:paddingEnd="12dp">
@@ -331,6 +334,7 @@ android:background="@drawable/gradient_background2">
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
+                        android:textColor="@color/black"
                         android:layout_marginTop="15dp"
                         android:text="Does the EMI calculator show total payment?"
                         android:textSize="17dp">

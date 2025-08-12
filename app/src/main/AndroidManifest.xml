@@ -11,39 +11,43 @@
         android:theme="@style/Theme.Daksh19"
         tools:targetApi="31">
         <activity
+            android:name=".intropage4"
+            android:exported="false" />
+        <activity
+            android:name=".AboutUs"
+            android:exported="true" />
+        <activity
+            android:name=".LoanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".intropage3"
+            android:exported="false" />
+        <activity
+            android:name=".intropage2"
+            android:exported="false" />
+        <activity
+            android:name=".intropage1"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".SpamUrlActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ReportUrlSpam"
+            android:exported="true" />
+        <activity
             android:name=".ReportSpamPhone"
             android:exported="true" />
         <activity
             android:name=".SpamCall"
-            android:exported="true">
-
-        </activity>
-
+            android:exported="true" />
         <activity
             android:name=".SpamEmail"
-            android:exported="true">
-
-        </activity>
-
-        <activity
-            android:name=".SpamUrlActivity"
-            android:exported="true">
-
-        </activity>
-
-        <activity
-            android:name=".ReportUrlSpam"
-            android:exported="true">
-
-        </activity>
-
+            android:exported="true" />
         <activity
             android:name=".ReportEmailSpam"
-            android:exported="true">
-
-        </activity>
-
-
+            android:exported="true" />
         <activity
             android:name=".Spam"
             android:exported="true" />
@@ -59,9 +63,7 @@
             android:exported="false" />
         <activity
             android:name=".Emi"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".SavingsActivity"
             android:exported="true" />
@@ -85,6 +87,7 @@
         <activity
             android:name=".dashboard_app"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -113,7 +116,6 @@
             android:exported="true" />
         <activity android:name=".QuizActivity" />
 
-        <activity android:name=".LoanActivity" />
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

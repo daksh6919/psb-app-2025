@@ -36,7 +36,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="95dp"
+                    android:layout_marginLeft="75dp"
                     android:text="Tax on Income"
                     android:textColor="#090909"
                     android:textSize="30sp"
@@ -50,7 +50,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:layout_marginRight="115dp"
+                android:textColor="@color/black"
+                android:layout_marginRight="100dp"
                 android:text="Enter your Income amount :"
                 android:textSize="14sp" />
 
@@ -72,7 +73,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:textColor="@color/black"
-                android:layout_marginRight="92dp"
+                android:layout_marginRight="80dp"
                 android:text="Select Tax Regime on your Income :"
                 android:textSize="14sp" />
 
@@ -139,6 +140,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="FAQ’s"
+                    android:textColor="@color/black"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -160,6 +162,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
+                        android:textColor="@color/black"
                         android:layout_marginTop="15dp"
                         android:text="What is Tax?"
                         android:textSize="17dp">
@@ -199,6 +202,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
+                        android:textColor="@color/black"
                         android:layout_marginTop="15dp"
                         android:text="What is Regime?"
                         android:textSize="17dp">
@@ -239,6 +243,7 @@
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="15dp"
                         android:text="How it Works?"
+                        android:textColor="@color/black"
                         android:textSize="17dp">
 
                     </TextView>

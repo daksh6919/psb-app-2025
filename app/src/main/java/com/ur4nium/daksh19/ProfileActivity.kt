@@ -2,14 +2,20 @@ package com.ur4nium.daksh19
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
+import android.widget.PopupMenu
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.ur4nium.daksh19.databinding.ActivityProfileBinding
+import android.net.Uri
 import com.ur4nium.daksh19.ui.login.LoginActivity
 
 class ProfileActivity : AppCompatActivity() {
+    private lateinit var dropdownIcon: ImageView
 
     private lateinit var binding: ActivityProfileBinding
     private val db = FirebaseFirestore.getInstance()
@@ -30,6 +36,39 @@ class ProfileActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val dropdownIcon = findViewById<ImageView>(R.id.dropdown_icon)
+
+        dropdownIcon.setOnClickListener { view ->
+            val popup = PopupMenu(this, view)
+            popup.menu.add("Good Day")
+            popup.menu.add("नमस्ते")
+            popup.menu.add("ਸਤ ਸ੍ਰੀ ਅਕਾਲ ")
+            popup.setOnMenuItemClickListener { item ->
+                Toast.makeText(this, "Selected: ${item.title}", Toast.LENGTH_SHORT).show()
+                true
+            }
+
+            popup.show()
+        }
+        binding.AboutUsButton.setOnClickListener {
+            val intent = Intent(this, AboutUs::class.java)
+            startActivity(intent)
+        }
+
+        val emailText = findViewById<TextView>(R.id.customer)
+
+        emailText.setOnClickListener {
+            val intent = Intent(Intent.ACTION_SENDTO).apply {
+                data = Uri.parse("mailto:trishulxur4nium@gmail.com")
+                putExtra(Intent.EXTRA_SUBJECT, "Feedback about TrishulX")
+                putExtra(Intent.EXTRA_TEXT, "Hello Team,")
+            }
+            startActivity(Intent.createChooser(intent, "Send Email"))
+        }
+
+
+
+
 
 
         // 🌗 Dark Mode Switch
@@ -41,7 +80,7 @@ class ProfileActivity : AppCompatActivity() {
             val editor = sharedPref.edit()
             editor.putBoolean("dark_mode", isChecked)
             editor.apply()
-            Toast.makeText(this, if (isChecked) "Dark Mode ON" else "Dark Mode OFF", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, if (isChecked) "Coming Soon " else "Coming Soon", Toast.LENGTH_SHORT).show()
         }
 
         // 🚪 Logout
@@ -52,8 +91,23 @@ class ProfileActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
-    }
+        val bottomNavigation = findViewById<BottomNavigationView>(R.id.bottom_navigation)
+        bottomNavigation.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.nav_home -> {
+                    startActivity(Intent(this, dashboard_app::class.java))
+                    true
+                }
 
+
+                R.id.nav_settings -> {
+
+                    true
+                }
+                else -> false
+            }
+        }
+    }
 
 
     // ⭐ Fetch data every time the screen becomes visible
@@ -76,8 +130,7 @@ class ProfileActivity : AppCompatActivity() {
 
                         // Update your TextViews with the fetched data
                         binding.usernameTextView.text = name
-                        binding.phoneTextView.text = phone
-                        binding.birthdateTextView.text = dob
+
 
                         Toast.makeText(this, "Profile data loaded!", Toast.LENGTH_SHORT).show()
                     } else {

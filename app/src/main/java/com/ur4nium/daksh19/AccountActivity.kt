@@ -24,7 +24,7 @@ class AccountActivity : AppCompatActivity() {
 
         // 🔐 Register Button Click
         binding.signinButton.setOnClickListener {
-            val username = binding.usernameEditText.text.toString()
+
             val email = binding.phoneEditText.text.toString()
             val password = binding.passwordEditText.text.toString()
             val confirmPassword = binding.confirmPasswordEditText.text.toString()
@@ -34,9 +34,7 @@ class AccountActivity : AppCompatActivity() {
                 Regex("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@#\$%^&+=!]).{8,}\$")
 
             when {
-                username.isEmpty() -> {
-                    Toast.makeText(this, "Username cannot be empty", Toast.LENGTH_SHORT).show()
-                }
+
                 email.isEmpty() || !android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches() -> {
                     Toast.makeText(this, "Enter a valid email address", Toast.LENGTH_SHORT).show()
                 }

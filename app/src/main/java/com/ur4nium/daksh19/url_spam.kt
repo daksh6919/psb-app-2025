@@ -72,12 +72,7 @@ class SpamUrlActivity : AppCompatActivity() {
             }
         }
 
-        val customButton2: RelativeLayout = findViewById(R.id.customButton2)
 
-        customButton2.setOnClickListener {
-            val intent = Intent(this, ReportUrlSpam::class.java)
-            startActivity(intent)
-        }
         // Bottom Navigation
         val bottomNav: BottomNavigationView = findViewById(R.id.bottom_navigation)
         bottomNav.setOnItemSelectedListener { item ->

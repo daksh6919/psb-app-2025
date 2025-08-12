@@ -20,8 +20,8 @@ class dashboard_app : AppCompatActivity() {
         binding = ActivityDashboardAppBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // --- NEW FIREBASE IMAGE SLIDER CODE STARTS HERE ---
-        // This block replaces your old static image list.
+
+
         val imageList = ArrayList<SlideModel>()
         val db = Firebase.firestore
 
@@ -94,14 +94,8 @@ class dashboard_app : AppCompatActivity() {
         // ✅ YOUR EXISTING BOTTOM NAVIGATION CODE IS KEPT
         binding.bottomNavigation.setOnItemSelectedListener { item ->
             when (item.itemId) {
-                R.id.nav_points -> {
-                    Toast.makeText(this, "Points clicked", Toast.LENGTH_SHORT).show()
-                    true
-                }
-                R.id.nav_search -> {
-                    Toast.makeText(this, "Search clicked", Toast.LENGTH_SHORT).show()
-                    true
-                }
+
+
                 R.id.nav_home -> {
                     Toast.makeText(this, "Home clicked", Toast.LENGTH_SHORT).show()
                     true

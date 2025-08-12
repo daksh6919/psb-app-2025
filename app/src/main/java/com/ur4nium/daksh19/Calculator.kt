@@ -87,14 +87,8 @@ class Calculator : AppCompatActivity() {
 
         bottomNavigation.setOnItemSelectedListener { item ->
             when (item.itemId) {
-                R.id.nav_points -> {
-                    // Navigate to Points
-                    true
-                }
-                R.id.nav_search -> {
-                    // Navigate to Search
-                    true
-                }
+
+
                 R.id.nav_home -> {
                     val intent = Intent(this, dashboard_app::class.java)
                     startActivity(intent)

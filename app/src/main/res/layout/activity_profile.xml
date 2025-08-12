@@ -4,11 +4,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background2">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fillViewport="true"
-        android:layout_above="@+id/bottom_navigation">
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -18,6 +14,7 @@
             android:padding="30dp"
             android:gravity="center_horizontal">
 
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -26,30 +23,26 @@
 
                 <ImageView
                     android:id="@+id/backButton"
-                    android:layout_width="34dp"
-                    android:layout_height="34dp"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
                     android:src="@drawable/back" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="105dp"
+                    android:layout_marginLeft="90dp"
                     android:text="Settings"
+                    android:textColor="#090909"
                     android:textSize="30sp"
-                    android:textStyle="bold"
-                    android:textColor="#090909" />
+                    android:textStyle="bold" />
             </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#040404" />
 
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/circle_bg"
+                android:src="@drawable/profilephoto"
                 android:padding="4dp" />
 
             <TextView
@@ -61,19 +54,7 @@
                 android:textStyle="bold"
                 android:layout_marginTop="12dp" />
 
-            <TextView
-                android:id="@+id/phoneTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="+91 88727-XXXX"
-                android:textColor="#666666" />
 
-            <TextView
-                android:id="@+id/birthdateTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Date of Birth"
-                android:textColor="#666666" />
 
             <Button
                 android:id="@+id/editProfileButton"
@@ -99,9 +80,9 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
                     android:orientation="horizontal"
-                    android:padding="16dp"
-                    android:gravity="center_vertical">
+                    android:padding="16dp">
 
                     <ImageView
                         android:layout_width="34dp"
@@ -111,11 +92,23 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
                         android:text="Language"
-                        android:textStyle="bold"
                         android:textColor="#090909"
-                        android:layout_marginStart="16dp"
-                        android:textSize="19sp" />
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/dropdown_icon"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="Dropdown icon"
+                        android:padding="4dp"
+                        android:src="@drawable/dropdown"
+                        android:tint="#000000" />
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -128,34 +121,13 @@
                     <ImageView
                         android:layout_width="34dp"
                         android:layout_height="34dp"
-                        android:src="@drawable/save" />
+                        android:src="@drawable/about" />
 
                     <TextView
+                        android:id="@+id/AboutUsButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Saved"
-                        android:textColor="#090909"
-                        android:textStyle="bold"
-                        android:layout_marginStart="16dp"
-                        android:textSize="19sp" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="16dp"
-                    android:gravity="center_vertical">
-
-                    <ImageView
-                        android:layout_width="34dp"
-                        android:layout_height="34dp"
-                        android:src="@drawable/lock" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Privacy"
+                        android:text="About Us"
                         android:textColor="#090909"
                         android:textStyle="bold"
                         android:layout_marginStart="16dp"
@@ -175,9 +147,11 @@
                         android:src="@drawable/help" />
 
                     <TextView
+                        android:id="@+id/customer"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Customer Support"
+                        android:inputType="textUri"
                         android:textStyle="bold"
                         android:textColor="#090909"
                         android:layout_marginStart="16dp"
@@ -220,7 +194,8 @@
                         android:id="@+id/darkModeSwitch"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:checked="true" />
+                        android:checked="true"
+                        />
                 </LinearLayout>
 
                 <LinearLayout
@@ -252,7 +227,7 @@
                     android:layout_height="20dp" />
             </LinearLayout>
         </LinearLayout>
-    </ScrollView>
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
