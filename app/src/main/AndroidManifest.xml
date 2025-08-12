@@ -19,6 +19,30 @@
 
         </activity>
 
+        <activity
+            android:name=".SpamEmail"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".SpamUrlActivity"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".ReportUrlSpam"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".ReportEmailSpam"
+            android:exported="true">
+
+        </activity>
+
 
         <activity
             android:name=".Spam"

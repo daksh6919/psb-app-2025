@@ -72,6 +72,26 @@ dependencies {
     // Google Sign-In
     implementation(libs.play.services.auth)
 
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    // Gson converter for converting JSON data to Kotlin objects
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    // Coroutines for handling background tasks smoothly
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+
+
+
+
+        // ... any other dependencies you already have ...
+
+        // --- ADD THIS NEW LINE AT THE END ---
+        implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
+
+
+
+
+
+
     // Testing
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
