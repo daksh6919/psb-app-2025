@@ -112,6 +112,8 @@
             android:name=".GameActivity"
             android:exported="true" />
         <activity android:name=".QuizActivity" />
+
+        <activity android:name=".LoanActivity" />
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

@@ -1,0 +1,637 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:paddingBottom="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="#2E9B94"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="RBI Logo"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/rbi" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Loan Types, Details and Eligibility (RBI Guidelines)"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#FFFFFF"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RBI Loans — From Introduction to Everything"
+                    android:textColor="#212121"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A beginner-friendly guide to RBI's role, loan types, protections and recent updates"
+                    android:textColor="#757575"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. Introduction: What is RBI's Role in Loans?"
+                    android:textColor="#212121"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The Reserve Bank of India (RBI) is India’s central bank. It sets rules, supervises lenders (banks, NBFCs), enforces fair practices, and uses monetary policy (e.g., repo rate) to influence loan costs. RBI acts as the referee of India’s lending ecosystem."
+                    android:textColor="#424242"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2. Types of Loans Under RBI Oversight"
+                    android:textColor="#212121"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Personal Loans — unsecured personal expenses\n• Home Loans — housing finance influenced by repo rate\n• Education Loans — collateral-free up to ₹4 lakh (Model Education Loan Scheme)\n• Gold and Silver Loans — secured against precious metals (LTV rules apply)\n• Business and MSME Loans — includes priority sector lending\n• Agriculture Loans — for farmers under PSL\n• Infrastructure and Project Loans — special provisioning rules\n• Emergency and Relief Loans — in disasters or crises"
+                    android:textColor="#424242"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3. Key RBI Guidelines for Borrowers"
+                    android:textColor="#212121"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Fair Practices Code: banks must clearly disclose interest, fees, decisions and avoid unethical recovery.\n• Prepayment Rules: no foreclosure charges on many floating-rate loans.\n• Risk-Based Pricing: rates based on borrower creditworthiness.\n• Loan-to-Value (LTV): especially applicable for gold/silver loans.\n• Credit Reporting: lenders must report loans to credit bureaus."
+                    android:textColor="#424242"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4. Digital and Data-Driven Lending"
+                    android:textColor="#212121"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Public Credit Registry (PCR): centralized credit history.\n• Unified Lending Interface (ULI): digital pipeline for faster appraisal using Aadhaar, PAN, land records.\n• Digital Lending Guidelines: mandatory consent, clear disclosures, loan agreements."
+                    android:textColor="#424242"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5. How RBI Controls Loan Interest Rates"
+                    android:textColor="#212121"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Repo rate changes influence banks' funding cost. If repo falls, floating-rate EMIs typically ease; if repo rises, EMIs increase. The Monetary Policy Committee (MPC) reviews rates regularly."
+                    android:textColor="#424242"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6. Special RBI Schemes and Frameworks"
+                    android:textColor="#212121"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Priority Sector Lending (PSL): mandated lending to underserved sectors (agriculture, MSMEs, housing, education).\n• Co-Lending Framework: banks and NBFCs jointly lend with defined risk-sharing rules.\n• Credit Guarantee Schemes: government/RBI-backed guarantees for SMEs and exporters."
+                    android:textColor="#424242"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="7. Borrower Protection Measures"
+                    android:textColor="#212121"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Transparent Charges: all fees must be disclosed.\n• Grievance Redressal: banks must have complaint mechanisms.\n• Banking Ombudsman: approach RBI’s Ombudsman if issues aren’t resolved."
+                    android:textColor="#424242"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="8. Recent RBI Loan-Related Updates (2025)"
+                    android:textColor="#212121"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="• Repo rate: 5.5% (August 2025) — impacts floating EMIs.\n• Lower provisioning for infrastructure loans from Oct 2025.\n• Stricter LTV calculations for gold/silver loans.\n• Co-lending rules (risk retention and disclosure) effective Jan 2026.\n• Ban on prepayment charges for many floating-rate loans."
+                    android:textColor="#424242"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="9. Summary"
+                    android:textColor="#212121"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="4dp" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1">
+
+                    <TableRow>
+                        <TextView
+                            android:text="RBI Role:"
+                            android:textStyle="bold"
+                            android:textColor="#212121"
+                            android:padding="4dp" />
+                        <TextView
+                            android:text="Regulates lending and enforces fair practices"
+                            android:textColor="#424242"
+                            android:padding="4dp" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:text="Loan Types:"
+                            android:textStyle="bold"
+                            android:textColor="#212121"
+                            android:padding="4dp" />
+                        <TextView
+                            android:text="Personal, home, education, MSME, gold, infra, agriculture"
+                            android:textColor="#424242"
+                            android:padding="4dp" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:text="Protections:"
+                            android:textStyle="bold"
+                            android:textColor="#212121"
+                            android:padding="4dp" />
+                        <TextView
+                            android:text="Fair Practices Code, Ombudsman, transparent pricing"
+                            android:textColor="#424242"
+                            android:padding="4dp" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Types of Loans and Information"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:textColor="#212121"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                android:layout_marginBottom="12dp"
+                app:cardBackgroundColor="#FFFFFF">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1. Personal Loan"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="#212121"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Unsecured loan for personal needs such as travel, medical, weddings, or emergencies.\nEligibility: 21–60 years, stable income, good credit score.\nGuidelines: Check rates, avoid over-borrowing, keep documents ready."
+                        android:paddingTop="4dp"
+                        android:textColor="#424242"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                android:layout_marginBottom="12dp"
+                app:cardBackgroundColor="#FFFFFF">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2. Home Loan"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="#212121"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Secured loan to buy, build, or renovate property.\nEligibility: 21–65 years, stable income, clear property documents.\nGuidelines: Compare fixed/floating rates, check EMI burden."
+                        android:paddingTop="4dp"
+                        android:textColor="#424242"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                android:layout_marginBottom="12dp"
+                app:cardBackgroundColor="#FFFFFF">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3. Car Loan"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="#212121"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Loan for new or used cars.\nEligibility: 21–65 years, stable income.\nGuidelines: Check processing fees, negotiate offers."
+                        android:paddingTop="4dp"
+                        android:textColor="#424242"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                android:layout_marginBottom="12dp"
+                app:cardBackgroundColor="#FFFFFF">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4. Education Loan"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="#212121"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Loan for higher education.\nEligibility: Confirmed admission, co-borrower income proof.\nGuidelines: Understand moratorium period, keep documents ready."
+                        android:paddingTop="4dp"
+                        android:textColor="#424242"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                android:layout_marginBottom="12dp"
+                app:cardBackgroundColor="#FFFFFF">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5. Gold Loan"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="#212121"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Loan against pledged gold.\nEligibility: Age 18+, own gold.\nGuidelines: Compare valuation rates, redeem early to save interest."
+                        android:paddingTop="4dp"
+                        android:textColor="#424242"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                android:layout_marginBottom="12dp"
+                app:cardBackgroundColor="#FFFFFF">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6. Business Loan"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="#212121"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Loan for starting or expanding a business.\nEligibility: 21–65 years, registered business, minimum turnover.\nGuidelines: Prepare business plan, keep financial statements ready."
+                        android:paddingTop="4dp"
+                        android:textColor="#424242"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                android:layout_marginBottom="12dp"
+                app:cardBackgroundColor="#FFFFFF">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7. Two-Wheeler Loan"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="#212121"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Loan to purchase bike or scooter.\nEligibility: 18–65 years, income proof.\nGuidelines: Compare EMI offers, avoid add-on charges."
+                        android:paddingTop="4dp"
+                        android:textColor="#424242"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                android:layout_marginBottom="12dp"
+                app:cardBackgroundColor="#FFFFFF">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8. Mortgage Loan"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="#212121"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Loan against property.\nEligibility: Clear property title, stable income.\nGuidelines: Understand risk of losing property, choose low-interest lender."
+                        android:paddingTop="4dp"
+                        android:textColor="#424242"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="#FFFFFF">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9. Agricultural Loan"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="#212121"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Loan for farmers.\nEligibility: Proof of land ownership, age 18–70.\nGuidelines: Use government schemes for subsidies, repay on time."
+                        android:paddingTop="4dp"
+                        android:textColor="#424242"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loan Comparison"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="#212121"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0,1,2,3">
+
+                <TableRow android:background="#2E9B94">
+                    <TextView
+                        android:text="Loan Type"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:padding="10dp" />
+                    <TextView
+                        android:text="Interest Rate"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:padding="10dp" />
+                    <TextView
+                        android:text="Details"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:padding="10dp" />
+                    <TextView
+                        android:text="Eligibility"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:padding="10dp" />
+                </TableRow>
+
+                <TableRow android:background="#FFFFFF">
+                    <TextView android:text="Personal Loan" android:padding="10dp" android:textColor="@android:color/black"/>
+                    <TextView android:text="10% - 16%" android:padding="10dp" android:textColor="@android:color/black"/>
+                    <TextView android:text="Unsecured loan for personal needs, no collateral required." android:padding="10dp" android:textColor="@android:color/black"/>
+                    <TextView android:text="Salaried/self-employed, 21-60 yrs, min ₹20k income." android:padding="10dp" android:textColor="@android:color/black"/>
+                </TableRow>
+
+                <TableRow android:background="#F9F9F9">
+                    <TextView android:text="Home Loan" android:padding="10dp" android:textColor="@android:color/black"/>
+                    <TextView android:text="8% - 10%" android:padding="10dp" android:textColor="@android:color/black"/>
+                    <TextView android:text="For purchase/construction of residential property." android:padding="10dp" android:textColor="@android:color/black"/>
+                    <TextView android:text="21-65 yrs, steady income, property as collateral." android:padding="10dp" android:textColor="@android:color/black" />
+                </TableRow>
+
+                <TableRow android:background="#FFFFFF">
+                    <TextView android:text="Vehicle Loan" android:padding="10dp" android:textColor="@android:color/black" />
+                    <TextView android:text="8% - 12%" android:padding="10dp" android:textColor="@android:color/black"/>
+                    <TextView android:text="For purchase of cars, bikes, commercial vehicles." android:padding="10dp" android:textColor="@android:color/black"/>
+                    <TextView android:text="18-65 yrs, income proof, margin money required." android:padding="10dp" android:textColor="@android:color/black" />
+                </TableRow>
+
+                <TableRow android:background="#F9F9F9">
+                    <TextView android:text="Education Loan" android:padding="10dp" android:textColor="@android:color/black" />
+                    <TextView android:text="7% - 12%" android:padding="10dp" android:textColor="@android:color/black"/>
+                    <TextView android:text="For higher studies in India or abroad." android:padding="10dp" android:textColor="@android:color/black"/>
+                    <TextView android:text="Indian citizen, admission in recognized institute." android:padding="10dp" android:textColor="@android:color/black"/>
+                </TableRow>
+
+                <TableRow android:background="#FFFFFF">
+                    <TextView android:text="Business Loan" android:padding="10dp" android:textColor="@android:color/black" />
+                    <TextView android:text="9% - 15%" android:padding="10dp" android:textColor="@android:color/black" />
+                    <TextView android:text="For expansion, equipment, working capital." android:padding="10dp" android:textColor="@android:color/black"/>
+                    <TextView android:text="Business vintage 2+ yrs, income proof, CIBIL > 650." android:padding="10dp" android:textColor="@android:color/black"/>
+                </TableRow>
+
+                <TableRow android:background="#F9F9F9">
+                    <TextView android:text="Agriculture Loan" android:padding="10dp" android:textColor="@android:color/black" />
+                    <TextView android:text="4% - 9%" android:padding="10dp" android:textColor="@android:color/black"/>
+                    <TextView android:text="For farming, equipment, irrigation, rural dev." android:padding="10dp" android:textColor="@android:color/black"/>
+                    <TextView android:text="Farmer with valid land ownership documents." android:padding="10dp" android:textColor="@android:color/black"/>
+                </TableRow>
+            </TableLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+</ScrollView>

@@ -10,7 +10,7 @@ import com.denzcoskun.imageslider.models.SlideModel
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.ur4nium.daksh19.databinding.ActivityDashboardAppBinding
-
+import android.widget.RelativeLayout
 class dashboard_app : AppCompatActivity() {
 
     private lateinit var binding: ActivityDashboardAppBinding
@@ -67,7 +67,8 @@ class dashboard_app : AppCompatActivity() {
         }
 
         binding.customButton5.setOnClickListener {
-            Toast.makeText(this, "Loan clicked", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, LoanActivity::class.java)
+            startActivity(intent)
         }
 
         binding.customButton6.setOnClickListener {
@@ -82,7 +83,14 @@ class dashboard_app : AppCompatActivity() {
         binding.customButton8.setOnClickListener {
             Toast.makeText(this, "Advisor clicked", Toast.LENGTH_SHORT).show()
         }
+// Find your Loan button
+        val loanButton = findViewById<RelativeLayout>(R.id.customButton5)
 
+        // Set click listener
+        loanButton.setOnClickListener {
+            val intent = Intent(this, LoanActivity::class.java)
+            startActivity(intent)
+        }
         // ✅ YOUR EXISTING BOTTOM NAVIGATION CODE IS KEPT
         binding.bottomNavigation.setOnItemSelectedListener { item ->
             when (item.itemId) {
@@ -108,6 +116,9 @@ class dashboard_app : AppCompatActivity() {
                 }
                 else -> false
             }
+
+
+
         }
     }
 }
