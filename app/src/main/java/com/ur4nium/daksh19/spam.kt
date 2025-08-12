@@ -2,20 +2,53 @@ package com.ur4nium.daksh19
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.TextView
 import android.widget.Toast
+import com.denzcoskun.imageslider.constants.ScaleTypes
+import com.denzcoskun.imageslider.models.SlideModel
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
+import com.ur4nium.daksh19.databinding.ActivityDashboardAppBinding
+import com.ur4nium.daksh19.databinding.ActivitySpamBinding
 
 class Spam : AppCompatActivity() {
-
+    private lateinit var binding: ActivitySpamBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_spam) // Replace with your XML filename
+        binding = ActivitySpamBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
+        // --- NEW FIREBASE IMAGE SLIDER CODE STARTS HERE ---
+        // This block replaces your old static image list.
+        val imageList = ArrayList<SlideModel>()
+        val db = Firebase.firestore
+
+        db.collection("spamsection")
+            .get()
+            .addOnSuccessListener { documents ->
+                if (documents.isEmpty) {
+                    Log.d("Firestore", "No images found in the collection.")
+                    return@addOnSuccessListener
+                }
+                // Loop through documents and add URLs to the list
+                for (document in documents) {
+                    val imageUrl = document.getString("url")
+                    if (imageUrl != null) {
+                        imageList.add(SlideModel(imageUrl, ScaleTypes.CENTER_CROP))
+                    }
+                }
+                // Set the fetched images to the slider
+                binding.imageSlider.setImageList(imageList)
+            }
+            .addOnFailureListener { exception ->
+                Log.w("Firestore", "Error getting documents: ", exception)
+            }
         // Top back button
         val backButton: ImageView = findViewById(R.id.backButton)
         backButton.setOnClickListener {

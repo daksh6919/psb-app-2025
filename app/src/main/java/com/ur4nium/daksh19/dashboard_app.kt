@@ -55,7 +55,8 @@ class dashboard_app : AppCompatActivity() {
         }
 
         binding.customButton2.setOnClickListener {
-            Toast.makeText(this, "Cyber Help clicked", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, CyberHelpActivity::class.java)
+            startActivity(intent)
         }
 
         binding.customButton3.setOnClickListener {

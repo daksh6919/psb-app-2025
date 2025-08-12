@@ -31,48 +31,59 @@ class SpamUrlActivity : AppCompatActivity() {
             .create(GoogleSafeBrowseApi::class.java)
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+      override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_url_spam)
 
-        // --- Initialize Views ---
-        // Using your variable names from your original file
+        // Initialize views
         urlEditText = findViewById(R.id.UrlEditText)
         checkButton = findViewById(R.id.CheckButton)
         resultTextView = findViewById(R.id.ResultEditText)
 
-        // Back button (your code)
+        // Back button
         val backButton: ImageView = findViewById(R.id.backButton)
         backButton.setOnClickListener {
             finish()
         }
 
-        // FAQ toggle logic (your code)
+        // FAQ toggle logic
         setupFaqs()
 
-        // Report Spam Button (your code)
+        // Report Spam Button
         val customButton2: RelativeLayout = findViewById(R.id.customButton2)
         customButton2.setOnClickListener {
             val intent = Intent(this, ReportUrlSpam::class.java)
             startActivity(intent)
         }
 
-        // Bottom Navigation (your code)
+        // Bottom Navigation
         setupBottomNavigation()
 
-        // --- NEW: Set up the button click listener to use the API ---
+        // Handle incoming shared URL/text intent
+        val intent = intent
+        val action = intent.action
+        val type = intent.type
+
+        if (Intent.ACTION_SEND == action && type == "text/plain") {
+            val sharedText = intent.getStringExtra(Intent.EXTRA_TEXT)
+            if (sharedText != null) {
+                urlEditText.setText(sharedText)
+                checkUrlWithGoogle(sharedText.trim())  // Auto-check shared URL
+            }
+        }
+
+        // Check button click listener
         checkButton.setOnClickListener {
             val enteredUrl = urlEditText.text.toString().trim()
-
             if (enteredUrl.isEmpty()) {
                 resultTextView.text = "Please enter Url."
-                resultTextView.setTextColor(Color.parseColor("#FFA500")) // Orange
+                resultTextView.setTextColor(Color.parseColor("#FFA500")) // orange color
                 return@setOnClickListener
             }
-            // Call the new function to check with Google's API
             checkUrlWithGoogle(enteredUrl)
         }
     }
+
 
     private fun checkUrlWithGoogle(url: String) {
         // <<< IMPORTANT: Paste your Google API Key here
