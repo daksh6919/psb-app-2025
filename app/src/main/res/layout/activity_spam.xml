@@ -47,22 +47,16 @@ tools:context=".Calculator">
 
 
 
-        <LinearLayout
+        <com.denzcoskun.imageslider.ImageSlider
             android:layout_width="match_parent"
-            android:layout_height="218dp"
-            android:layout_marginTop="24dp"
-            android:elevation="5dp"
-            android:background="@drawable/rounded_background"
-            android:orientation="horizontal"
-            android:padding="8dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="NEWS/UPDATES#" />
-
-
-        </LinearLayout>
+            android:layout_height="200dp"
+            android:layout_marginTop="25dp"
+            android:id="@+id/imageSlider"
+            app:iss_period="1000"
+            app:iss_auto_cycle="true"
+            app:iss_delay="1000"
+            app:iss_corner_radius="20"
+            app:iss_title_background="@drawable/gradient"/>
 
         <View
             android:layout_width="match_parent"

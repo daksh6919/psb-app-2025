@@ -1,0 +1,1129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:text="Cyber Crime"
+                        android:textColor="@android:color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Cybercrime refers to criminal activities carried out using computers and the internet, including hacking, data theft, malware attacks, and financial fraud..."
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cybercrime_image" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="This article explores the types of cybercrime with examples, real-world cases, cybercrime laws, and effective prevention measures to stay protected in the digital world."
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="#f0f0f0"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Table of Content"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="• What is Cyber Crime?"
+                    android:textColor="#007BFF" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Types of Cyber Crime"
+                    android:textColor="#007BFF" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Examples of Cyber Crime"
+                    android:textColor="#007BFF" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="What is Cyber Crime?"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Cybercrime refers to illegal activities involving computers, networks, or the internet as a tool to commit offenses. These crimes include:"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Identity Theft - Stealing personal information to commit fraud."
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Financial Fraud - Online scams, fake transactions, and credit card fraud."
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="As the internet becomes an essential part of daily life, from online shopping to business operations and communication, cybercrime cases have surged globally..."
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Types of Cyber Crime"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Cybercrime includes a wide range of illegal activities that exploit computers, networks, and the internet. These crimes can be categorized into two main types:"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Cyber Crimes Targeting Computer Networks or Devices"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Cyber Crimes Targeting Computer Networks or Devices"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="These crimes involve direct attacks on computers, servers, or digital infrastructure to steal data, cause disruption, or damage systems. It involves different threats like- viruses, bugs, etc, and (DoS) denial-of-service attacks."
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="22dp"
+                android:background="@drawable/rounded_background_calculator"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="12dp"
+                    android:background="#DDDDDD" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_background_calculator"
+                    android:paddingStart="20dp"
+                    android:paddingTop="15dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Malware Attacks: "
+                        android:textSize="17dp"
+                        android:textColor="@android:color/black">
+
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/plus_icon1"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="Plus icon"
+                        android:padding="4dp"
+                        android:src="@drawable/add_sharp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/faq1_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="This kind of cyber threat relates to malware viruses, worms, trojans, etc. for interfering, damaging, or unauthorized access to computer systems"
+                    android:visibility="gone"
+                    android:padding="8dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="For example, Sending threatening messages to a person via email or social media."
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_background_calculator"
+                    android:paddingStart="20dp"
+                    android:paddingTop="15dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Denial-of-Service (DoS) Attacks: "
+                        android:textSize="17dp"
+                        android:textColor="@android:color/black">
+
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/plus_icon2"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="Plus icon"
+                        android:padding="4dp"
+                        android:src="@drawable/add_sharp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/faq2_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Here, the attackers focus on a system and flood it with high traffic, hence making it inaccessible to the users. Another dangerous variant of DoS is DDoS wherein many compromised systems target one, thus, much difficult to defend against."
+                    android:visibility="gone"
+                    android:padding="8dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="For example, A DDoS attack crashes an e-commerce website by overwhelming its server with traffic."
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_background_calculator"
+                    android:paddingStart="20dp"
+                    android:paddingTop="15dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Phishing Attacks: "
+                        android:textSize="17dp"
+                        android:textColor="@android:color/black">
+
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/plus_icon3"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="Plus icon"
+                        android:padding="4dp"
+                        android:src="@drawable/add_sharp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/faq3_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="These are masqueraded e-mails or messages claiming to be from a formal web but only request that the user grant access to sensitive information like password points for an account or credit card numbers. Phishing can be described as an outstanding one of the most common cyber threats."
+                    android:visibility="gone"
+                    android:padding="8dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="For example, A fake Paypal login page that steals your credentials."
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_background_calculator"
+                    android:paddingStart="20dp"
+                    android:paddingTop="15dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Botnets (Zombie Networks): "
+                        android:textSize="17dp"
+                        android:textColor="@android:color/black">
+
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/plus_icon4"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="Plus icon"
+                        android:padding="4dp"
+                        android:src="@drawable/add_sharp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/faq4_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A number of hijacked computers can become a botnet of malware that can be used by an attacker for coordinated attacks or spamming."
+                    android:visibility="gone"
+                    android:padding="8dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="For example, Hackers use botnets to send millions of spam emails in a single day."
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_background_calculator"
+                    android:paddingStart="20dp"
+                    android:paddingTop="15dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Exploits and Vulnerabilities: "
+                        android:textSize="17dp"
+                        android:textColor="@android:color/black">
+
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/plus_icon5"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="Plus icon"
+                        android:padding="4dp"
+                        android:src="@drawable/add_sharp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/faq5_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The typical area through which cyber-thieves exploit software weakness is the application or operating system vulnerability in order to access it illegally."
+                    android:visibility="gone"
+                    android:padding="8dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="For example, Exploiting an outdated banking app to steal user financial details."
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
+
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="2. Crimes Using Computer Networks to Commit Other Criminal Activities"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="These types of crimes include cyberstalking, financial fraud, or identity theft."
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="22dp"
+                android:background="@drawable/rounded_background_calculator"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_background_calculator"
+                    android:paddingStart="20dp"
+                    android:paddingTop="15dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Cyberstalking: "
+                        android:textSize="17dp"
+                        android:textColor="@android:color/black">
+
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/plus_icon6"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="Plus icon"
+                        android:padding="4dp"
+                        android:src="@drawable/add_sharp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/faq6_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="This is considered as that crime in the nature of threatening or frightening a person on-line and spreading fear and emotional distress. This can be termed as involving threats, constant monitoring, or receiving repeated unwanted messages."
+                    android:visibility="gone"
+                    android:padding="8dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="For example, Sending threatening messages to a person via email or social media."
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_background_calculator"
+                    android:paddingStart="20dp"
+                    android:paddingTop="15dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Financial Fraud: "
+                        android:textSize="17dp"
+                        android:textColor="@android:color/black">
+
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/plus_icon7"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="Plus icon"
+                        android:padding="4dp"
+                        android:src="@drawable/add_sharp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/faq7_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="This is an example of a cybercrook manipulating the victim online to proceed with stealing money, such as fake investment opportunities, hacking a business email, and using someone else's credit card details."
+                    android:visibility="gone"
+                    android:padding="8dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="For example, A fake online store that steals credit card details without delivering products."
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rounded_background_calculator"
+                    android:paddingStart="20dp"
+                    android:paddingTop="15dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Identity Theft: "
+                        android:textSize="17dp"
+                        android:textColor="@android:color/black">
+
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/plus_icon8"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="Plus icon"
+                        android:padding="4dp"
+                        android:src="@drawable/add_sharp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/faq8_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="It is normally the identity of people whose information is stolen with the intention of only acting like them either to misuse their cash or money from their account or even to do malicious reasons. It always lowers the credit score of the victim and in the worst case scenario, misused the account/loan financially with incorrect transactions."
+                    android:visibility="gone"
+                    android:padding="8dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="For example, A hacker using stolen credentials to apply for credit cards and loans."
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Also Read:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Cyber Criminals and its types"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Examples of Cyber Crime"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cybercrime includes a wide range of illegal activities that exploit the internet, computer systems, and networks for financial, political, or personal gain. Here are some of the most common cybercrime examples:"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Cyber Terrorism:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cyber terrorism involves using the internet to carry out violent threats, disrupt essential services, or spread fear among people. Cyber terrorists target critical infrastructure, government systems, or financial institutions to cause panic or damage."
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Example: Hacking into power grids or communication networks to create widespread disruption"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Cyber Extortion (Ransomware Attacks):"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cyber extortion happens when hackers attack websites or computer systems and demand money to stop the attacks. They threaten to keep attacking unless they receive a large payment."
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Example: A ransomware attack on a hospital system, blocking access to patient records until a ransom is paid"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. Cyber Warfare:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cyber warfare is when countries use computers and networks as part of their battles. It includes both attacking and defending against cyber threats, like hacking and spying."
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Example: A government hacking another country's defense networks to steal classified information."
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. Internet Fraud:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This type of fraud occurs when someone tricks others on internet to steal money or private information. It involves hiding or giving false information to deceive people and covers many different illegal actions."
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Example: A scam website pretending to sell products but stealing users' payment details instead"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5. Cyber Stalking and Online Harassment"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cyber stalking is a form of online harassment where someone sends threatening messages or emails to a victim they know. If the stalker feels it's not working, they may also start following the victim in real life to make their life more difficult."
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Example: An ex-partner repeatedly sending threatening messages and tracking a victim's online activity"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6. Financial Fraud:"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cybercriminals steal personal and financial data to commit fraud, open fake bank accounts, or make unauthorized transactions. Phishing attacks are one of the most common methods used to trick victims into providing sensitive information."
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Example: A phishing email pretending to be from a bank, asking users to enter their login details on a fake website."
+                android:textColor="@android:color/black"
+                android:textStyle="italic"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7. Cyber Espionage:"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cyber espionage refers to hacking into government agencies, businesses, or corporations to steal confidential data or trade secrets. It is often used by competitor businesses or state-sponsored hackers."
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Example: A company stealing another firm's product designs through hacking."
+                android:textColor="@android:color/black"
+                android:textStyle="italic"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Challenges of Cyber Crime"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• People are unaware of their cyber rights: The Cybercrime usually happen with illiterate people around the world who are unaware about their cyber rights implemented by the government of that particular country."
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Anonymity: Those who commit cyber crime are anonymous for us so we cannot do anything to that person."
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Less numbers of case registered: Every country in the world faces the challenge of cyber crime and the rate of cyber crime is increasing day by day because the people who even don't register a case of cyber crime and this is major challenge for us as well as for authorities as well."
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Mostly committed by well educated people: Committing a cyber crime is not a cup of tea for every individual. The person who commits a crime is a very technical person so he knows how to commit the crime and not get caught by the authorities."
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• No harsh punishment: In Cyber crime there is no harsh punishment in every cases. But there is harsh punishment in some cases like when somebody commits cyber terrorism in that case there is harsh punishment for that individual. But in other cases there is no harsh punishment so this factor also gives encouragement to that person who commits Cyber crime."
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Impact of Cyber Crimes"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Financial Losses: The fraud and theft can cause great losses not only for the given organizations but for individuals also."
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Reputational Damage: Some people may realize that reputation becomes an issue they may lose depending on the legal outcomes resulting from lawsuits."
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Operational Disruption: As aall be highlighted later, such an occurence leads to a shutdown and consequently a loss of productivity."
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Legal Consequences: In the cases where clients have been involved in some legal cases or even regulatory fines, they may have to go through another phase of legal activities, clients have to spend considerable amount of money on protecting their data."
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How to Protect Yourself Against Cybercrime?"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Use strong password: Maintain different password and username combinations for each account and resist the temptation to write them down. Weak passwords can be easily cracked using certain attacking methods like Brute force attack, Rainbow table attack, etc. So make them complex. That means combination of letters, numbers and special characters."
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Use trusted antivirus in devices: Always use trustworthy and highly advanced antivirus software in mobile and personal computers. This leads to the prevention of different virus attack on devices."
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Enable Two-Factor Authentication: Activate two-factor authentication on your accounts for an extra layer of security which requires a second verification step."
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Keep your device software updated: Whenever you see the updates of the system software update it at the same time because sometimes the previous version can be easily attacked."
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Use secure network: Public Wi-Fi are vulnerable. Avoid conducting financial or corporate transactions on these networks."
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Never open attachments in spam emails: A computer get infected by malware attacks and other forms of cybercrime is via email attachments in spam emails. Never open an attachment from a sender you do not know."
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Software should be updated: operating system should be updated regularly when it comes to internet security. This can become a potential threat when cybercriminals exploit flaws in the system."
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Also Read:"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• How to Protect Yourself From Cyber Attacks?"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Cybercrime Causes And Measures To Prevent"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How to Report a Cybercrime"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reporting cybercrime quickly is important to stop further damage and catch the criminals. Each country has its own way of handling cybercrime, but in most cases, you need to contact local police or a government agency that deals with online crimes."
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="United States"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• FBI's Internet Crime Complaint Center (IC3): Victims can file complaints online at ic3.gov. This platform is designed for reporting cyber-enabled crimes and fraud."
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="India"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• National Cybercrime Reporting Portal: Individuals can report cybercrimes through the official portal at cybercrime.gov.in. This service facilitates the online filing of complaints related to cyber offenses."
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="European Union"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Europol's Reporting Page: Europol provides links to national reporting websites for EU member countries. Visit Europol's website to find the appropriate platform for your country."
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="General Advice:"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Always consider contacting your local police department to report cybercrimes. Even if the crime is international, local authorities can guide you on the appropriate steps and coordinate with international agencies if necessary."
+                android:textColor="@android:color/black"
+                android:fontFamily="serif"
+                android:textStyle="italic"
+                android:background="#f0f0f0"
+                android:padding="8dp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conclusion"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Computer criminality forms part of the threats that bring a clear threat increase to personal computer use, businesses, and governments. Enumerating the types is of cybercrime, the challenges that are there, and taking preventive measures, one is in a position to minimize the impacts of these threats."
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Despite all of this, there are a lot of issues, which remain to be discussed, as the technology advances even more. This simply means that one has to be alert and be sensitive to the new world of threats that are accorded to the cyber world."
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp" />
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
