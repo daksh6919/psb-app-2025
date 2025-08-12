@@ -6,17 +6,13 @@
     android:background="@drawable/gradient_background2">
 
     <!-- Scrollable Content -->
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fillViewport="true"
-        android:layout_above="@+id/bottom_navigation">
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="30dp"
+            android:padding="10dp"
             android:gravity="center_horizontal">
 
             <!-- Back and Title -->
@@ -51,6 +47,7 @@
                 android:layout_height="100dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/circle_bg"
+                android:src="@drawable/profilephoto"
                 android:padding="4dp" />
 
             <!-- Options -->
@@ -182,7 +179,7 @@
                     android:layout_width="250dp"
                     android:layout_height="58dp"
                     android:layout_gravity="center"
-                    android:text="EDIT"
+                    android:text="SAVE"
                     android:textSize="24dp"
                     android:textColor="@android:color/white"
                     android:layout_marginTop="24dp"
@@ -190,7 +187,7 @@
 
             </LinearLayout>
         </LinearLayout>
-    </ScrollView>
+
 
     <!-- Bottom Navigation -->
     <com.google.android.material.bottomnavigation.BottomNavigationView

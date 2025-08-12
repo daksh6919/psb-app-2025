@@ -127,6 +127,16 @@
                 android:textColor="@android:color/white"
                 android:textSize="25dp" />
 
+            <TextView
+                android:id="@+id/resultGST"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:text="TAX:" />
+
+
             <!-- FAQ Card -->
             <LinearLayout
                 android:layout_width="match_parent"

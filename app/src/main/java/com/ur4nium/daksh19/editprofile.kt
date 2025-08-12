@@ -104,6 +104,7 @@ class EditProfileActivity : AppCompatActivity() {
                 "born" to dob
             )
 
+
             // ⭐ CRITICAL CHANGE: Use the current user's UID to update the document.
             val userId = FirebaseAuth.getInstance().currentUser?.uid
 
@@ -121,6 +122,7 @@ class EditProfileActivity : AppCompatActivity() {
             } else {
                 Toast.makeText(this, "User not authenticated.", Toast.LENGTH_SHORT).show()
             }
+            finish()
         }
 
     }
