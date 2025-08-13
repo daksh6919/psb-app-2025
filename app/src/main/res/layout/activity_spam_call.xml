@@ -31,6 +31,7 @@ android:background="@drawable/gradient_background2">
                 android:id="@+id/backButton"
                 android:layout_width="28dp"
                 android:layout_height="28dp"
+                android:tint="@color/white"
                 android:src="@drawable/back" />
 
             <TextView
@@ -38,7 +39,7 @@ android:background="@drawable/gradient_background2">
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="95dp"
                 android:text="Spam(Call)"
-                android:textColor="#090909"
+                android:textColor="@color/white"
                 android:textSize="30sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -51,7 +52,7 @@ android:background="@drawable/gradient_background2">
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:layout_marginRight="86dp"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:text="Enter Suspected Phone Number :"
             android:textSize="14sp" />
 
@@ -59,9 +60,10 @@ android:background="@drawable/gradient_background2">
             android:id="@+id/phoneEditText"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:layout_marginTop="8dp"
-            android:background="@drawable/rounded_background_calculator"
+            android:textColorHint="#9B9797"
+            android:background="@drawable/rounded_background"
             android:hint="+CC 45616 XXXXX   ( CC = Country Code )"
             android:inputType="phone"
             android:padding="12dp" />
@@ -78,7 +80,7 @@ android:background="@drawable/gradient_background2">
             android:layout_width="250dp"
             android:layout_height="58dp"
             android:layout_marginTop="24dp"
-            android:backgroundTint="#17BAD3"
+            android:backgroundTint="#1E1E1E"
             android:elevation="6dp"
             android:paddingLeft="32dp"
             android:paddingRight="32dp"
@@ -92,7 +94,7 @@ android:background="@drawable/gradient_background2">
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginRight="0dp"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:text="Result :"
             android:textSize="14sp" />
 
@@ -103,10 +105,10 @@ android:background="@drawable/gradient_background2">
             android:layout_height="50dp"
             android:textSize="16dp"
             android:layout_marginTop="8dp"
-            android:background="@drawable/rounded_background_calculator"
+            android:background="@drawable/rounded_background"
             android:inputType="phone"
             android:padding="12dp"
-            android:textColor="@color/black" />
+            android:textColor="@color/white" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -134,7 +136,7 @@ android:background="@drawable/gradient_background2">
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="REPORT SPAM"
-                    android:textColor="#000000"
+                    android:textColor="@color/white"
                     android:textSize="14dp"
                     android:textStyle="bold" />
 
@@ -163,7 +165,7 @@ android:background="@drawable/gradient_background2">
             android:layout_marginTop="16dp"
             android:lineSpacingExtra="2dp"
             android:text="What is Vishing?\n "
-            android:textColor="#050505"
+            android:textColor="@color/white"
             android:textSize="24sp">
 
         </TextView>
@@ -173,7 +175,7 @@ android:background="@drawable/gradient_background2">
             android:layout_height="wrap_content"
             android:layout_marginTop="1dp"
             android:textSize="14sp"
-            android:textColor="#050505"
+            android:textColor="#F2EEEE"
             android:lineSpacingExtra="2dp"
             android:text="Vishing, short for voice phishing, is a type of cybercrime where scammers use phone calls to trick people into revealing personal and financial information. It's the voice equivalent of email phishing.\n
              How It Typically Works:\n
@@ -222,7 +224,7 @@ android:background="@drawable/gradient_background2">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:text="FAQ’s"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -246,7 +248,7 @@ android:background="@drawable/gradient_background2">
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="15dp"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:text="What is a spam call?"
                         android:textSize="17dp">
 
@@ -262,7 +264,7 @@ android:background="@drawable/gradient_background2">
                         android:contentDescription="Plus icon"
                         android:padding="4dp"
                         android:src="@drawable/add_sharp"
-                        app:tint="#000000" />
+                        app:tint="@color/white" />
                 </RelativeLayout>
 
                 <TextView
@@ -286,7 +288,7 @@ android:background="@drawable/gradient_background2">
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="15dp"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:text="How do they get my number?"
                         android:textSize="17dp">
 
@@ -301,7 +303,7 @@ android:background="@drawable/gradient_background2">
                         android:contentDescription="Plus icon"
                         android:padding="4dp"
                         android:src="@drawable/add_sharp"
-                        app:tint="#000000" />
+                        app:tint="@color/white" />
                 </RelativeLayout>
 
                 <TextView
@@ -325,7 +327,7 @@ android:background="@drawable/gradient_background2">
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="15dp"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:text="How can I block or reduce them?"
                         android:textSize="17dp">
 
@@ -340,7 +342,7 @@ android:background="@drawable/gradient_background2">
                         android:contentDescription="Plus icon"
                         android:padding="4dp"
                         android:src="@drawable/add_sharp"
-                        app:tint="#000000" />
+                        app:tint="@color/white" />
                 </RelativeLayout>
 
                 <TextView
@@ -370,8 +372,8 @@ android:background="@drawable/gradient_background2">
         android:layout_alignParentBottom="true"
         android:background="@drawable/gradient_background4"
         android:elevation="20dp"
-        app:itemIconTint="@color/black"
-        app:itemTextColor="@color/black"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
         app:itemBackground="@drawable/bottom_nav_item_background"
         app:labelVisibilityMode="labeled"
         app:menu="@menu/bottom_nav_menu" />

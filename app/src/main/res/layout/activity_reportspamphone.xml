@@ -36,6 +36,7 @@
                     android:id="@+id/backButton"
                     android:layout_width="28dp"
                     android:layout_height="28dp"
+                    android:tint="@color/white"
                     android:src="@drawable/back" />
 
                 <TextView
@@ -43,7 +44,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="65dp"
                     android:text="Report Spam(Call)"
-                    android:textColor="#090909"
+                    android:textColor="#F6F4F4"
                     android:textSize="30sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -57,7 +58,7 @@
                 android:layout_marginTop="80dp"
                 android:layout_marginRight="87dp"
                 android:text="Enter Suspected Phone Number :"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="14sp" />
 
             <EditText
@@ -65,11 +66,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="8dp"
-                android:background="@drawable/rounded_background_calculator"
+                android:background="@drawable/rounded_background"
+                android:textColorHint="#8E8B8B"
                 android:hint="+CC 45616 XXXXX   ( CC = Country Code )"
                 android:inputType="phone"
                 android:padding="12dp"
-                android:textColor="@color/black" />
+                android:textColor="@color/white" />
 
             <!-- Calculate Button -->
 
@@ -114,8 +116,8 @@
         android:layout_alignParentBottom="true"
         android:background="@drawable/gradient_background4"
         android:elevation="20dp"
-        app:itemIconTint="@color/black"
-        app:itemTextColor="@color/black"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
         app:itemBackground="@drawable/bottom_nav_item_background"
         app:labelVisibilityMode="labeled"
         app:menu="@menu/bottom_nav_menu" />

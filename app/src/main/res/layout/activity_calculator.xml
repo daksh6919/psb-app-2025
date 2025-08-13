@@ -30,6 +30,7 @@ tools:context=".Calculator">
                 android:id="@+id/backButton"
                 android:layout_width="28dp"
                 android:layout_height="28dp"
+                android:tint="@color/white"
                 android:src="@drawable/back" />
 
             <TextView
@@ -37,7 +38,7 @@ tools:context=".Calculator">
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="95dp"
                 android:text="Calculator"
-                android:textColor="#090909"
+                android:textColor="@color/white"
                 android:textSize="30sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -75,7 +76,7 @@ tools:context=".Calculator">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textStyle="bold"
             android:text="All-in-One Calculation Hub"
             android:gravity="center_horizontal"
@@ -121,7 +122,7 @@ tools:context=".Calculator">
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Tax on Income"
-                    android:textColor="#000000"
+                    android:textColor="@color/white"
                     android:textSize="14dp"
                     android:textStyle="bold" />
 
@@ -132,7 +133,7 @@ tools:context=".Calculator">
                     android:text="New/Old"
                     android:layout_below="@+id/titleText"
                     android:textSize="14sp"
-                    android:textColor="#666666"/>
+                    android:textColor="@color/white"/>
 
                 <ImageView
                     android:id="@+id/cardImage1"
@@ -165,7 +166,7 @@ tools:context=".Calculator">
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="EMI"
-                    android:textColor="#000000"
+                    android:textColor="@color/white"
                     android:textSize="14dp"
                     android:textStyle="bold" />
 
@@ -176,7 +177,7 @@ tools:context=".Calculator">
                     android:text="Instalment"
                     android:layout_below="@+id/titleText2"
                     android:textSize="14sp"
-                    android:textColor="#666666"/>
+                    android:textColor="@color/white"/>
 
 
                 <ImageView
@@ -227,7 +228,7 @@ tools:context=".Calculator">
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="GST"
-                    android:textColor="#000000"
+                    android:textColor="@color/white"
                     android:textSize="14dp"
                     android:textStyle="bold" />
 
@@ -237,7 +238,7 @@ tools:context=".Calculator">
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/titleText3"
                     android:text="GST Estimate"
-                    android:textColor="#666666"
+                    android:textColor="@color/white"
                     android:textSize="14sp" />
 
 
@@ -270,7 +271,7 @@ tools:context=".Calculator">
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Goals"
-                    android:textColor="#000000"
+                    android:textColor="@color/white"
                     android:textSize="14dp"
                     android:textStyle="bold" />
 
@@ -280,7 +281,7 @@ tools:context=".Calculator">
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/titleText4"
                     android:text="Saving Planner"
-                    android:textColor="#666666"
+                    android:textColor="@color/white"
                     android:textSize="14sp" />
 
 
@@ -319,8 +320,8 @@ tools:context=".Calculator">
     android:layout_alignParentBottom="true"
     android:background="@drawable/gradient_background4"
     android:elevation="20dp"
-    app:itemIconTint="@color/black"
-    app:itemTextColor="@color/black"
+    app:itemIconTint="@color/white"
+    app:itemTextColor="@color/white"
     app:itemBackground="@drawable/bottom_nav_item_background"
     app:labelVisibilityMode="labeled"
     app:menu="@menu/bottom_nav_menu" />

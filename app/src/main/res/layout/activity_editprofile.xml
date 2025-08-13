@@ -60,7 +60,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="70dp"
-                    android:background="@drawable/rounded_edittext"
+                    android:background="@drawable/rounded_background"
                     android:gravity="center_vertical"
                     android:paddingHorizontal="16dp"
                     android:layout_marginTop="14dp"
@@ -70,7 +70,7 @@
                         android:layout_width="34dp"
                         android:layout_height="34dp"
                         android:src="@drawable/img17"
-                        android:tint="#17BAD3"/>
+                        android:tint="#7F3AA1"/>
 
                     <EditText
                         android:id="@+id/usernameEditText"
@@ -78,7 +78,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:hint="Full Name"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:background="@android:color/transparent"
                         android:inputType="textPersonName"
                         android:textColorHint="#999"
@@ -95,7 +95,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="70dp"
-                    android:background="@drawable/rounded_edittext"
+                    android:background="@drawable/rounded_background"
                     android:gravity="center_vertical"
                     android:paddingHorizontal="16dp"
                     android:orientation="horizontal"
@@ -105,7 +105,7 @@
                         android:layout_width="34dp"
                         android:layout_height="34dp"
                         android:src="@drawable/img13"
-                        android:tint="#17BAD3"/>
+                        android:tint="#7F3AA1"/>
 
                     <!-- Fixed country code -->
                     <TextView
@@ -113,8 +113,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="+91"
-                        android:textSize="18sp"
-                        android:textColor="@android:color/black"
+                        android:textSize="22sp"
                         android:paddingStart="4dp"
                         android:paddingEnd="4dp"/>
 
@@ -125,7 +124,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:hint="8878X-XXXXX"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:inputType="phone"
                         android:maxLength="10"
                         android:ems="10"
@@ -143,7 +142,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="70dp"
-                    android:background="@drawable/rounded_edittext"
+                    android:background="@drawable/rounded_background"
                     android:gravity="center_vertical"
                     android:paddingHorizontal="16dp"
                     android:orientation="horizontal"
@@ -153,14 +152,14 @@
                         android:layout_width="34dp"
                         android:layout_height="34dp"
                         android:src="@drawable/calendar"
-                        android:tint="#17BAD3"/>
+                        android:tint="#7F3AA1"/>
 
                     <EditText
                         android:id="@+id/birthDateEditText"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:background="@android:color/transparent"
                         android:hint="Select Birthdate"
                         android:inputType="none"
@@ -183,7 +182,7 @@
                     android:textSize="24dp"
                     android:textColor="@android:color/white"
                     android:layout_marginTop="24dp"
-                    android:backgroundTint="#17BAD3"/>
+                    android:backgroundTint="#1E1E1E"/>
 
             </LinearLayout>
         </LinearLayout>
@@ -197,8 +196,8 @@
         android:layout_alignParentBottom="true"
         android:background="@drawable/gradient_background4"
         android:elevation="20dp"
-        app:itemIconTint="@color/black"
-        app:itemTextColor="@color/black"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
         app:itemBackground="@drawable/bottom_nav_item_background"
         app:labelVisibilityMode="labeled"
         app:menu="@menu/bottom_nav_menu" />

@@ -30,6 +30,7 @@
                 <ImageView
                     android:id="@+id/backButton"
                     android:layout_width="28dp"
+                    android:tint="@color/white"
                     android:layout_height="28dp"
                     android:src="@drawable/back" />
 
@@ -38,7 +39,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="95dp"
                     android:text="Spam(URL)"
-                    android:textColor="#090909"
+                    android:textColor="@color/white"
                     android:textSize="30sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -51,7 +52,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:layout_marginRight="100dp"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:text="Enter Suspected URL :"
                 android:textSize="14sp" />
 
@@ -59,9 +60,10 @@
                 android:id="@+id/UrlEditText"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
+                android:textColorHint="#979393"
                 android:layout_marginTop="8dp"
-                android:background="@drawable/rounded_background_calculator"
+                android:background="@drawable/rounded_background"
                 android:hint="https://example.com"
                 android:inputType="textUri"
                 android:padding="12dp" />
@@ -78,7 +80,7 @@
                 android:layout_width="250dp"
                 android:layout_height="58dp"
                 android:layout_marginTop="24dp"
-                android:backgroundTint="#17BAD3"
+                android:backgroundTint="#1E1E1E"
                 android:elevation="6dp"
                 android:paddingLeft="32dp"
                 android:paddingRight="32dp"
@@ -92,8 +94,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="0dp"
-                android:textColor="@color/black"
                 android:text="Result :"
+                android:textColor="@color/white"
                 android:textSize="14sp" />
 
 
@@ -106,7 +108,7 @@
                 android:background="@drawable/rounded_background_calculator"
                 android:inputType="phone"
                 android:padding="12dp"
-                android:textColor="@color/black" />
+                android:textColor="@color/white" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -114,7 +116,7 @@
                 android:layout_marginTop="16dp"
                 android:lineSpacingExtra="2dp"
                 android:text="What is Phishing?\n "
-                android:textColor="#050505"
+                android:textColor="@color/white"
                 android:textSize="24sp">
 
             </TextView>
@@ -124,7 +126,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="1dp"
                 android:textSize="14sp"
-                android:textColor="#050505"
+                android:textColor="@color/white"
                 android:lineSpacingExtra="2dp"
                 android:text="A URL scam isn't a single type of scam, but rather a collection of techniques that scammers use to trick you into visiting malicious websites. These websites are designed to steal your personal information, infect your computer with malware, or trick you into sending money.
 
@@ -203,7 +205,7 @@ How it Works: You receive an email, text message (smishing), or social media mes
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="FAQ’s"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -226,7 +228,7 @@ How it Works: You receive an email, text message (smishing), or social media mes
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:layout_marginTop="15dp"
-                            android:textColor="@color/black"
+                            android:textColor="@color/white"
                             android:text="What is a malicious URL?"
                             android:textSize="17dp">
 
@@ -242,7 +244,7 @@ How it Works: You receive an email, text message (smishing), or social media mes
                             android:contentDescription="Plus icon"
                             android:padding="4dp"
                             android:src="@drawable/add_sharp"
-                            app:tint="#000000" />
+                            app:tint="@color/white" />
                     </RelativeLayout>
 
                     <TextView
@@ -265,7 +267,7 @@ How it Works: You receive an email, text message (smishing), or social media mes
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
-                            android:textColor="@color/black"
+                            android:textColor="@color/white"
                             android:layout_marginTop="15dp"
                             android:text=" How do people get such links?"
                             android:textSize="17dp">
@@ -281,7 +283,7 @@ How it Works: You receive an email, text message (smishing), or social media mes
                             android:contentDescription="Plus icon"
                             android:padding="4dp"
                             android:src="@drawable/add_sharp"
-                            app:tint="#000000" />
+                            app:tint="@color/white" />
                     </RelativeLayout>
 
                     <TextView
@@ -305,7 +307,7 @@ How it Works: You receive an email, text message (smishing), or social media mes
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:layout_marginTop="15dp"
-                            android:textColor="@color/black"
+                            android:textColor="@color/white"
                             android:text="How can I protect myself?"
                             android:textSize="17dp">
 
@@ -320,7 +322,7 @@ How it Works: You receive an email, text message (smishing), or social media mes
                             android:contentDescription="Plus icon"
                             android:padding="4dp"
                             android:src="@drawable/add_sharp"
-                            app:tint="#000000" />
+                            app:tint="@color/white" />
                     </RelativeLayout>
 
                     <TextView
@@ -350,8 +352,8 @@ How it Works: You receive an email, text message (smishing), or social media mes
         android:layout_alignParentBottom="true"
         android:background="@drawable/gradient_background4"
         android:elevation="20dp"
-        app:itemIconTint="@color/black"
-        app:itemTextColor="@color/black"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
         app:itemBackground="@drawable/bottom_nav_item_background"
         app:labelVisibilityMode="labeled"
         app:menu="@menu/bottom_nav_menu" />

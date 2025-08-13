@@ -29,6 +29,7 @@
                 <ImageView
                     android:id="@+id/backButton"
                     android:layout_width="28dp"
+                    android:tint="@color/white"
                     android:layout_height="28dp"
                     android:src="@drawable/back" />
 
@@ -39,7 +40,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="115dp"
                     android:text="About Us"
-                    android:textColor="#090909"
+                    android:textColor="#FFFF"
                     android:textSize="30sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -61,8 +62,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/black"
                     android:text="Our mission is to empower every Indian to navigate the digital financial world with confidence and security.\n\nIn an era where online transactions and services are becoming a part of daily life, we believe that knowledge is the best protection. We saw a need for a single platform where individuals can not only learn about financial products but also shield themselves from the growing risks of spam and cyber fraud. We are here to bridge that gap.\n\nTrishulX is your dedicated partner for financial literacy and digital safety. We are committed to simplifying complex topics—from understanding loans to planning your savings—while providing robust tools to help you identify and report online threats.\n\nTrishulX is a brand owned by Team Ur4nium. Our platform is designed for educational and informational purposes to help you make smarter, safer decisions in the digital world.\n\n\n\nFor any questions or feedback, please contact us at ."
+                    android:textColor="#FFFF"
                     android:textSize="14dp"
                     android:textStyle="bold">
 
@@ -94,8 +95,8 @@
         android:layout_alignParentBottom="true"
         android:background="@drawable/gradient_background4"
         android:elevation="20dp"
-        app:itemIconTint="@color/black"
-        app:itemTextColor="@color/black"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
         app:itemBackground="@drawable/bottom_nav_item_background"
         app:labelVisibilityMode="labeled"
         app:menu="@menu/bottom_nav_menu" />

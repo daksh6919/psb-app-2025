@@ -34,6 +34,7 @@ android:background="@drawable/gradient_background2">
             <ImageView
                 android:id="@+id/backButton"
                 android:layout_width="28dp"
+                android:tint="@color/white"
                 android:layout_height="28dp"
                 android:src="@drawable/back" />
 
@@ -42,7 +43,7 @@ android:background="@drawable/gradient_background2">
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="130dp"
                 android:text="EMI"
-                android:textColor="#090909"
+                android:textColor="#ffff"
                 android:textSize="30sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -56,28 +57,30 @@ android:background="@drawable/gradient_background2">
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:layout_marginRight="105dp"
-            android:textColor="@color/black"
+            android:textColor="#FFFF"
             android:text="Enter your Loan Amount :"
             android:textSize="14sp" />
+
+        <!-- Tax Regime Dropdown -->
+        <!-- Tax Regime Dropdown -->
 
         <EditText
             android:id="@+id/LoanEditText"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="8dp"
-            android:textColor="@color/black"
-            android:background="@drawable/rounded_background_calculator"
+            android:background="@drawable/rounded_background"
             android:hint="amount"
             android:inputType="number"
-            android:padding="12dp" />
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:textColorHint="#A4A0A0" />
 
-        <!-- Tax Regime Dropdown -->
-        <!-- Tax Regime Dropdown -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:textColor="@color/black"
+            android:textColor="#FFFF"
             android:layout_marginRight="75dp"
             android:text="Enter Annual Interest Rate ( in %)  :"
             android:textSize="14sp" />
@@ -86,10 +89,11 @@ android:background="@drawable/gradient_background2">
             android:id="@+id/InterestEditText"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:layout_marginTop="8dp"
-            android:background="@drawable/rounded_background_calculator"
+            android:background="@drawable/rounded_background"
             android:hint="%"
+            android:textColorHint="#A4A0A0"
             android:inputType="number"
             android:padding="12dp" />
 
@@ -101,16 +105,17 @@ android:background="@drawable/gradient_background2">
             android:layout_marginTop="20dp"
             android:layout_marginRight="84dp"
             android:text="Enter Loan Tenure ( in years ) :"
-            android:textColor="@color/black"
+            android:textColor="#FFFF"
             android:textSize="14sp" />
 
         <EditText
             android:id="@+id/TenureEditText"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:layout_marginTop="8dp"
-            android:background="@drawable/rounded_background_calculator"
+            android:background="@drawable/rounded_background"
+            android:textColorHint="#A4A0A0"
             android:hint="Years"
             android:inputType="number"
             android:padding="12dp" />
@@ -120,7 +125,7 @@ android:background="@drawable/gradient_background2">
             android:layout_width="250dp"
             android:layout_height="58dp"
             android:layout_marginTop="8dp"
-            android:backgroundTint="#17BAD3"
+            android:backgroundTint="#1E1E1E"
             android:elevation="6dp"
             android:paddingLeft="32dp"
             android:paddingRight="32dp"
@@ -134,9 +139,9 @@ android:background="@drawable/gradient_background2">
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="20dp"
-            android:text="EMI Per Month:" />
+            android:text="EMI per Month:" />
 
 
         <!-- FAQ Card -->
@@ -157,7 +162,7 @@ android:background="@drawable/gradient_background2">
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="FAQ’s"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -179,7 +184,7 @@ android:background="@drawable/gradient_background2">
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:layout_marginTop="15dp"
                         android:text="What is EMI?"
                         android:textSize="17dp">
@@ -196,7 +201,7 @@ android:background="@drawable/gradient_background2">
                         android:contentDescription="Plus icon"
                         android:padding="4dp"
                         android:src="@drawable/add_sharp"
-                        android:tint="#000000" />
+                        android:tint="#ffff" />
                 </RelativeLayout>
 
                 <TextView
@@ -219,7 +224,7 @@ android:background="@drawable/gradient_background2">
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:layout_marginTop="15dp"
                         android:text="How is EMI calculated?"
                         android:textSize="17dp">
@@ -235,7 +240,7 @@ android:background="@drawable/gradient_background2">
                         android:contentDescription="Plus icon"
                         android:padding="4dp"
                         android:src="@drawable/add_sharp"
-                        android:tint="#000000" />
+                        android:tint="#ffff" />
                 </RelativeLayout>
 
                 <TextView
@@ -258,7 +263,7 @@ android:background="@drawable/gradient_background2">
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:layout_marginTop="15dp"
                         android:text="Does EMI change during the loan period?"
                         android:textSize="17dp">
@@ -274,7 +279,7 @@ android:background="@drawable/gradient_background2">
                         android:contentDescription="Plus icon"
                         android:padding="4dp"
                         android:src="@drawable/add_sharp"
-                        android:tint="#000000" />
+                        android:tint="#ffff" />
                 </RelativeLayout>
 
                 <TextView
@@ -296,7 +301,7 @@ android:background="@drawable/gradient_background2">
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="13dp"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:layout_marginTop="15dp"
                         android:text="What details do I need to use this calculator?"
                         android:textSize="17dp">
@@ -312,7 +317,7 @@ android:background="@drawable/gradient_background2">
                         android:contentDescription="Plus icon"
                         android:padding="4dp"
                         android:src="@drawable/add_sharp"
-                        android:tint="#000000" />
+                        android:tint="#ffff" />
                 </RelativeLayout>
 
                 <TextView
@@ -334,7 +339,7 @@ android:background="@drawable/gradient_background2">
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:layout_marginTop="15dp"
                         android:text="Does the EMI calculator show total payment?"
                         android:textSize="17dp">
@@ -350,7 +355,7 @@ android:background="@drawable/gradient_background2">
                         android:contentDescription="Plus icon"
                         android:padding="4dp"
                         android:src="@drawable/add_sharp"
-                        android:tint="#000000" />
+                        android:tint="#ffff" />
                 </RelativeLayout>
 
                 <TextView
@@ -378,8 +383,8 @@ android:background="@drawable/gradient_background2">
     android:layout_alignParentBottom="true"
     android:background="@drawable/gradient_background4"
     android:elevation="20dp"
-    app:itemIconTint="@color/black"
-    app:itemTextColor="@color/black"
+    app:itemIconTint="@color/white"
+    app:itemTextColor="@color/white"
     app:itemBackground="@drawable/bottom_nav_item_background"
     app:labelVisibilityMode="labeled"
     app:menu="@menu/bottom_nav_menu" />

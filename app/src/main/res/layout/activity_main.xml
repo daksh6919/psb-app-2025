@@ -1,521 +1,443 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_background2"
-    tools:context=".dashboard_app">
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    tools:context=".MainActivity">
 
-    <!-- Scrollable Content -->
-    <ScrollView
+    <!-- Top Banner Image -->
+    <ImageView
+        android:id="@+id/top_banner_image"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/bottom_navigation"
-        android:padding="16dp">
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/rounded_background"
+        android:contentDescription="Security and Finance Banner" />
 
+    <!-- Main Content Area with two columns -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <!-- Left Column - White Buttons -->
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginEnd="8dp">
 
-
-            <LinearLayout
+            <!-- Spam Button -->
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="207dp"
-                android:layout_marginTop="35dp"
-                android:elevation="5dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="8dp"
                 android:background="@drawable/rounded_background"
-                android:orientation="horizontal"
-                android:padding="8dp">
+                android:padding="16dp">
 
                 <TextView
+                    android:id="@+id/left_button1_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/latest_news" />
-
-
-            </LinearLayout>
-
-            <!-- Spacer -->
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="10dp" />
-
-            <!-- Four icons -->
-
-            <!-- Text -->
-
-
-            <!-- Row 1 -->
-
-            <!-- Row 2 -->
-            <LinearLayout
-                android:layout_width="419dp"
-                android:layout_height="102dp"
-                android:layout_marginTop="0dp"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:padding="0dp">
-
-
-
-
-
-                <RelativeLayout
-                    android:id="@+id/customButton1"
-                    android:layout_width="198dp"
-                    android:layout_height="78dp"
-                    android:orientation="vertical"
-                    android:elevation="5dp"
-                    android:layout_gravity="center"
-                    android:padding="12dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/rounded_background"
-                    android:clickable="true"
-                    android:focusable="true">
-
-                    <TextView
-                        android:id="@+id/titleText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/spam"
-                        android:textColor="#000000"
-                        android:textSize="14sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/subText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/check_spams"
-                        android:layout_below="@+id/titleText"
-                        android:textSize="14sp"
-                        android:textColor="#666666"/>
-
-
-                    <ImageView
-                        android:id="@+id/cardImage"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_toEndOf="@+id/subText"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/spam" />
-
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:id="@+id/customButton2"
-                    android:layout_width="198dp"
-                    android:layout_height="78dp"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:elevation="5dp"
-                    android:padding="12dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/rounded_background"
-                    android:clickable="true"
-                    android:focusable="true">
-
-                    <TextView
-                        android:id="@+id/titleText2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/cyber_help"
-                        android:textColor="#000000"
-                        android:textSize="14sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/subText2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/online_support"
-                        android:layout_below="@+id/titleText2"
-                        android:textSize="14sp"
-                        android:textColor="#666666"/>
-
-
-                    <ImageView
-                        android:id="@+id/cardImage2"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_toEndOf="@+id/subText2"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/cyber" />
-
-
-                </RelativeLayout>
-
-
-
-
-            </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="10dp" />
-
-
-            <LinearLayout
-                android:layout_width="419dp"
-                android:layout_height="102dp"
-                android:layout_marginTop="0dp"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:padding="0dp">
-
-                <RelativeLayout
-                    android:id="@+id/customButton3"
-                    android:layout_width="198dp"
-                    android:layout_height="78dp"
-                    android:orientation="vertical"
-                    android:elevation="5dp"
-                    android:gravity="center"
-                    android:padding="12dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/rounded_background"
-                    android:clickable="true"
-                    android:focusable="true">
-
-                    <TextView
-                        android:id="@+id/titleText3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Quiz"
-                        android:textColor="#000000"
-                        android:textSize="14dp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/subText3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Education"
-                        android:layout_below="@+id/titleText3"
-                        android:textSize="14sp"
-                        android:textColor="#666666"/>
-
-
-                    <ImageView
-                        android:id="@+id/cardImage3"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_toRightOf="@+id/subText3"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/headlines" />
-
-
-                </RelativeLayout>
-
-
-                <RelativeLayout
-                    android:id="@+id/customButton4"
-                    android:layout_width="198dp"
-                    android:layout_height="78dp"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:elevation="5dp"
-                    android:padding="12dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/rounded_background"
-                    android:clickable="true"
-                    android:focusable="true">
-
-                    <TextView
-                        android:id="@+id/titleText4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Simulation"
-                        android:textColor="#000000"
-                        android:textSize="14dp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/subText4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Practice Scenarios"
-                        android:layout_below="@+id/titleText4"
-                        android:textSize="14sp"
-                        android:textColor="#666666"/>
-
-
-                    <ImageView
-                        android:id="@+id/cardImage4"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_toRightOf="@+id/subText4"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/simulation" />
-
-
-                </RelativeLayout>
-
-
-            </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="10dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginTop="0dp"
-                android:background="@drawable/rounded_background"
-                android:gravity="center"
-                android:orientation="horizontal">
+                    android:text="SPAM"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
 
                 <TextView
+                    android:id="@+id/left_button1_subtitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="#AD" />
-            </LinearLayout>
+                    android:layout_below="@id/left_button1_title"
+                    android:text="CHECK SPAMS"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp"/>
 
-            <View
+                <ImageView
+                    android:id="@+id/left_button1_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_mail_outline"
+                    app:tint="@color/black"
+                    android:contentDescription="Spam Icon"/>
+
+            </RelativeLayout>
+
+            <!-- Calculator Button -->
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="10dp" />
-
-
-            <LinearLayout
-                android:layout_width="419dp"
-                android:layout_height="102dp"
-                android:layout_marginTop="0dp"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:padding="0dp">
-
-                <RelativeLayout
-                    android:id="@+id/customButton5"
-                    android:layout_width="198dp"
-                    android:layout_height="78dp"
-                    android:orientation="vertical"
-                    android:elevation="5dp"
-                    android:gravity="center"
-                    android:padding="12dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/rounded_background"
-                    android:clickable="true"
-                    android:focusable="true">
-
-                    <TextView
-                        android:id="@+id/titleText5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Loan"
-                        android:textColor="#000000"
-                        android:textSize="14dp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/subText5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text=" Loan Planner"
-                        android:layout_below="@+id/titleText5"
-                        android:textSize="14sp"
-                        android:textColor="#666666"/>
-
-
-                    <ImageView
-                        android:id="@+id/cardImage5"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_toRightOf="@+id/subText5"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/loan" />
-
-
-                </RelativeLayout>
-
-
-                <RelativeLayout
-                    android:id="@+id/customButton6"
-                    android:layout_width="198dp"
-                    android:layout_height="78dp"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:elevation="5dp"
-                    android:padding="12dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/rounded_background"
-                    android:clickable="true"
-                    android:focusable="true">
-
-                    <TextView
-                        android:id="@+id/titleText6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Savings"
-                        android:textColor="#000000"
-                        android:textSize="14dp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/subText6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Plan your savings"
-                        android:layout_below="@+id/titleText6"
-                        android:textSize="14sp"
-                        android:textColor="#666666"/>
-
-
-                    <ImageView
-                        android:id="@+id/cardImage6"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_toRightOf="@+id/subText6"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/savings" />
-
-                </RelativeLayout>
-
-
-            </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="10dp" />
-
-            <LinearLayout
-                android:layout_width="419dp"
-                android:layout_height="102dp"
-                android:layout_marginTop="0dp"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:padding="0dp">
-
-                <RelativeLayout
-                    android:id="@+id/customButton7"
-                    android:layout_width="198dp"
-                    android:layout_height="78dp"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:elevation="5dp"
-                    android:padding="12dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/rounded_background"
-                    android:clickable="true"
-                    android:focusable="true">
-
-                    <TextView
-                        android:id="@+id/titleText7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Calculator"
-                        android:textColor="#000000"
-                        android:textSize="14dp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/subText7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Calculate finances"
-                        android:layout_below="@+id/titleText7"
-                        android:textSize="14sp"
-                        android:textColor="#666666"/>
-
-
-                    <ImageView
-                        android:id="@+id/cardImage7"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_toRightOf="@+id/subText7"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/calculator" />
-
-                </RelativeLayout>
-
-
-                <RelativeLayout
-                    android:id="@+id/customButton8"
-                    android:layout_width="198dp"
-                    android:layout_height="78dp"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:elevation="5dp"
-                    android:padding="12dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/rounded_background"
-                    android:clickable="true"
-                    android:focusable="true">
-
-                    <TextView
-                        android:id="@+id/titleText8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Advisor"
-                        android:textColor="#000000"
-                        android:textSize="14dp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/subText8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Get financial advice"
-                        android:layout_below="@+id/titleText8"
-                        android:textSize="14sp"
-                        android:textColor="#666666"/>
-
-
-                    <ImageView
-                        android:id="@+id/cardImage8"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_toRightOf="@+id/subText8"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/advisor" />
-
-                </RelativeLayout>
-
-
-            </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginTop="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="8dp"
                 android:background="@drawable/rounded_background"
-                android:gravity="center"
-                android:orientation="horizontal">
+                android:padding="16dp">
 
                 <TextView
+                    android:id="@+id/left_button2_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="#AD" />
-            </LinearLayout>
+                    android:text="CALCULATOR"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
 
+                <TextView
+                    android:id="@+id/left_button2_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/left_button2_title"
+                    android:text="CALCULATE FINANCES"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp"/>
 
+                <ImageView
+                    android:id="@+id/left_button2_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_calculator"
+                    app:tint="@color/black"
+                    android:contentDescription="Calculator Icon"/>
 
+            </RelativeLayout>
 
+            <!-- Quiz Button -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rounded_background"
+                android:padding="16dp">
 
-            <!-- ✅ Now paste ALL your content inside here -->
-            <!-- Cards, views, all your RelativeLayouts, etc. -->
+                <TextView
+                    android:id="@+id/left_button3_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="QUIZ"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/left_button3_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/left_button3_title"
+                    android:text="EDUCATIONAL"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp"/>
+
+                <ImageView
+                    android:id="@+id/left_button3_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_quiz"
+                    app:tint="@color/black"
+                    android:contentDescription="Quiz Icon"/>
+
+            </RelativeLayout>
+
+            <!-- Simulation Button -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_background"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/left_button4_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SIMULATION"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/left_button4_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/left_button4_title"
+                    android:text="PRACTICE SCENARIOS"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp"/>
+
+                <ImageView
+                    android:id="@+id/left_button4_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_simulation"
+                    app:tint="@color/black"
+                    android:contentDescription="Simulation Icon"/>
+
+            </RelativeLayout>
 
         </LinearLayout>
-    </ScrollView>
 
+        <!-- Right Column - Blue Buttons -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp">
 
-    <!-- Fixed BottomNavigationView -->
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Center of Financial Strategy"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:textSize="12sp"
+                android:padding="4dp"/>
+
+            <!-- Cyber Help Button -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rounded_background"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/right_button1_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_shield"
+                    app:tint="@color/white"
+                    android:contentDescription="Cyber Help Icon"/>
+
+                <TextView
+                    android:id="@+id/right_button1_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/right_button1_icon"
+                    android:layout_marginStart="8dp"
+                    android:text="CYBER HELP"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/right_button1_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/right_button1_title"
+                    android:layout_toEndOf="@id/right_button1_icon"
+                    android:layout_marginStart="8dp"
+                    android:text="ONLINE SUPPORT"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"/>
+
+            </RelativeLayout>
+
+            <!-- Loan Button -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rounded_background"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/right_button2_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_loan"
+                    app:tint="@color/white"
+                    android:contentDescription="Loan Icon"/>
+
+                <TextView
+                    android:id="@+id/right_button2_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/right_button2_icon"
+                    android:layout_marginStart="8dp"
+                    android:text="LOAN"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/right_button2_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/right_button2_title"
+                    android:layout_toEndOf="@id/right_button2_icon"
+                    android:layout_marginStart="8dp"
+                    android:text="LOAN PLANNER"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"/>
+
+            </RelativeLayout>
+
+            <!-- Budget Button -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rounded_background"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/right_button3_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_budget"
+                    app:tint="@color/white"
+                    android:contentDescription="Budget Icon"/>
+
+                <TextView
+                    android:id="@+id/right_button3_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/right_button3_icon"
+                    android:layout_marginStart="8dp"
+                    android:text="BUDGET"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/right_button3_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/right_button3_title"
+                    android:layout_toEndOf="@id/right_button3_icon"
+                    android:layout_marginStart="8dp"
+                    android:text="PLAN YOUR SAVINGS"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"/>
+
+            </RelativeLayout>
+
+            <!-- Advisor Button -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_background"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/right_button4_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_advisor"
+                    app:tint="@color/white"
+                    android:contentDescription="Advisor Icon"/>
+
+                <TextView
+                    android:id="@+id/right_button4_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/right_button4_icon"
+                    android:layout_marginStart="8dp"
+                    android:text="ADVISOR"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/right_button4_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/right_button4_title"
+                    android:layout_toEndOf="@id/right_button4_icon"
+                    android:layout_marginStart="8dp"
+                    android:text="STRATEGIC GROWTH"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Bottom Navigation Bar -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottom_navbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/rounded_background2"
-        android:elevation="20dp"
-        app:itemIconTint="@color/black"
-        app:itemTextColor="@color/black"
-        app:itemBackground="@drawable/bottom_nav_item_background"
-        app:labelVisibilityMode="labeled"
-        app:menu="@menu/bottom_nav_menu" />
+        android:layout_height="72dp"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp">
 
-</RelativeLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_button_white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <!-- Home Button -->
+            <ImageView
+                android:id="@+id/navbar_home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_home"
+                android:padding="12dp"
+                android:contentDescription="Home" />
+
+            <!-- Notification Button -->
+            <ImageView
+                android:id="@+id/navbar_notification"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_notification"
+                android:padding="12dp"
+                android:contentDescription="Notifications" />
+
+            <!-- Settings Button -->
+            <ImageView
+                android:id="@+id/navbar_settings"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_settings"
+                android:padding="12dp"
+                android:contentDescription="Settings" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

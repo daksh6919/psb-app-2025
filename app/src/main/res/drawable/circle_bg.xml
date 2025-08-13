@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="oval">
-    <solid android:color="#C2E6FF"/> <!-- Button background color -->
+    <solid android:color="#D7A0F2"/> <!-- Button background color -->
     <stroke
         android:width="2dp"
-        android:color="#C2E6FF"/>  <!-- Optional border -->
+        android:color="#D7A0F2"/>  <!-- Optional border -->
 </shape>

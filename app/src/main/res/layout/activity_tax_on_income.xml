@@ -31,6 +31,7 @@
                     android:id="@+id/backButton"
                     android:layout_width="28dp"
                     android:layout_height="28dp"
+                    android:tint="@color/white"
                     android:src="@drawable/back" />
 
                 <TextView
@@ -38,7 +39,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="75dp"
                     android:text="Tax on Income"
-                    android:textColor="#090909"
+                    android:textColor="@color/white"
                     android:textSize="30sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -50,29 +51,30 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:layout_marginRight="100dp"
                 android:text="Enter your Income amount :"
                 android:textSize="14sp" />
 
+            <!-- Tax Regime Dropdown -->
+            <!-- Tax Regime Dropdown -->
             <EditText
                 android:id="@+id/incomeEditText"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:textColor="@color/black"
                 android:layout_marginTop="8dp"
-                android:background="@drawable/rounded_background_calculator"
+                android:background="@drawable/rounded_background"
                 android:hint="e.g. 500000"
                 android:inputType="number"
-                android:padding="12dp" />
+                android:padding="12dp"
+                android:textColor="@color/white"
+                android:textColorHint="#9B9999" />
 
-            <!-- Tax Regime Dropdown -->
-            <!-- Tax Regime Dropdown -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:layout_marginRight="80dp"
                 android:text="Select Tax Regime on your Income :"
                 android:textSize="14sp" />
@@ -82,21 +84,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="8dp"
-                android:background="@drawable/rounded_background_calculator"
+                android:background="@drawable/rounded_background"
                 android:paddingEnd="12dp">
 
 
-            <TextView
+                <TextView
                     android:id="@+id/regime_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColorHint="#807B7B"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="15dp"
                     android:hint="Choose Regime"
                     android:textSize="17dp">
 
-            </TextView>
-
+                </TextView>
 
                 <ImageView
                     android:id="@+id/dropdown_icon"
@@ -107,7 +109,7 @@
                     android:contentDescription="Dropdown icon"
                     android:padding="4dp"
                     android:src="@drawable/dropdown"
-                    android:tint="#000000" />
+                    android:tint="#F6F0F0" />
 
             </RelativeLayout>
 
@@ -118,7 +120,7 @@
                 android:layout_width="250dp"
                 android:layout_height="58dp"
                 android:layout_marginTop="24dp"
-                android:backgroundTint="#17BAD3"
+                android:backgroundTint="#1E1E1E"
                 android:elevation="6dp"
                 android:paddingLeft="32dp"
                 android:paddingRight="32dp"
@@ -131,7 +133,7 @@
                 android:id="@+id/resultGST"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:layout_marginTop="20dp"
                 android:textSize="20dp"
                 android:text="TAX:" />
@@ -150,7 +152,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="FAQ’s"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -172,7 +174,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:layout_marginTop="15dp"
                         android:text="What is Tax?"
                         android:textSize="17dp">
@@ -189,7 +191,7 @@
                         android:contentDescription="Plus icon"
                         android:padding="4dp"
                         android:src="@drawable/add_sharp"
-                        android:tint="#000000" />
+                        android:tint="@color/white" />
                 </RelativeLayout>
 
                 <TextView
@@ -212,7 +214,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:layout_marginTop="15dp"
                         android:text="What is Regime?"
                         android:textSize="17dp">
@@ -228,7 +230,7 @@
                         android:contentDescription="Plus icon"
                         android:padding="4dp"
                         android:src="@drawable/add_sharp"
-                        android:tint="#000000" />
+                        android:tint="@color/white" />
                 </RelativeLayout>
 
                 <TextView
@@ -253,7 +255,7 @@
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="15dp"
                         android:text="How it Works?"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="17dp">
 
                     </TextView>
@@ -267,7 +269,7 @@
                         android:contentDescription="Plus icon"
                         android:padding="4dp"
                         android:src="@drawable/add_sharp"
-                        android:tint="#000000" />
+                        android:tint="@color/white" />
                 </RelativeLayout>
 
                 <TextView
@@ -292,8 +294,8 @@
         android:layout_alignParentBottom="true"
         android:background="@drawable/gradient_background4"
         android:elevation="20dp"
-        app:itemIconTint="@color/black"
-        app:itemTextColor="@color/black"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
         app:itemBackground="@drawable/bottom_nav_item_background"
         app:labelVisibilityMode="labeled"
         app:menu="@menu/bottom_nav_menu" />
