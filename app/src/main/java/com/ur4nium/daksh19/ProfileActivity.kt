@@ -73,15 +73,8 @@ class ProfileActivity : AppCompatActivity() {
 
         // 🌗 Dark Mode Switch
         val sharedPref = getSharedPreferences("Settings", MODE_PRIVATE)
-        val isDarkMode = sharedPref.getBoolean("dark_mode", false)
-        binding.darkModeSwitch.isChecked = isDarkMode
 
-        binding.darkModeSwitch.setOnCheckedChangeListener { _, isChecked ->
-            val editor = sharedPref.edit()
-            editor.putBoolean("dark_mode", isChecked)
-            editor.apply()
-            Toast.makeText(this, if (isChecked) "Coming Soon " else "Coming Soon", Toast.LENGTH_SHORT).show()
-        }
+
 
         // 🚪 Logout
         binding.LogoutButton.setOnClickListener {

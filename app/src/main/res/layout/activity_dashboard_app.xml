@@ -27,7 +27,7 @@
                 app:iss_auto_cycle="true"
                 app:iss_delay="1000"
                 app:iss_corner_radius="20"
-                app:iss_title_background="@drawable/gradient"/>
+                app:iss_title_background="@drawable/rounded_background"/>
 
             <View
                 android:layout_width="match_parent"
@@ -48,7 +48,7 @@
                     android:layout_margin="8dp"
                     android:background="@drawable/rounded_background"
                     android:clickable="true"
-                    android:elevation="5dp"
+                    android:elevation="2dp"
                     android:focusable="true"
                     android:orientation="vertical"
                     android:padding="12dp">
@@ -58,7 +58,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Spam"
-                        android:textColor="#000000"
+                        android:textColor="#FFFF"
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
@@ -68,7 +68,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/titleText"
                         android:text="@string/check_spams"
-                        android:textColor="#666666"
+                        android:textColor="#FFFF"
                         android:textSize="14sp" />
 
                     <ImageView
@@ -88,7 +88,7 @@
                     android:layout_margin="8dp"
                     android:background="@drawable/rounded_background"
                     android:clickable="true"
-                    android:elevation="5dp"
+                    android:elevation="2dp"
                     android:focusable="true"
                     android:gravity="center"
                     android:orientation="vertical"
@@ -99,7 +99,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=" Cyber Help"
-                        android:textColor="#000000"
+                        android:textColor="#FFFF"
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
@@ -109,7 +109,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/titleText2"
                         android:text=" Online Support"
-                        android:textColor="#666666"
+                        android:textColor="#FFFF"
                         android:textSize="14sp" />
 
                     <ImageView
@@ -142,7 +142,7 @@
                     android:layout_margin="8dp"
                     android:background="@drawable/rounded_background"
                     android:clickable="true"
-                    android:elevation="5dp"
+                    android:elevation="2dp"
                     android:focusable="true"
                     android:gravity="center"
                     android:orientation="vertical"
@@ -153,7 +153,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Quiz"
-                        android:textColor="#000000"
+                        android:textColor="#FFFF"
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
@@ -163,7 +163,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/titleText3"
                         android:text="Education"
-                        android:textColor="#666666"
+                        android:textColor="#FFFF"
                         android:textSize="14sp" />
 
 
@@ -184,7 +184,7 @@
                     android:layout_margin="8dp"
                     android:background="@drawable/rounded_background"
                     android:clickable="true"
-                    android:elevation="5dp"
+                    android:elevation="2dp"
                     android:focusable="true"
                     android:gravity="center"
                     android:orientation="vertical"
@@ -195,7 +195,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Simulation"
-                        android:textColor="#000000"
+                        android:textColor="#FFFF"
                         android:textSize="14dp"
                         android:textStyle="bold" />
 
@@ -205,7 +205,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/titleText4"
                         android:text="Practice Scenarios"
-                        android:textColor="#666666"
+                        android:textColor="#FFFF"
                         android:textSize="14sp" />
 
 
@@ -256,7 +256,7 @@
                     android:layout_margin="8dp"
                     android:background="@drawable/rounded_background"
                     android:clickable="true"
-                    android:elevation="5dp"
+                    android:elevation="2dp"
                     android:focusable="true"
                     android:gravity="center"
                     android:orientation="vertical"
@@ -267,7 +267,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Loan"
-                        android:textColor="#000000"
+                        android:textColor="#FFFF"
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
@@ -277,7 +277,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/titleText5"
                         android:text=" Loan Planner"
-                        android:textColor="#666666"
+                        android:textColor="#FFFF"
                         android:textSize="14sp" />
 
 
@@ -298,7 +298,7 @@
                     android:layout_margin="8dp"
                     android:background="@drawable/rounded_background"
                     android:clickable="true"
-                    android:elevation="5dp"
+                    android:elevation="2dp"
                     android:focusable="true"
                     android:gravity="center"
                     android:orientation="vertical"
@@ -309,7 +309,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Budget and Saving"
-                        android:textColor="#000000"
+                        android:textColor="#FFFF"
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
@@ -319,7 +319,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/titleText6"
                         android:text="Plan your savings"
-                        android:textColor="#666666"
+                        android:textColor="#FFFF"
                         android:textSize="14sp" />
 
                     <ImageView
@@ -352,7 +352,7 @@
                     android:layout_margin="8dp"
                     android:background="@drawable/rounded_background"
                     android:clickable="true"
-                    android:elevation="5dp"
+                    android:elevation="2dp"
                     android:focusable="true"
                     android:gravity="center"
                     android:orientation="vertical"
@@ -363,7 +363,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Calculator"
-                        android:textColor="#000000"
+                        android:textColor="#FFFF"
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
@@ -373,7 +373,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/titleText7"
                         android:text="Calculate finances"
-                        android:textColor="#666666"
+                        android:textColor="#FFFF"
                         android:textSize="14sp" />
 
                     <ImageView
@@ -393,7 +393,7 @@
                     android:layout_margin="8dp"
                     android:background="@drawable/rounded_background"
                     android:clickable="true"
-                    android:elevation="5dp"
+                    android:elevation="2dp"
                     android:focusable="true"
                     android:gravity="center"
                     android:orientation="vertical"
@@ -404,7 +404,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Advisor"
-                        android:textColor="#000000"
+                        android:textColor="#FFFF"
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
@@ -414,7 +414,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/titleText8"
                         android:text="Get financial advice"
-                        android:textColor="#666666"
+                        android:textColor="#FFFF"
                         android:textSize="14sp" />
 
                     <ImageView
@@ -458,8 +458,8 @@
         android:background="@drawable/gradient_background4"
         android:elevation="20dp"
         app:itemBackground="@drawable/bottom_nav_item_background"
-        app:itemIconTint="@color/black"
-        app:itemTextColor="@color/black"
+        app:itemIconTint="#FFFF"
+        app:itemTextColor="#FFFF"
         app:labelVisibilityMode="labeled"
         app:menu="@menu/bottom_nav_menu" />
 
