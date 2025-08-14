@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background2"
+    tools:context=".ExampleActivity">
+
+    <!-- Scrollable content -->
+    <ScrollView
+        android:id="@+id/scroll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigation"
+        android:fillViewport="true"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
+
+            <!-- Top Header -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hi, Jerel"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Find your lessons today!"
+                        android:textColor="#F6F3F3"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/notification"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:padding="5dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/notification"
+                    android:tint="#FDF8F8" />
+            </RelativeLayout>
+
+            <!-- Discover Top Picks Section -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_background"
+                android:padding="24dp" />
+
+            <!-- Popular Lessons Section Header -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Popular lessons"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="See All"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <!-- Popular Lessons Horizontal Scroll -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:scrollbars="none"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- Lesson Card 1 -->
+                    <RelativeLayout
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/rounded_background"
+                        android:paddingBottom="16dp">
+
+                        <ImageView
+                            android:id="@+id/lesson_image1"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/rounded_background"
+                            android:contentDescription="Lesson image for Figma master class"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/fraud" />
+
+                        <ImageView
+                            android:layout_width="34dp"
+                            android:layout_height="44dp"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/heart"
+                            android:tint="#9E1A1A" />
+
+                        <TextView
+                            android:id="@+id/lesson_title1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/lesson_image1"
+                            android:layout_marginStart="12dp"
+                            android:text="Figma master class"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/lesson_subtitle1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/lesson_title1"
+                            android:layout_marginStart="12dp"
+                            android:text="UI Design (28 lessons)"
+                            android:textColor="#B8B3B3"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/lesson_subtitle1"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:contentDescription="Duration"
+                                android:src="@drawable/clock"
+                                app:tint="@color/primaryColor" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:text="6h 30min"
+                                android:textColor="#D1CFCF"
+                                android:textSize="12sp" />
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginStart="12dp"
+                                android:contentDescription="Rating"
+                                android:src="@drawable/star"
+                                app:tint="#E9C111" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:text="4.9"
+                                android:textColor="#ABA7A8"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <!-- Lesson Card 2 -->
+                    <RelativeLayout
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_background"
+                        android:layout_marginEnd="16dp"
+                        android:paddingBottom="16dp">
+
+                        <ImageView
+                            android:id="@+id/lesson_image2"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:src="@drawable/fraud"
+                            android:scaleType="centerCrop"
+                            android:background="@color/white"
+                            android:layout_marginBottom="8dp"
+                            android:contentDescription="Lesson image for Web design fundamentals" />
+
+                        <ImageView
+                            android:layout_width="34dp"
+                            android:layout_height="44dp"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/heart"
+                            android:tint="#9E1A1A" />
+
+                        <TextView
+                            android:id="@+id/lesson_title2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/lesson_image2"
+                            android:layout_marginStart="12dp"
+                            android:text="Web design fundamentals"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/lesson_subtitle2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/lesson_title2"
+                            android:layout_marginStart="12dp"
+                            android:text="UX Design (28 lessons)"
+                            android:textColor="#A09B9B"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_below="@id/lesson_subtitle2"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:src="@drawable/clock"
+                                app:tint="@color/primaryColor"
+                                android:contentDescription="Duration" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:text="8h 30min"
+                                android:textColor="#C3BFBF"
+                                android:textSize="12sp" />
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginStart="12dp"
+                                android:src="@drawable/star"
+                                app:tint="#EBC41B"
+                                android:contentDescription="Rating" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:text="4.9"
+                                android:textColor="#AFAAAA"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation Bar fixed at bottom -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradient_background4"
+        android:elevation="0dp"
+        app:itemBackground="@drawable/bottom_nav_item_background"
+        app:itemIconTint="@color/white"
+        app:itemActiveIndicatorStyle="@style/NoActiveIndicator"
+        app:itemTextColor="@color/white"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu" />
+</RelativeLayout>

@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="16dp"
+        android:scrollbars="none"
         android:clipToPadding="false">
 
         <LinearLayout
@@ -329,6 +330,7 @@ amazon.in might be faked as amaz0n.in (with a zero instead of an 'o')
         app:itemBackground="@drawable/bottom_nav_item_background"
         app:itemIconTint="@color/white"
         app:itemTextColor="@color/white"
+        app:itemActiveIndicatorStyle="@style/NoActiveIndicator"
         app:labelVisibilityMode="labeled"
         app:menu="@menu/bottom_nav_menu" />
 

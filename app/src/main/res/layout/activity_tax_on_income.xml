@@ -294,6 +294,7 @@
         android:layout_alignParentBottom="true"
         android:background="@drawable/gradient_background4"
         android:elevation="0dp"
+        app:itemActiveIndicatorStyle="@style/NoActiveIndicator"
         app:itemBackground="@drawable/bottom_nav_item_background"
         app:itemIconTint="@color/white"
         app:itemTextColor="@color/white"

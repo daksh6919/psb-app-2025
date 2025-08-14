@@ -2,4 +2,10 @@
     <style name="YourButtonShape" color="@color/yourButtonColor">
         <item name="cornerSize">30dp</item>
     </style>
+
+    <style name="NoActiveIndicator">
+        <item name="android:color">@android:color/transparent</item>
+        <item name="android:alpha">0</item>
+    </style>
+
 </resources>

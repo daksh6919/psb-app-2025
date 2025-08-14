@@ -118,6 +118,7 @@
         android:elevation="0dp"
         app:itemBackground="@drawable/bottom_nav_item_background"
         app:itemIconTint="@color/white"
+        app:itemActiveIndicatorStyle="@style/NoActiveIndicator"
         app:itemTextColor="@color/white"
         app:labelVisibilityMode="labeled"
         app:menu="@menu/bottom_nav_menu" />

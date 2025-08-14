@@ -67,13 +67,11 @@ class dashboard_app : AppCompatActivity() {
 
         // ✅ ALL YOUR EXISTING BUTTON LISTENERS ARE KEPT BELOW
         binding.customButton1.setOnClickListener {
-            val intent = Intent(this, Spam::class.java)
-            startActivity(intent)
+            startActivity(Intent(this, Spam::class.java))
         }
 
         binding.customButton2.setOnClickListener {
-            val intent = Intent(this, Calculator::class.java)
-            startActivity(intent)
+            startActivity(Intent(this, Calculator::class.java))
         }
 
         binding.customButton3.setOnClickListener {
@@ -84,14 +82,12 @@ class dashboard_app : AppCompatActivity() {
             startActivity(Intent(this, GameActivity::class.java))
         }
 
-        binding.customButton5.setOnClickListener {
-            val intent = Intent(this, CyberHelpActivity::class.java)
-            startActivity(intent)
+        binding.customButton50.setOnClickListener {
+            startActivity(Intent(this, ExampleActivity::class.java))
         }
 
         binding.customButton6.setOnClickListener {
-            val intent = Intent(this, LoanActivity::class.java)
-            startActivity(intent)
+            startActivity(Intent(this, LoanActivity::class.java))
         }
 
         binding.customButton7.setOnClickListener {
@@ -102,13 +98,7 @@ class dashboard_app : AppCompatActivity() {
             Toast.makeText(this, "INVESTMENT clicked", Toast.LENGTH_SHORT).show()
         }
 // Find your Loan button
-        val loanButton = findViewById<RelativeLayout>(R.id.customButton5)
 
-        // Set click listener
-        loanButton.setOnClickListener {
-            val intent = Intent(this, LoanActivity::class.java)
-            startActivity(intent)
-        }
         // ✅ YOUR EXISTING BOTTOM NAVIGATION CODE IS KEPT
         binding.bottomNavigation.setOnItemSelectedListener { item ->
             when (item.itemId) {
@@ -132,5 +122,6 @@ class dashboard_app : AppCompatActivity() {
 
 
         }
+
     }
 }
