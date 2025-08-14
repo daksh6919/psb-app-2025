@@ -36,20 +36,7 @@ class ProfileActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val dropdownIcon = findViewById<ImageView>(R.id.dropdown_icon)
 
-        dropdownIcon.setOnClickListener { view ->
-            val popup = PopupMenu(this, view)
-            popup.menu.add("Good Day")
-            popup.menu.add("नमस्ते")
-            popup.menu.add("ਸਤ ਸ੍ਰੀ ਅਕਾਲ ")
-            popup.setOnMenuItemClickListener { item ->
-                Toast.makeText(this, "Selected: ${item.title}", Toast.LENGTH_SHORT).show()
-                true
-            }
-
-            popup.show()
-        }
         binding.AboutUsButton.setOnClickListener {
             val intent = Intent(this, AboutUs::class.java)
             startActivity(intent)

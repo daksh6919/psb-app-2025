@@ -3,6 +3,8 @@ package com.ur4nium.daksh19
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.widget.ImageView
+import android.widget.PopupMenu
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.denzcoskun.imageslider.constants.ScaleTypes
@@ -48,6 +50,21 @@ class dashboard_app : AppCompatActivity() {
         // --- NEW FIREBASE IMAGE SLIDER CODE ENDS HERE ---
 
 
+        val dropdownIcon = findViewById<ImageView>(R.id.dropdown_icon)
+
+        dropdownIcon.setOnClickListener { view ->
+            val popup = PopupMenu(this, view)
+            popup.menu.add("Good Day")
+            popup.menu.add("नमस्ते")
+            popup.menu.add("ਸਤ ਸ੍ਰੀ ਅਕਾਲ ")
+            popup.setOnMenuItemClickListener { item ->
+                Toast.makeText(this, "Selected: ${item.title}", Toast.LENGTH_SHORT).show()
+                true
+            }
+
+            popup.show()
+        }
+
         // ✅ ALL YOUR EXISTING BUTTON LISTENERS ARE KEPT BELOW
         binding.customButton1.setOnClickListener {
             val intent = Intent(this, Spam::class.java)
@@ -55,7 +72,7 @@ class dashboard_app : AppCompatActivity() {
         }
 
         binding.customButton2.setOnClickListener {
-            val intent = Intent(this, CyberHelpActivity::class.java)
+            val intent = Intent(this, Calculator::class.java)
             startActivity(intent)
         }
 
@@ -68,21 +85,21 @@ class dashboard_app : AppCompatActivity() {
         }
 
         binding.customButton5.setOnClickListener {
-            val intent = Intent(this, LoanActivity::class.java)
+            val intent = Intent(this, CyberHelpActivity::class.java)
             startActivity(intent)
         }
 
         binding.customButton6.setOnClickListener {
-            val intent = Intent(this, BudgetSavingActivity::class.java)
+            val intent = Intent(this, LoanActivity::class.java)
             startActivity(intent)
         }
 
         binding.customButton7.setOnClickListener {
-            startActivity(Intent(this, Calculator::class.java))
+            startActivity(Intent(this, BudgetSavingActivity::class.java))
         }
 
         binding.customButton8.setOnClickListener {
-            Toast.makeText(this, "Advisor clicked", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "INVESTMENT clicked", Toast.LENGTH_SHORT).show()
         }
 // Find your Loan button
         val loanButton = findViewById<RelativeLayout>(R.id.customButton5)
