@@ -179,26 +179,26 @@
                 android:lineSpacingExtra="2dp"
                 android:text="Phishing is a type of cybercrime where attackers send fraudulent emails that appear to be from legitimate and trusted sources, such as banks, e-commerce sites, or even government agencies. The goal is to trick the recipient into revealing sensitive personal information.
 
-                                The term phishing is a play on the word fishing because these scammers are essentially fishing for your private data.
+The term phishing is a play on the word fishing because these scammers are essentially fishing for your private data.
 
-                                How an Email Phishing Attack Works:
-                                The Bait: The attacker crafts a convincing email that looks like it's from a company you know and trust. They will often use official logos, branding, and a similar writing style to make it look authentic.
+How an Email Phishing Attack Works:
+The Bait: The attacker crafts a convincing email that looks like it's from a company you know and trust. They will often use official logos, branding, and a similar writing style to make it look authentic.
 
-                                The Hook: The email will typically create a sense of urgency, fear, or curiosity to get you to act quickly without thinking. Common tactics include:
+The Hook: The email will typically create a sense of urgency, fear, or curiosity to get you to act quickly without thinking. Common tactics include:
 
-                                Claiming there’s a problem with your account or payment information.
+Claiming there’s a problem with your account or payment information.
 
-                                Threatening to close or suspend your account.
+ Threatening to close or suspend your account.
 
-                                Offering a prize, a refund, or an unbelievable discount.
+  Offering a prize, a refund, or an unbelievable discount.
 
-                                Including a fake invoice or a notice of a delivery.
+Including a fake invoice or a notice of a delivery.
 
-                                The Catch: The email will contain a malicious link or an attachment.
+The Catch: The email will contain a malicious link or an attachment.
 
-                                Malicious Links: If you click the link, it will take you to a fake website that looks identical to the real one (e.g., a fake net banking login page). When you enter your username and password, the attackers steal your credentials.
+ Malicious Links: If you click the link, it will take you to a fake website that looks identical to the real one (e.g., a fake net banking login page). When you enter your username and password, the attackers steal your credentials.
 
-                                Infected Attachments: If you download and open the attachment, it can install malware (like viruses, spyware, or ransomware) on your computer, which can steal your information or lock your files.
+ Infected Attachments: If you download and open the attachment, it can install malware (like viruses, spyware, or ransomware) on your computer, which can steal your information or lock your files.
 
                                ">
 
@@ -447,16 +447,15 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
         android:layout_alignParentBottom="true"
         android:background="@drawable/gradient_background4"
-        android:elevation="20dp"
+        android:elevation="0dp"
+        app:itemBackground="@drawable/bottom_nav_item_background"
         app:itemIconTint="@color/white"
         app:itemTextColor="@color/white"
-        app:itemBackground="@drawable/bottom_nav_item_background"
         app:labelVisibilityMode="labeled"
         app:menu="@menu/bottom_nav_menu" />
-
 
 
 </RelativeLayout>

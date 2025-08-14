@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -31,204 +32,413 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="10dp" />
+                android:layout_height="30dp" />
 
+            <!-- THIS IS THE CORRECTED SECTION FOR THE TWO COLUMNS -->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="102dp"
-                android:gravity="center"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="0dp">
+                android:baselineAligned="false">
 
-
-
-                <RelativeLayout
-                    android:id="@+id/customButton1"
-                    android:layout_width="172dp"
-                    android:layout_height="78dp"
-                    android:layout_gravity="center"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/rounded_background"
-                    android:clickable="true"
-                    android:elevation="2dp"
-                    android:focusable="true"
-                    android:orientation="vertical"
-                    android:padding="12dp">
-
-                    <TextView
-                        android:id="@+id/titleText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Spam"
-                        android:textColor="#FFFF"
-                        android:textSize="14sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/subText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/titleText"
-                        android:text="@string/check_spams"
-                        android:textColor="#F4E8E8"
-                        android:textSize="14sp" />
-
-                    <ImageView
-                        android:id="@+id/cardImage1"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_toRightOf="@+id/subText"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/spam"
-                        />
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:id="@+id/customButton2"
-                    android:layout_width="172dp"
-                    android:layout_height="78dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/rounded_background"
-                    android:clickable="true"
-                    android:elevation="2dp"
-                    android:focusable="true"
+                <!-- Left Column -->
+                <LinearLayout
+                    android:id="@+id/left_column_container"
+                    android:layout_width="0dp"
+                    android:layout_height="460dp"
+                    android:layout_weight="1"
                     android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="12dp">
+                    android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/titleText2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text=" Cyber Help"
-                        android:textColor="#FFFF"
-                        android:textSize="14sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/subText2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/titleText2"
-                        android:text=" Online Support"
-                        android:textColor="#F4E8E8"
-                        android:textSize="14sp" />
-
-                    <ImageView
-                        android:id="@+id/cardImage2"
+                    <!-- All buttons for the left column go here -->
+                    <!-- Corrected: Unique IDs for each button and their children -->
+                    <RelativeLayout
+                        android:id="@+id/customButton1"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_toRightOf="@+id/subText2"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/cyber"/>
+                        android:layout_height="98dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/rounded_background"
+                        android:clickable="true"
+                        android:elevation="2dp"
+                        android:focusable="true"
+                        android:padding="12dp">
 
-                </RelativeLayout>
+                        <TextView
+                            android:id="@+id/titleText1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SPAM"
+                            android:textColor="#FFFF"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/subText1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/titleText1"
+                            android:text="CHECK\nSPAMS"
+                            android:textColor="#F4E8E8"
+                            android:textSize="8sp" />
+
+                        <ImageView
+                            android:id="@+id/cardImage1"
+                            android:layout_width="99dp"
+                            android:layout_height="77dp"
+                            android:layout_marginStart="43dp"
+                            android:layout_toEndOf="@+id/subText1"
+                            android:padding="20dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/spam"
+                            android:tint="@color/white" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp" />
+
+                    <RelativeLayout
+                        android:id="@+id/customButton2"
+                        android:layout_width="match_parent"
+                        android:layout_height="98dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/rounded_background"
+                        android:clickable="true"
+                        android:elevation="2dp"
+                        android:focusable="true"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:id="@+id/titleText2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CALCULATOR"
+                            android:layout_marginLeft="65dp"
+                            android:textColor="#FFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/subText2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="95dp"
+                            android:layout_below="@+id/titleText2"
+                            android:text="CALCULATE\n   FINANCES"
+                            android:textColor="#F4E8E8"
+                            android:textSize="8sp" />
+
+                        <ImageView
+                            android:id="@+id/cardImage2"
+                            android:layout_width="74dp"
+                            android:layout_height="76dp"
+                            android:padding="25dp"
+                            android:scaleType="centerInside"
+                            android:tint="@color/white"
+                            android:src="@drawable/calculator" />
+
+                    </RelativeLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp" />
+
+                    <RelativeLayout
+                        android:id="@+id/customButton3"
+                        android:layout_width="match_parent"
+                        android:layout_height="98dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/rounded_background4"
+                        android:clickable="true"
+                        android:elevation="2dp"
+                        android:focusable="true"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:id="@+id/titleText_spam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="QUIZ"
+                            android:textColor="#FFFF"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/subText_spam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/titleText_spam"
+                            android:text="EDUCATIONAL"
+                            android:textColor="#F4E8E8"
+                            android:textSize="8sp" />
+
+                        <ImageView
+                            android:id="@+id/cardImage3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toEndOf="@+id/subText_spam"
+                            android:scaleType="centerInside"
+                            android:tint="@color/white"
+                            android:padding="20dp"
+                            android:src="@drawable/quiz"
+                             />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/customButton4"
+                        android:layout_width="match_parent"
+                        android:layout_height="98dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/rounded_background"
+                        android:clickable="true"
+                        android:elevation="2dp"
+                        android:focusable="true"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:id="@+id/titleText4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SIMULATION"
+                            android:layout_marginLeft="65dp"
+                            android:textColor="#FFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/subText4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/titleText4"
+                            android:layout_marginLeft="93dp"
+                            android:text="   PRACTICE\nSCENARIOS"
+                            android:textColor="#F4E8E8"
+                            android:textSize="8sp" />
+
+                        <ImageView
+                            android:id="@+id/cardImage4"
+                            android:layout_width="56dp"
+                            android:layout_height="67dp"
+                            android:scaleType="centerInside"
+                            android:padding="5dp"
+                            android:src="@drawable/simulation2"
+                            android:tint="@color/white" />
+
+                    </RelativeLayout>
+
+
+                    <!-- ... Other buttons for the left column -->
+
+                </LinearLayout>
+
+                <!-- Right Column -->
+                <LinearLayout
+                    android:id="@+id/right_column_container"
+                    android:layout_width="0dp"
+                    android:background="@drawable/rounded_background7"
+                    android:layout_height="445dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:text="The Centre of Financial Strategy"
+                        android:textSize="10dp">
+
+                    </TextView>
+
+                    <!-- All buttons for the right column go here -->
+                    <!-- Corrected: Unique IDs for each button and their children -->
+                    <RelativeLayout
+                        android:id="@+id/customButton5"
+                        android:layout_width="match_parent"
+                        android:layout_height="78dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/rounded_background"
+                        android:clickable="true"
+                        android:elevation="2dp"
+                        android:focusable="true"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:id="@+id/titleText5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CYBER HELP"
+                            android:textColor="#FFFF"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/subText5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/titleText5"
+                            android:text="ONLINE\nSUPPORT"
+                            android:textColor="#F4E8E8"
+                            android:textSize="8sp" />
+
+                        <ImageView
+                            android:id="@+id/cardImage5"
+                            android:layout_width="81dp"
+                            android:layout_height="55dp"
+                            android:layout_marginStart="43dp"
+                            android:layout_toEndOf="@+id/subText5"
+                            android:padding="10dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/cyber"
+                            android:tint="@color/white" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/customButton6"
+                        android:layout_width="match_parent"
+                        android:layout_height="78dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/rounded_background4"
+                        android:clickable="true"
+                        android:elevation="2dp"
+                        android:focusable="true"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:id="@+id/titleText6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="LOAN"
+                            android:layout_marginLeft="95dp"
+                            android:textColor="#FFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/subText6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/titleText6"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginLeft="90dp"
+                            android:layout_marginTop="0dp"
+                            android:text="        LOAN\nPLANNER"
+                            android:textColor="#F4E8E8"
+                            android:textSize="8sp" />
+
+                        <ImageView
+                            android:id="@+id/cardImage6"
+                            android:layout_width="67dp"
+                            android:layout_height="54dp"
+                            android:padding="10dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/loan3"
+                            android:tint="@color/white"
+
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/customButton7"
+                        android:layout_width="match_parent"
+                        android:layout_height="78dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/rounded_background"
+                        android:clickable="true"
+                        android:elevation="2dp"
+                        android:focusable="true"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:id="@+id/titleText7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BUDGET"
+                            android:textColor="#FFFF"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/subText7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/titleText7"
+                            android:text="PLAN YOUR\nSAVINGS"
+                            android:textColor="#F4E8E8"
+                            android:textSize="8sp" />
+
+                        <ImageView
+                            android:id="@+id/cardImage7"
+                            android:layout_width="94dp"
+                            android:layout_height="52dp"
+                            android:layout_marginStart="31dp"
+                            android:layout_toEndOf="@+id/subText7"
+                            android:padding="10dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/budjet"
+                            android:tint="@color/white" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/customButton8"
+                        android:layout_width="match_parent"
+                        android:layout_height="78dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/rounded_background"
+                        android:clickable="true"
+                        android:elevation="2dp"
+                        android:focusable="true"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:id="@+id/titleText8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="INVESTMENT"
+                            android:layout_marginLeft="52dp"
+                            android:textColor="#FFFF"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/subText8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="85dp"
+                            android:layout_below="@+id/titleText8"
+                            android:text="STRATEGIC\n    GROWTH"
+                            android:textColor="#F4E8E8"
+                            android:textSize="8sp" />
+
+                        <ImageView
+                            android:id="@+id/cardImage_spam"
+                            android:layout_width="51dp"
+                            android:layout_height="43dp"
+                            android:padding="10dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/investment"
+                            android:tint="@color/white" />
+
+                    </RelativeLayout>
+                    <!-- ... Other buttons for the right column -->
+
+                </LinearLayout>
 
             </LinearLayout>
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="10dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="102dp"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:padding="0dp">
-
-                <RelativeLayout
-                    android:id="@+id/customButton3"
-                    android:layout_width="172dp"
-                    android:layout_height="78dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/rounded_background"
-                    android:clickable="true"
-                    android:elevation="2dp"
-                    android:focusable="true"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="12dp">
-
-                    <TextView
-                        android:id="@+id/titleText3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Quiz"
-                        android:textColor="#FFFF"
-                        android:textSize="14sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/subText3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/titleText3"
-                        android:text="Education"
-                        android:textColor="#F4E8E8"
-                        android:textSize="14sp" />
+                android:layout_height="30dp" />
 
 
-                    <ImageView
-                        android:id="@+id/cardImage3"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_toRightOf="@+id/subText3"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/simulation"
-                         />
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:id="@+id/customButton4"
-                    android:layout_width="172dp"
-                    android:layout_height="78dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/rounded_background"
-                    android:clickable="true"
-                    android:elevation="2dp"
-                    android:focusable="true"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="12dp">
-
-                    <TextView
-                        android:id="@+id/titleText4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Simulation"
-                        android:textColor="#FFFF"
-                        android:textSize="14dp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/subText4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/titleText4"
-                        android:text="Practice Scenarios"
-                        android:textColor="#F4E8E8"
-                        android:textSize="14sp" />
-
-
-                    <ImageView
-                        android:id="@+id/cardImage4"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_toRightOf="@+id/subText4"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/simulation"
-                       />
-
-                </RelativeLayout>
-
-            </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="10dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -243,219 +453,21 @@
                     android:text="#AD" />
             </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="10dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="102dp"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:padding="0dp">
-
-                <RelativeLayout
-                    android:id="@+id/customButton5"
-                    android:layout_width="172dp"
-                    android:layout_height="78dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/rounded_background"
-                    android:clickable="true"
-                    android:elevation="2dp"
-                    android:focusable="true"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="12dp">
-
-                    <TextView
-                        android:id="@+id/titleText5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Loan"
-                        android:textColor="#FFFF"
-                        android:textSize="14sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/subText5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/titleText5"
-                        android:text=" Loan Planner"
-                        android:textColor="#F4E8E8"
-                        android:textSize="14sp" />
-
-
-                    <ImageView
-                        android:id="@+id/cardImage5"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_toRightOf="@+id/subText5"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/loan"
-                       />
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:id="@+id/customButton6"
-                    android:layout_width="172dp"
-                    android:layout_height="78dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/rounded_background"
-                    android:clickable="true"
-                    android:elevation="2dp"
-                    android:focusable="true"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="12dp">
-
-                    <TextView
-                        android:id="@+id/titleText6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Budget and Saving"
-                        android:textColor="#FFFF"
-                        android:textSize="14sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/subText6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/titleText6"
-                        android:text="Plan your savings"
-                        android:textColor="#F4E8E8"
-                        android:textSize="14sp" />
-
-                    <ImageView
-                        android:id="@+id/cardImage6"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_toRightOf="@+id/subText6"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/savings"
-                       />
-
-                </RelativeLayout>
-
-            </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="10dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="102dp"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:padding="0dp">
-
-                <RelativeLayout
-                    android:id="@+id/customButton7"
-                    android:layout_width="172dp"
-                    android:layout_height="78dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/rounded_background"
-                    android:clickable="true"
-                    android:elevation="2dp"
-                    android:focusable="true"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="12dp">
-
-                    <TextView
-                        android:id="@+id/titleText7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Calculator"
-                        android:textColor="#FFFF"
-                        android:textSize="14sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/subText7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/titleText7"
-                        android:text="Calculate finances"
-                        android:textColor="#F4E8E8"
-                        android:textSize="14sp" />
-
-                    <ImageView
-                        android:id="@+id/cardImage7"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_toRightOf="@+id/subText7"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/calculator"
-                        />
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:id="@+id/customButton8"
-                    android:layout_width="172dp"
-                    android:layout_height="78dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/rounded_background"
-                    android:clickable="true"
-                    android:elevation="2dp"
-                    android:focusable="true"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="12dp">
-
-                    <TextView
-                        android:id="@+id/titleText8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Advisor"
-                        android:textColor="#FFFF"
-                        android:textSize="14sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/subText8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/titleText8"
-                        android:text="Get financial advice"
-                        android:textColor="#F4E8E8"
-                        android:textSize="14sp" />
-
-                    <ImageView
-                        android:id="@+id/cardImage8"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_toRightOf="@+id/subText8"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/advisor"
-                         />
-
-                </RelativeLayout>
-
-            </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp" />
 
         </LinearLayout>
-    </ScrollView>
 
+    </ScrollView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
         android:layout_alignParentBottom="true"
         android:background="@drawable/gradient_background4"
-        android:elevation="20dp"
+        android:elevation="0dp"
         app:itemBackground="@drawable/bottom_nav_item_background"
-        app:itemIconTint="#FFFF"
-        app:itemTextColor="#FFFF"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
         app:labelVisibilityMode="labeled"
         app:menu="@menu/bottom_nav_menu" />
 

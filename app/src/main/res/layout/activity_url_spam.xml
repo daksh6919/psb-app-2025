@@ -137,47 +137,21 @@ This is the most common type of URL scam, where the link leads to a fake website
 
 How it Works: You receive an email, text message (smishing), or social media message with a link. The message creates a sense of urgency, like Your account has been compromised, click here to reset your password. When you click the link, you're taken to a fake login page where the scammers steal your credentials.
 
-            What to Look For:
+What to Look For:
 
-            Typosquatting: The URL will have a very subtle misspelling of a popular website. For example:
+ Typosquatting: The URL will have a very subtle misspelling of a popular website. For example:
 
-            www.sbi-bank.co.in might be faked as www.sbi-bannk.co.in
+ www.sbi-bank.co.in might be faked as www.sbi-bannk.co.in
 
-            amazon.in might be faked as amaz0n.in (with a zero instead of an 'o')
+amazon.in might be faked as amaz0n.in (with a zero instead of an 'o')
 
-            Deceptive Subdomains: The real domain is hidden at the end of a long URL. For example:
+ Deceptive Subdomains: The real domain is hidden at the end of a long URL. For example:
 
-            www.amazon.in.secure-login-page.com - The real website here is secure-login-page.com, not amazon.in.
+ www.amazon.in.secure-login-page.com - The real website here is secure-login-page.com, not amazon.in.
 
-            2. Link Masking and URL Shorteners
-            Scammers often hide the true destination of a URL to make it look less suspicious.
 
-            How it Works: They use URL shortening services (like Bitly or TinyURL) or embed the malicious link within text or a button (like a Click Here button).
 
-            What to Look For:
-
-            Shortened URLs: Be cautious of links from services like bit.ly or tinyurl.com, especially if you receive them unexpectedly. You have no way of knowing where they lead until you click them.
-
-            Hover Before You Click: On a computer, you can hover your mouse over a link (without clicking) to see the actual URL in the bottom corner of your browser. If the destination URL looks different from what you expect, don't click it.
-
-            3. Malicious Redirects
-            These URLs might initially take you to a legitimate-looking website, but then quickly redirect you to a malicious one.
-
-            How it Works: You might click on what seems like a normal link, but the website has code that automatically sends you to a different, often harmful, site.
-
-            What to Look For: Pay attention to the URL in your browser's address bar. If it suddenly changes to something completely different and unexpected, close the tab immediately.
-
-            How to Protect Yourself from URL Scams:
-            Always Double-Check the URL: Before entering any personal information, carefully examine the website's address. Look for misspellings, extra characters, or unusual domain extensions.
-
-            Don't Trust Display Names: In an email, the sender's name can be easily faked. Always check the actual email address it came from.
-
-            Go Directly to the Source: If you receive a suspicious message from a company you do business with, don't click the link in the message. Instead, open a new browser tab and type in the company's official website address yourself, or use their official app.
-
-            Look for HTTPS: A legitimate website that asks for sensitive information should have a URL that starts with https:// (the 's' stands for secure) and a padlock icon in the address bar. However, be aware that even some scam sites now use HTTPS, so this isn't a foolproof guarantee of safety.
-
-            Use Security Software: A good antivirus program or internet security suite will often include features that block malicious websites and warn you about suspicious links.
-                                                                                    ">
+">
 
             </TextView>
 
@@ -348,13 +322,13 @@ How it Works: You receive an email, text message (smishing), or social media mes
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
         android:layout_alignParentBottom="true"
         android:background="@drawable/gradient_background4"
-        android:elevation="20dp"
+        android:elevation="0dp"
+        app:itemBackground="@drawable/bottom_nav_item_background"
         app:itemIconTint="@color/white"
         app:itemTextColor="@color/white"
-        app:itemBackground="@drawable/bottom_nav_item_background"
         app:labelVisibilityMode="labeled"
         app:menu="@menu/bottom_nav_menu" />
 
