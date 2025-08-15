@@ -39,7 +39,7 @@ class MyPopupDialog : DialogFragment() {
         val imageList = ArrayList<SlideModel>()
         val db = Firebase.firestore
 
-        db.collection("dashboard_slider")
+        db.collection("cyberfraud1")
             .get()
             .addOnSuccessListener { documents ->
                 if (documents.isEmpty) {

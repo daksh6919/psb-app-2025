@@ -12,7 +12,7 @@ import androidx.media3.ui.PlayerView
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
-class VideoCyber : AppCompatActivity() {
+class Phishv2 : AppCompatActivity() {
 
     // Declare the player as nullable to manage its lifecycle
     private var player: ExoPlayer? = null
@@ -26,7 +26,7 @@ class VideoCyber : AppCompatActivity() {
         // Initialize UI components from the layout
         playerView = findViewById(R.id.playerView)
         videoDescription = findViewById(R.id.videoDescription)
-        videoDescription.text = "This video explains what is phishing"
+        videoDescription.text = "How to prevent phishing"
     }
 
     // Use onStart to begin fetching data when the activity becomes visible
@@ -42,7 +42,7 @@ class VideoCyber : AppCompatActivity() {
 
         // Create a reference to the specific document where the URL is stored
         // IMPORTANT: Change "videos" and "cyberAwareness" to match your collection and document names
-        val videoDocRef = db.collection("cyberlesson").document("video1")
+        val videoDocRef = db.collection("phishv2").document("videophish")
 
         // Asynchronously get the document
         videoDocRef.get()
@@ -55,18 +55,18 @@ class VideoCyber : AppCompatActivity() {
                         initializePlayer(videoUrl)
                     } else {
                         // Handle cases where the URL field is missing or empty
-                        Log.e("VideoCyber", "URL is null or empty in Firestore document")
+                        Log.e("Phishv2", "URL is null or empty in Firestore document")
                         Toast.makeText(this, "Video URL not found.", Toast.LENGTH_SHORT).show()
                     }
                 } else {
                     // Handle cases where the document doesn't exist
-                    Log.e("VideoCyber", "No such document in Firestore")
+                    Log.e("Phishv2", "No such document in Firestore")
                     Toast.makeText(this, "Video data not found.", Toast.LENGTH_SHORT).show()
                 }
             }
             .addOnFailureListener { exception ->
                 // Handle any errors that occur while fetching the document
-                Log.e("VideoCyber", "Error getting document: ", exception)
+                Log.e("Phishv2", "Error getting document: ", exception)
                 Toast.makeText(this, "Failed to load video data.", Toast.LENGTH_SHORT).show()
             }
     }
