@@ -34,7 +34,10 @@
     <string name="example_text3">UPI &amp; Payment App <font color='#FF0000'>Frauds</font> </string>
     <string name="example_text4">These  <font color='#FF0000'>crimes </font> involve direct attacks on computers, servers, or digital infrastructure to steal data, cause disruption, or damage systems. It involves different threats like- viruses, bugs, etc, and (DoS) denial-of-service attacks</string>
     <string name="example_text5">Denial-of-Service <font color='#FF0000'>(DoS) </font>Attacks</string>
-
+    <string name="example_text6">PREVENTION OF CYBER <font color='#FF0000'>CRIMES </font> </string>
+    <string name="example_text7">Use Strong Passwords &amp; Enable <font color='#1E90FF'> Two-Factor </font>Authentication (2FA) </string>
+    <string name="example_text8">Stay Alert to Phishing &amp; Social Engineering <font color='#FF0000'> Attacks </font> </string>
+    <string name="example_text9">Avoid Clicking <font color='#FF0000'>Suspicious </font>Links</string>
 
 </resources>
 

@@ -25,9 +25,7 @@
         <activity
             android:name=".cybersectionvideo1"
             android:exported="false" />
-        <activity
-            android:name=".Chatbot"
-            android:exported="false" />
+
         <activity
             android:name=".MyPopupDialog"
             android:exported="true"

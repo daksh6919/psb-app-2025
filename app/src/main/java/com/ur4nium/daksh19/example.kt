@@ -11,16 +11,12 @@ class ExampleActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_example) // change if your XML name is different
+        setContentView(R.layout.activity_example)
 
-        // ----- Header -----
+
         val notificationIcon: ImageView = findViewById(R.id.notification) // add id to ImageView in XML if missing
 
-        // ----- Search Bar -----
 
-
-
-        // ----- Popular Lessons -----
         val lessonImage1: ImageView = findViewById(R.id.lesson_image1)
         val lessonTitle1: TextView = findViewById(R.id.lesson_title1)
         val lessonSubtitle1: TextView = findViewById(R.id.lesson_subtitle1)
@@ -55,7 +51,7 @@ class ExampleActivity : AppCompatActivity() {
 
 
         lessonImage2.setOnClickListener {
-            Toast.makeText(this, "Opening ${lessonTitle2.text}", Toast.LENGTH_SHORT).show()
+            MyPopupDialog2().show(supportFragmentManager, "popup")
         }
 
         lessonImage3.setOnClickListener {

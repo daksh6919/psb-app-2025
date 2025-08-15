@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:id="@+id/mainRootLayout1515"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_background2"
+    android:background="@drawable/bg_dark"
     >
 
 
@@ -16,6 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/bottom_navigation"
+        android:scrollbars="none"
         android:fillViewport="true"
         android:overScrollMode="never">
 
@@ -78,10 +79,40 @@
                 android:background="@drawable/rounded_background"
                 android:padding="24dp" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="27dp"
+                android:text="CYBER SECURITY  "
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="27dp"
+                android:layout_marginBottom="10dp"
+                android:text="From Introduction to Everything"
+                android:textColor="#912AA4"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="27dp"
+                android:text="A beginner-friendly guide to cyber security,  types, protections and recent updates."
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+
             <!-- Popular Lessons Section Header -->
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
                 android:paddingStart="24dp"
                 android:paddingEnd="24dp"
                 android:layout_marginBottom="16dp">
@@ -102,6 +133,8 @@
                     android:textColor="@color/primaryColor"
                     android:textSize="16sp" />
             </RelativeLayout>
+
+
 
             <!-- Popular Lessons Horizontal Scroll -->
             <HorizontalScrollView
@@ -144,7 +177,7 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/lesson_image1"
                             android:layout_marginStart="12dp"
-                            android:text="CYBER SECURITY"
+                            android:text="CYBER CRIMES"
                             android:textColor="@color/white"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -155,7 +188,7 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/lesson_title1"
                             android:layout_marginStart="12dp"
-                            android:text="Types (lessons)"
+                            android:text="TYPES"
                             android:textColor="#B8B3B3"
                             android:textSize="14sp" />
 
@@ -199,8 +232,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="120dp"
                             android:src="@drawable/fraud"
+                            android:padding="10dp"
                             android:scaleType="centerCrop"
-                            android:background="@color/white"
                             android:layout_marginBottom="8dp"
                             android:contentDescription="Lesson image for Web design fundamentals" />
 
@@ -212,7 +245,7 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/lesson_image2"
                             android:layout_marginStart="12dp"
-                            android:text="Web design fundamentals"
+                            android:text="PREVENT CYBER CRIMES"
                             android:textColor="@color/white"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -223,7 +256,7 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/lesson_title2"
                             android:layout_marginStart="12dp"
-                            android:text="UX Design (28 lessons)"
+                            android:text="PREVENTION"
                             android:textColor="#A09B9B"
                             android:textSize="14sp" />
 
@@ -266,7 +299,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Popular lessons"
+                    android:text="Video lessons"
                     android:textColor="@color/white"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -294,6 +327,8 @@
                     android:orientation="horizontal">
 
                     <!-- Lesson Card 1 -->
+
+                    <!-- Lesson Card 2 -->
                     <RelativeLayout
                         android:layout_width="220dp"
                         android:layout_height="wrap_content"
@@ -305,12 +340,12 @@
                             android:id="@+id/lesson_image3"
                             android:layout_width="match_parent"
                             android:layout_height="120dp"
+                            android:padding="10dp"
                             android:layout_marginBottom="8dp"
                             android:background="@drawable/rounded_background"
                             android:contentDescription="Lesson image for Figma master class"
                             android:scaleType="centerCrop"
                             android:src="@drawable/fraud" />
-
 
 
                         <TextView
@@ -330,7 +365,7 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/lesson_title3"
                             android:layout_marginStart="12dp"
-                            android:text="explanation and prevention          (2 lessons)"
+                            android:text="explanation &amp; prevention"
                             android:textColor="#B8B3B3"
                             android:textSize="14sp" />
 
@@ -376,7 +411,6 @@
                         </LinearLayout>
                     </RelativeLayout>
 
-                    <!-- Lesson Card 2 -->
                     <RelativeLayout
                         android:layout_width="220dp"
                         android:layout_height="wrap_content"
@@ -390,7 +424,7 @@
                             android:layout_height="120dp"
                             android:src="@drawable/fraud"
                             android:scaleType="centerCrop"
-                            android:background="@color/white"
+                            android:padding="10dp"
                             android:layout_marginBottom="8dp"
                             android:contentDescription="Lesson image for Web design fundamentals" />
 
@@ -401,7 +435,7 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/lesson_image4"
                             android:layout_marginStart="12dp"
-                            android:text="Web design fundamentals"
+                            android:text="CYBER FRAUDS"
                             android:textColor="@color/white"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -412,7 +446,7 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@id/lesson_title4"
                             android:layout_marginStart="12dp"
-                            android:text="UX Design (28 lessons)"
+                            android:text="Explanation &amp; Prevention"
                             android:textColor="#A09B9B"
                             android:textSize="14sp" />
 

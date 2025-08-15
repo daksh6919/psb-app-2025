@@ -35,5 +35,5 @@ class cybersectionvideo1 : AppCompatActivity() {
             intent.putExtra("DOC_ID", "video3")
             startActivity(intent)
         }
-    }
+        }
 }

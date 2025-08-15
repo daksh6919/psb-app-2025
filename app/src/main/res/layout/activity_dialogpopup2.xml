@@ -1,0 +1,378 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:background="@android:color/transparent">
+
+    <!-- Outer container for popup -->
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="700dp"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_background"
+        android:gravity="center_horizontal"
+        android:padding="20dp">
+
+        <!-- Scrollable content -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="0dp"
+                    android:layout_gravity="center"
+                    android:text="@string/example_text6"
+                    android:textColor="#ffff"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Prevention of cyber crime involves protecting your digital identity through strong security practices like using strong passwords, enabling two-factor authentication, keeping software updated, and avoiding suspicious links or emails. Staying informed and cautious online greatly reduces the risk of falling victim to hackers or scams."
+                    android:textSize="14sp"
+                    android:textColor="#B4B1B1" />
+
+                <TextView
+                    android:id="@+id/section1Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/example_text7"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/section1Description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="One of the easiest yet most powerful ways to protect yourself from cyber crimes is to use strong, unique passwords for each account. Avoid simple combinations like 123456 or your birthday. A strong password should be long, include letters, numbers, and special symbols. Additionally, enable two-factor authentication (2FA), which adds a second verification step (like a code sent to your phone) before granting access. This way, even if hackers get your password, they won’t be able to log in without the second factor. Password managers can also help in securely storing and generating complex passwords. "
+                    android:textColor="#B4AFAF"
+                    android:textSize="14sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/rounded_background5"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- FAQ Items -->
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/rounded_background"
+                        android:paddingEnd="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="15dp"
+                            android:text="How long should my password be?"
+                            android:textSize="15dp">
+
+                        </TextView>
+
+                        <ImageView
+                            android:id="@+id/plus_icon1"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="Plus icon"
+                            android:padding="4dp"
+                            android:src="@drawable/add_sharp"
+                            android:tint="#ffff" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/faq1_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Your password should ideally be at least 12–16 characters long to make it significantly harder for hackers to guess or crack. Short passwords are more vulnerable to brute force attacks, where attackers try every possible combination until they find the correct one. Longer passwords exponentially increase the number of possible combinations, making them much more secure."
+                        android:visibility="gone"
+                        android:padding="8dp" />
+
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/rounded_background"
+                        android:paddingEnd="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/example_text7"
+                            android:textSize="15dp">
+
+                        </TextView>
+
+                        <ImageView
+                            android:id="@+id/plus_icon2"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="Plus icon"
+                            android:padding="4dp"
+                            android:src="@drawable/add_sharp"
+                            android:tint="#ffff" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/faq2_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Add an extra layer of security by requiring a second verification step, like a one-time code sent to your phone. This helps protect accounts even if your password is compromised."
+                        android:visibility="gone"
+                        android:padding="8dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/rounded_background"
+                        android:paddingEnd="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="15dp"
+                            android:text="Beware of Phishing Scams"
+                            android:textSize="16dp">
+
+                        </TextView>
+
+                        <ImageView
+                            android:id="@+id/plus_icon3"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="Plus icon"
+                            android:padding="4dp"
+                            android:src="@drawable/add_sharp"
+                            android:tint="#ffff" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/faq3_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Be cautious with emails, messages, or links from unknown or suspicious sources. Always verify the sender’s identity before sharing personal or financial information."
+                        android:visibility="gone"
+                        android:padding="8dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/section1Title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/example_text8"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/section1Description2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="Phishing attacks trick people into revealing sensitive information by pretending to be a trusted source. They often come in the form of emails, messages, or fake websites that look real. To prevent falling victim, always double-check the sender’s email address, hover over links before clicking, and never share personal data unless you are 100% certain of the request’s legitimacy. Social engineering attacks may also use phone calls or fake support messages to manipulate you into revealing details. Being cautious and skeptical is your first defense."
+                    android:textColor="#B4AFAF"
+                    android:textSize="14sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/rounded_background5"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- FAQ Items -->
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/rounded_background"
+                        android:paddingEnd="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="4dp"
+                            android:text="Verify the Source Before Responding"
+                            android:textSize="16dp">
+
+                        </TextView>
+
+                        <ImageView
+                            android:id="@+id/plus_icon4"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="Plus icon"
+                            android:padding="4dp"
+                            android:src="@drawable/add_sharp"
+                            android:tint="#ffff" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/faq4_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Always double-check the sender’s email address, phone number, or profile. Scammers often use addresses that look similar to trusted sources but have small differences."
+                        android:visibility="gone"
+                        android:padding="8dp" />
+
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/rounded_background"
+                        android:paddingEnd="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="13dp"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="15dp"
+                            android:text="@string/example_text9"
+                            android:textSize="16dp">
+
+                        </TextView>
+
+                        <ImageView
+                            android:id="@+id/plus_icon5"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="Plus icon"
+                            android:padding="4dp"
+                            android:src="@drawable/add_sharp"
+                            android:tint="#ffff" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/faq5_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hover over links to see their real destination before clicking. Fake links may lead to phishing websites designed to steal your personal or financial details."
+                        android:visibility="gone"
+                        android:padding="8dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/rounded_background"
+                        android:paddingEnd="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="5dp"
+                            android:text="Be Wary of Urgent or Emotional Requests"
+                            android:textSize="16dp">
+
+                        </TextView>
+
+                        <ImageView
+                            android:id="@+id/plus_icon6"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="Plus icon"
+                            android:padding="4dp"
+                            android:src="@drawable/add_sharp"
+                            android:tint="#ffff" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/faq6_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Social engineering often creates a sense of urgency or fear to trick you into acting quickly. Take time to think before providing sensitive information or making payments."
+                        android:visibility="gone"
+                        android:padding="8dp" />
+
+                </LinearLayout>
+
+
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/imageSlider"
+                    app:iss_period="1000"
+                    app:iss_auto_cycle="true"
+                    app:iss_delay="1000"
+                    app:iss_corner_radius="20"
+                    app:iss_title_background="@drawable/rounded_background"/>
+
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
