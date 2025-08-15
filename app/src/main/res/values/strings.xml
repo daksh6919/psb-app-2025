@@ -35,5 +35,6 @@
     <string name="example_text4">These  <font color='#FF0000'>crimes </font> involve direct attacks on computers, servers, or digital infrastructure to steal data, cause disruption, or damage systems. It involves different threats like- viruses, bugs, etc, and (DoS) denial-of-service attacks</string>
     <string name="example_text5">Denial-of-Service <font color='#FF0000'>(DoS) </font>Attacks</string>
 
+
 </resources>
 
