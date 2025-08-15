@@ -57,6 +57,8 @@ dependencies {
     implementation("com.github.denzcoskun:ImageSlideshow:0.1.0")
 
 
+
+
     // Lifecycle
     implementation(libs.androidx.lifecycle.livedata.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)

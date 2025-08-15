@@ -2,6 +2,7 @@ package com.ur4nium.daksh19
 
 import android.content.Intent
 import android.os.Bundle
+import blurBackground
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -33,11 +34,17 @@ class ExampleActivity : AppCompatActivity() {
 
         // Example: Handle Search Click
 
+        lessonImage1.setOnClickListener {
+            // Blur the background view
+
+
+            // Show the popup
+            MyPopupDialog().show(supportFragmentManager, "popup")
+        }
+
 
         // Example: Lesson Click
-        lessonImage1.setOnClickListener {
-            Toast.makeText(this, "Opening ${lessonTitle1.text}", Toast.LENGTH_SHORT).show()
-        }
+
 
         lessonImage2.setOnClickListener {
             Toast.makeText(this, "Opening ${lessonTitle2.text}", Toast.LENGTH_SHORT).show()

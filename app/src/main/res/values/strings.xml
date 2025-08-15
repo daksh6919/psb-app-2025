@@ -29,7 +29,11 @@
     <string name="simulation">Simulation</string>
     <string name="practice_scenarios">Practice Scenarios</string>
     <string name="simulation_image">simulation_image</string>
-
+    <string name="example_text">TYPES OF CYBER <font color='#FF0000'>CRIME </font> </string>
+    <string name="example_text2">Cyber <font color='#FF0000'>Crimes </font>Targeting Computer Networks or Devices. </string>
+    <string name="example_text3">UPI &amp; Payment App <font color='#FF0000'>Frauds</font> </string>
+    <string name="example_text4">These  <font color='#FF0000'>crimes </font> involve direct attacks on computers, servers, or digital infrastructure to steal data, cause disruption, or damage systems. It involves different threats like- viruses, bugs, etc, and (DoS) denial-of-service attacks</string>
+    <string name="example_text5">Denial-of-Service <font color='#FF0000'>(DoS) </font>Attacks</string>
 
 </resources>
 

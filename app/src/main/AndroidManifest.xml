@@ -11,14 +11,13 @@
         android:theme="@style/Theme.Daksh19"
         tools:targetApi="31">
         <activity
-            android:name=".videocyber"
-            android:exported="false" />
+            android:name=".MyPopupDialog"
+            android:exported="true"
+            tools:ignore="Instantiatable" />
+
         <activity
-            android:name=".fragmentprofile"
-            android:exported="false" />
-        <activity
-            android:name=".HomeIconActivity"
-            android:exported="false" />
+            android:name=".VideoCyber"
+            android:exported="true" />
         <activity
             android:name=".ExampleActivity"
             android:exported="true" />
