@@ -33,6 +33,10 @@ class ExampleActivity : AppCompatActivity() {
         val lessonImage3: ImageView = findViewById(R.id.lesson_image3)
         val lessonTitle3: TextView = findViewById(R.id.lesson_title3)
         val lessonSubtitle3: TextView = findViewById(R.id.lesson_subtitle3)
+
+        val lessonImage4: ImageView = findViewById(R.id.lesson_image4)
+        val lessonTitle4: TextView = findViewById(R.id.lesson_title4)
+        val lessonSubtitle4: TextView = findViewById(R.id.lesson_subtitle4)
         // ----- Bottom Navigation -----
         val bottomNav: BottomNavigationView = findViewById(R.id.bottom_navigation)
 
@@ -57,6 +61,11 @@ class ExampleActivity : AppCompatActivity() {
         lessonImage3.setOnClickListener {
             // Blur the background view
             startActivity(Intent(this, cybersectionvideo1::class.java))
+            true
+        }
+        lessonImage4.setOnClickListener {
+            // Blur the background view
+            startActivity(Intent(this, cybersectionvideo2::class.java))
             true
         }
 

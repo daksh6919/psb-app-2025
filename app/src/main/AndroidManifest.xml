@@ -11,6 +11,15 @@
         android:theme="@style/Theme.Daksh19"
         tools:targetApi="31">
         <activity
+            android:name=".preventcyber"
+            android:exported="false" />
+        <activity
+            android:name=".cybersectionvideo2"
+            android:exported="false" />
+        <activity
+            android:name=".fraudweb"
+            android:exported="false" />
+        <activity
             android:name=".Phishv2"
             android:exported="false" />
         <activity
@@ -26,7 +35,6 @@
         <activity
             android:name=".VideoCyber"
             android:exported="true" />
-
         <activity
             android:name=".ExampleActivity"
             android:exported="true" />
