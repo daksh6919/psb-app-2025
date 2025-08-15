@@ -1,29 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-android:gravity="center"
-android:background="@android:color/transparent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center">
 
-<!-- Outer container for popup -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:background="@drawable/rounded_background"
         android:gravity="center_horizontal"
+        android:orientation="vertical"
         android:padding="20dp">
-
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="VEDIO LESSONS"
-            android:textStyle="bold"
-            android:textSize="30dp"
-            android:textColor="#912AA4">
-        </TextView>
-
+            android:text="VIDEO LESSONS"
+            android:textColor="#912AA4"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -34,11 +31,8 @@ android:background="@android:color/transparent">
             android:orientation="vertical"
             android:padding="16dp">
 
-            <!-- FAQ Items -->
-
-
-
             <RelativeLayout
+                android:id="@+id/videoCyber"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="8dp"
@@ -49,12 +43,10 @@ android:background="@android:color/transparent">
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
-                    android:textColor="@color/white"
                     android:layout_marginTop="10dp"
                     android:text="1. What is Phishing?"
-                    android:textSize="20dp">
-
-                </TextView>
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
 
                 <ImageView
                     android:id="@+id/plus_icon4"
@@ -62,23 +54,13 @@ android:background="@android:color/transparent">
                     android:layout_height="34dp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
-                    android:contentDescription="Plus icon"
+                    android:contentDescription="Play video icon"
                     android:src="@drawable/playvideo"
-                    android:tint="#ffff" />
+                    app:tint="#ffff" />
             </RelativeLayout>
 
-            <TextView
-                android:id="@+id/faq4_answer"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="A malware attack involves using malicious software (malware) to harm a computer or network. This software can steal private data, disrupt system functions, or take control of the infected device without the user's knowledge. It's a common type of cybercrime that aims to cause damage or gain unauthorized access."
-                android:visibility="gone"
-                android:padding="8dp" />
-
-
-
-
             <RelativeLayout
+                android:id="@+id/video_lesson_2"
                 android:layout_width="match_parent"
                 android:layout_height="57dp"
                 android:layout_marginTop="8dp"
@@ -89,12 +71,10 @@ android:background="@android:color/transparent">
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="13dp"
-                    android:textColor="@color/white"
                     android:layout_marginTop="15dp"
                     android:text="2. How to Identify Phish?"
-                    android:textSize="20dp">
-
-                </TextView>
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
 
                 <ImageView
                     android:id="@+id/plus_icon5"
@@ -102,20 +82,13 @@ android:background="@android:color/transparent">
                     android:layout_height="34dp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
-                    android:contentDescription="Plus icon"
+                    android:contentDescription="Play video icon"
                     android:src="@drawable/playvideo"
-                    android:tint="#ffff" />
+                    app:tint="#ffff" />
             </RelativeLayout>
 
-            <TextView
-                android:id="@+id/faq5_answer"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="A Denial-of-Service (DoS) attack is a cybercrime that floods a network or website with so much traffic that it overwhelms the system, making it inaccessible to legitimate users. The attack doesn't steal data but instead focuses on preventing a service from working correctly. Think of it like a mob of people blocking the entrance to a store, preventing real customers from getting in."
-                android:visibility="gone"
-                android:padding="8dp" />
-
             <RelativeLayout
+                android:id="@+id/video_lesson_3"
                 android:layout_width="match_parent"
                 android:layout_height="57dp"
                 android:layout_marginTop="8dp"
@@ -126,12 +99,10 @@ android:background="@android:color/transparent">
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:textColor="@color/white"
                     android:layout_marginTop="15dp"
                     android:text="3. video:"
-                    android:textSize="16dp">
-
-                </TextView>
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
 
                 <ImageView
                     android:id="@+id/plus_icon6"
@@ -139,24 +110,11 @@ android:background="@android:color/transparent">
                     android:layout_height="34dp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
-                    android:contentDescription="Plus icon"
+                    android:contentDescription="Play video icon"
                     android:src="@drawable/playvideo"
-                    android:tint="#ffff" />
+                    app:tint="#ffff" />
             </RelativeLayout>
 
-            <TextView
-                android:id="@+id/faq6_answer"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="This crime involves stealing a person's private information to impersonate them. The criminal then uses this information to commit fraud, make purchases, or open new accounts in the victim's name."
-                android:visibility="gone"
-                android:padding="8dp" />
-
         </LinearLayout>
-
-
-
-
     </LinearLayout>
-
 </LinearLayout>

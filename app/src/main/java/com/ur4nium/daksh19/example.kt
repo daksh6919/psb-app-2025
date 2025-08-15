@@ -29,6 +29,10 @@ class ExampleActivity : AppCompatActivity() {
         val lessonTitle2: TextView = findViewById(R.id.lesson_title2)
         val lessonSubtitle2: TextView = findViewById(R.id.lesson_subtitle2)
 
+
+        val lessonImage3: ImageView = findViewById(R.id.lesson_image3)
+        val lessonTitle3: TextView = findViewById(R.id.lesson_title3)
+        val lessonSubtitle3: TextView = findViewById(R.id.lesson_subtitle3)
         // ----- Bottom Navigation -----
         val bottomNav: BottomNavigationView = findViewById(R.id.bottom_navigation)
 
@@ -48,6 +52,12 @@ class ExampleActivity : AppCompatActivity() {
 
         lessonImage2.setOnClickListener {
             Toast.makeText(this, "Opening ${lessonTitle2.text}", Toast.LENGTH_SHORT).show()
+        }
+
+        lessonImage3.setOnClickListener {
+            // Blur the background view
+            startActivity(Intent(this, cybersectionvideo1::class.java))
+            true
         }
 
         // Bottom Navigation Clicks
