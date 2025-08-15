@@ -6,376 +6,378 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:background="@drawable/gradient_background2">
 
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="16dp"
-    android:scrollbars="none"
-    android:clipToPadding="false">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="80dp"
-        android:gravity="center_horizontal"
-        android:orientation="vertical">
-
-
-
-        <!-- Title -->
-
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:clipToPadding="false"
+        android:padding="16dp"
+        android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:backgroundTint="@color/white"
-            android:gravity="center_vertical"
-            android:paddingBottom="12dp">
-
-            <ImageView
-                android:id="@+id/backButton"
-                android:layout_width="28dp"
-                android:tint="@color/white"
-                android:layout_height="28dp"
-                android:src="@drawable/back" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="100dp"
-                android:text="Savings"
-                android:textColor="#FAF6F6"
-                android:textSize="30sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-
-        <!-- Income Input -->
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="90dp"
-            android:text="Enter your Monthly Income :"
-            android:textColor="@color/white"
-            android:textSize="14sp" />
-
-        <EditText
-            android:id="@+id/incomeEditText"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:textColor="@color/white"
-            android:layout_marginTop="8dp"
-            android:textColorHint="#A6A2A2"
-            android:background="@drawable/rounded_background"
-            android:hint="e.g. 500000"
-            android:inputType="number"
-            android:padding="12dp" />
-
-        <!-- Tax Regime Dropdown -->
-        <!-- Tax Regime Dropdown -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="92dp"
-            android:text="Enter Your Monthly Expense :"
-            android:textColor="@color/white"
-            android:textSize="14sp" />
-
-        <EditText
-            android:id="@+id/ExpenseEditText"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="8dp"
-            android:textColor="@color/white"
-            android:textColorHint="#A4A1A1"
-            android:background="@drawable/rounded_background"
-            android:hint="e.g. 500000"
-            android:inputType="number"
-            android:padding="12dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:textColor="@color/white"
-            android:layout_marginRight="100dp"
-            android:text="Enter Your Saving Goal :"
-            android:textSize="14sp" />
-
-        <!-- Calculate Button -->
-        <EditText
-            android:id="@+id/SavingEditText"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="8dp"
-            android:textColorHint="#9B9797"
-            android:background="@drawable/rounded_background"
-            android:hint="e.g. 500000"
-            android:inputType="number"
-            android:padding="12dp"
-            android:textColor="@color/white" />
-
-        <Button
-            android:id="@+id/calculateButton"
-            android:layout_width="250dp"
-            android:layout_height="58dp"
-            android:layout_marginTop="8dp"
-            android:backgroundTint="#1E1E1E"
-            android:elevation="6dp"
-            android:paddingLeft="32dp"
-            android:paddingRight="32dp"
-            android:text="Calculate"
-            android:textAllCaps="false"
-            android:textColor="@android:color/white"
-            android:textSize="25dp" />
+            android:layout_marginBottom="80dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
 
-        <!-- FAQ Card -->
+            <!-- Title -->
 
-        <TextView
-            android:id="@+id/resultGST"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Months Required:"
-            android:textColor="@color/white"
-            android:textSize="20dp" />
-
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="22dp"
-                android:layout_marginBottom="100dp"
-                android:background="@drawable/rounded_background_calculator"
-                android:orientation="vertical"
-                android:padding="16dp">
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/white"
+                android:gravity="center_vertical"
+                android:paddingBottom="12dp">
+
+                <ImageView
+                    android:id="@+id/backButton"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/back"
+                    android:tint="@color/white" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:text="FAQ’s"
-                    android:textSize="18sp"
+                    android:layout_marginLeft="100dp"
+                    android:text="Savings"
+                    android:textColor="#FAF6F6"
+                    android:textSize="30sp"
                     android:textStyle="bold" />
-
-                <!-- FAQ Items -->
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="12dp"
-                    android:background="#DDDDDD" />
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/rounded_background_calculator"
-                    android:paddingEnd="12dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:textColor="@color/white"
-                        android:layout_marginTop="15dp"
-                        android:text="What does this savings planner do?"
-                        android:textSize="17dp">
-
-                    </TextView>
-
-
-                    <ImageView
-                        android:id="@+id/plus_icon1"
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:contentDescription="Plus icon"
-                        android:padding="4dp"
-                        android:src="@drawable/add_sharp"
-                        android:tint="#FDFAFA" />
-                </RelativeLayout>
-
-                <TextView
-                    android:id="@+id/faq1_answer"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="It helps you decide how much money to save every month to reach your goal."
-                    android:visibility="gone"
-                    android:padding="8dp" />
-
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="57dp"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/rounded_background_calculator"
-                    android:paddingEnd="12dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:textColor="@color/white"
-                        android:layout_marginTop="15dp"
-                        android:text="How do I know my monthly saving amount?"
-                        android:textSize="17dp">
-
-                    </TextView>
-
-                    <ImageView
-                        android:id="@+id/plus_icon2"
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:contentDescription="Plus icon"
-                        android:padding="4dp"
-                        android:src="@drawable/add_sharp"
-                        android:tint="#F8F8F8" />
-                </RelativeLayout>
-
-                <TextView
-                    android:id="@+id/faq2_answer"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Enter your goal amount, how many months you have, and it will calculate it for you."
-                    android:visibility="gone"
-                    android:padding="8dp" />
-
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/rounded_background_calculator"
-                    android:paddingEnd="12dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="15dp"
-                        android:textColor="@color/white"
-                        android:text="Can I change my goal later?"
-                        android:textSize="17dp">
-
-                    </TextView>
-
-                    <ImageView
-                        android:id="@+id/plus_icon3"
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:contentDescription="Plus icon"
-                        android:padding="4dp"
-                        android:src="@drawable/add_sharp"
-                        android:tint="#FDFBFB" />
-                </RelativeLayout>
-
-                <TextView
-                    android:id="@+id/faq3_answer"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Yes, you can edit your goal or time anytime if your plan changes."
-                    android:visibility="gone"
-                    android:padding="8dp" />
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/rounded_background_calculator"
-                    android:paddingEnd="12dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="15dp"
-                        android:text="What if I already have some savings?"
-                        android:textColor="@color/white"
-                        android:textSize="17dp">
-
-                    </TextView>
-
-                    <ImageView
-                        android:id="@+id/plus_icon4"
-                        android:layout_width="24dp"
-                        android:layout_height="26dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginEnd="2dp"
-                        android:layout_marginBottom="14dp"
-                        android:contentDescription="Plus icon"
-                        android:padding="4dp"
-                        android:src="@drawable/add_sharp"
-                        android:tint="@color/white" />
-                </RelativeLayout>
-
-                <TextView
-                    android:id="@+id/faq4_answer"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Just add your current savings, and the planner will adjust the monthly amount."
-                    android:visibility="gone"
-                    android:padding="8dp" />
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="57dp"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/rounded_background_calculator"
-                    android:paddingEnd="12dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="15dp"
-                        android:textColor="@color/white"
-                        android:text="Does this include interest from the bank?"
-                        android:textSize="17dp">
-
-                    </TextView>
-
-                    <ImageView
-                        android:id="@+id/plus_icon5"
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:contentDescription="Plus icon"
-                        android:padding="4dp"
-                        android:src="@drawable/add_sharp"
-                        android:tint="@color/white" />
-                </RelativeLayout>
-
-                <TextView
-                    android:id="@+id/faq5_answer"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="f you want, you can add an interest rate; otherwise, it calculates only the basic savings needed."
-                    android:visibility="gone"
-                    android:padding="8dp" />
-
-
-
             </LinearLayout>
 
-        </ScrollView>
+            <!-- Income Input -->
 
-    </LinearLayout>
-</ScrollView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="90dp"
+                android:text="Enter your Monthly Income :"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
 
+            <EditText
+                android:id="@+id/incomeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_background"
+                android:hint="e.g. 500000"
+                android:inputType="number"
+                android:padding="12dp"
+                android:textColor="@color/white"
+                android:textColorHint="#A6A2A2" />
+
+            <!-- Tax Regime Dropdown -->
+            <!-- Tax Regime Dropdown -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="92dp"
+                android:text="Enter Your Monthly Expense :"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/ExpenseEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_background"
+                android:hint="e.g. 500000"
+                android:inputType="number"
+                android:padding="12dp"
+                android:textColor="@color/white"
+                android:textColorHint="#A4A1A1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="100dp"
+                android:text="Enter Your Saving Goal :"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <!-- Calculate Button -->
+            <EditText
+                android:id="@+id/SavingEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_background"
+                android:hint="e.g. 500000"
+                android:inputType="number"
+                android:padding="12dp"
+                android:textColor="@color/white"
+                android:textColorHint="#9B9797" />
+
+            <Button
+                android:id="@+id/calculateButton"
+                android:layout_width="250dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#1E1E1E"
+                android:elevation="6dp"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:text="Calculate"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="25dp" />
+
+
+            <!-- FAQ Card -->
+
+            <TextView
+                android:id="@+id/resultGST"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Months Required:"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginBottom="100dp"
+                    android:background="@drawable/rounded_background_calculator"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FAQ’s"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <!-- FAQ Items -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="12dp"
+                        android:background="#DDDDDD" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/rounded_background_calculator"
+                        android:paddingEnd="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:text="What does this savings planner do?"
+                            android:textColor="@color/white"
+                            android:textSize="17dp">
+
+                        </TextView>
+
+
+                        <ImageView
+                            android:id="@+id/plus_icon1"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="Plus icon"
+                            android:padding="4dp"
+                            android:src="@drawable/add_sharp"
+                            android:tint="#FDFAFA" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/faq1_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="It helps you decide how much money to save every month to reach your goal."
+                        android:visibility="gone" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/rounded_background_calculator"
+                        android:paddingEnd="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:text="How do I know my monthly saving amount?"
+                            android:textColor="@color/white"
+                            android:textSize="17dp">
+
+                        </TextView>
+
+                        <ImageView
+                            android:id="@+id/plus_icon2"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="Plus icon"
+                            android:padding="4dp"
+                            android:src="@drawable/add_sharp"
+                            android:tint="#F8F8F8" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/faq2_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Enter your goal amount, how many months you have, and it will calculate it for you."
+                        android:visibility="gone" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/rounded_background_calculator"
+                        android:paddingEnd="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Can I change my goal later?"
+                            android:textColor="@color/white"
+                            android:textSize="17dp">
+
+                        </TextView>
+
+                        <ImageView
+                            android:id="@+id/plus_icon3"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="Plus icon"
+                            android:padding="4dp"
+                            android:src="@drawable/add_sharp"
+                            android:tint="#FDFBFB" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/faq3_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Yes, you can edit your goal or time anytime if your plan changes."
+                        android:visibility="gone" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/rounded_background_calculator"
+                        android:paddingEnd="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:text="What if I already have some savings?"
+                            android:textColor="@color/white"
+                            android:textSize="17dp">
+
+                        </TextView>
+
+                        <ImageView
+                            android:id="@+id/plus_icon4"
+                            android:layout_width="24dp"
+                            android:layout_height="26dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginBottom="14dp"
+                            android:contentDescription="Plus icon"
+                            android:padding="4dp"
+                            android:src="@drawable/add_sharp"
+                            android:tint="@color/white" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/faq4_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Just add your current savings, and the planner will adjust the monthly amount."
+                        android:visibility="gone" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/rounded_background_calculator"
+                        android:paddingEnd="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Does this include interest from the bank?"
+                            android:textColor="@color/white"
+                            android:textSize="17dp">
+
+                        </TextView>
+
+                        <ImageView
+                            android:id="@+id/plus_icon5"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="Plus icon"
+                            android:padding="4dp"
+                            android:src="@drawable/add_sharp"
+                            android:tint="@color/white" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/faq5_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="f you want, you can add an interest rate; otherwise, it calculates only the basic savings needed."
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+    </ScrollView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
