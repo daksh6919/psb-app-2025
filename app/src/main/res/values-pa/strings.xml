@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">daksh19</string>
+    <string name="welcome_to_my_app">ਮੇਰੀ ਐਪ ਵਿੱਚ ਤੁਹਾਡਾ ਸੁਆਗਤ ਹੈ</string>
+    <string name="title_activity_login">ਲੌਗਇਨ</string>
+    <string name="prompt_email">ਈਮੇਲ</string>
+    <string name="prompt_password">ਪਾਸਵਰਡ</string>
+    <string name="action_sign_in">ਸਾਈਨ ਇਨ ਕਰੋ ਜਾਂ ਰਜਿਸਟਰ ਕਰੋ</string>
+    <string name="action_sign_in_short">ਸਾਈਨ ਇਨ ਕਰੋ</string>
+    <string name="welcome">"ਜੀ ਆਇਆਂ ਨੂੰ !"</string>
+    <string name="invalid_username">ਇਹ ਯੂਜ਼ਰਨਾਮ ਵੈਧ ਨਹੀਂ ਹੈ</string>
+    <string name="invalid_password">ਪਾਸਵਰਡ 5 ਅੱਖਰਾਂ ਤੋਂ ਵੱਡਾ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ</string>
+    <string name="login_failed">"ਲੌਗਇਨ ਅਸਫਲ ਰਿਹਾ"</string>
+    <string name="spam">ਸਪੈਮ</string>
+    <string name="check_spams">ਸਪੈਮ ਚੈੱਕ ਕਰੋ</string>
+    <string name="cyber_help">ਸਾਈਬਰ ਮਦਦ</string>
+    <string name="online_support">ਆਨਲਾਈਨ ਸਹਾਇਤਾ</string>
+    <string name="headlines">ਸੁਰਖੀਆਂ</string>
+    <string name="latest_news">ਤਾਜ਼ਾ ਖ਼ਬਰਾਂ</string>
+    <string name="simulation">ਸਿਮੂਲੇਸ਼ਨ</string>
+    <string name="practice_scenarios">ਅਭਿਆਸ ਦ੍ਰਿਸ਼</string>
+    <string name="example_text"><![CDATA[ਸਾਈਬਰ <font color=\'#FF0000\'>ਅਪਰਾਧ </font> ਦੀਆਂ ਕਿਸਮਾਂ]]></string>
+    <string name="example_text2"><![CDATA[ਕੰਪਿਊਟਰ ਨੈੱਟਵਰਕਾਂ ਜਾਂ ਡਿਵਾਈਸਾਂ ਨੂੰ ਨਿਸ਼ਾਨਾ ਬਣਾਉਣ ਵਾਲੇ ਸਾਈਬਰ <font color=\'#FF0000\'>ਅਪਰਾਧ</font>]]></string>
+    <string name="example_text3"><![CDATA[ਯੂਪੀਆਈ ਅਤੇ ਪੇਮੈਂਟ ਐਪ <font color=\'#FF0000\'>ਧੋਖਾਧੜੀ</font>]]></string>
+    <string name="example_text4"><![CDATA[ਇਹਨਾਂ <font color=\'#FF0000\'>ਅਪਰਾਧਾਂ </font> ਵਿੱਚ ਡੇਟਾ ਚੋਰੀ ਕਰਨ, ਵਿਘਨ ਪਾਉਣ, ਜਾਂ ਸਿਸਟਮ ਨੂੰ ਨੁਕਸਾਨ ਪਹੁੰਚਾਉਣ ਲਈ ਕੰਪਿਊਟਰਾਂ, ਸਰਵਰਾਂ, ਜਾਂ ਡਿਜੀਟਲ ਬੁਨਿਆਦੀ ਢਾਂਚੇ \'ਤੇ ਸਿੱਧੇ ਹਮਲੇ ਸ਼ਾਮਲ ਹੁੰਦੇ ਹਨ। ਇਸ ਵਿੱਚ ਵੱਖ-ਵੱਖ ਖਤਰੇ ਸ਼ਾਮਲ ਹਨ ਜਿਵੇਂ- ਵਾਇਰਸ, ਬੱਗ, ਆਦਿ, ਅਤੇ (DoS) ਡਿਨਾਇਲ-ਆਫ-ਸਰਵਿਸ ਹਮਲੇ]]></string>
+    <string name="example_text5"><![CDATA[ਡਿਨਾਇਲ-ਆਫ-ਸਰਵਿਸ <font color=\'#FF0000\'>(DoS) </font> ਹਮਲੇ]]></string>
+    <string-array name="tax_regimes">
+        <item>ਵਿਕਲਪ ਚੁਣੋ</item>
+        <item>ਪੁਰਾਣੀ ਪ੍ਰਣਾਲੀ</item>
+        <item>ਨਵੀਂ ਪ੍ਰਣਾਲੀ</item>
+    </string-array>
+
+    <string name="language">ਭਾਸ਼ਾ</string>
+    <string name="calculator">ਕੈਲਕੁਲੇਟਰ</string>
+    <string name="quiz">ਕੁਇਜ਼</string>
+    <string name="loan">ਲੋਨ</string>
+    <string name="budget">ਬਜਟ</string>
+    <string name="investment">ਨਿਵੇਸ਼</string>
+    <string name="check_spams_subtitle">ਸਪੈਮ\nਚੈੱਕ ਕਰੋ</string>
+    <string name="calculator_subtitle">ਵਿੱਤ\nਦੀ ਗਣਨਾ ਕਰੋ</string>
+    <string name="educational_subtitle">ਵਿਦਿਅਕ</string>
+    <string name="practice_scenarios_subtitle">ਅਭਿਆਸ\nਦ੍ਰਿਸ਼</string>
+    <string name="online_support_subtitle">ਆਨਲਾਈਨ\nਸਹਾਇਤਾ</string>
+    <string name="loan_planner_subtitle">ਲੋਨ\nਯੋਜਨਾਕਾਰ</string>
+    <string name="plan_your_savings_subtitle">ਆਪਣੀ\nਬਚਤ ਦੀ ਯੋਜਨਾ ਬਣਾਓ</string>
+    <string name="strategic_growth_subtitle">ਰਣਨੀਤਕ\nਵਿਕਾਸ</string>
+    <string name="financial_strategy_center">ਵਿੱਤੀ ਰਣਨੀਤੀ ਦਾ ਕੇਂਦਰ</string>
+    <string name="bank_tagline">ਪੰਜਾਬ ਐਂਡ ਸਿੰਧ ਬੈਂਕ ਤੁਹਾਡੇ ਇੱਕ ਕਲਿੱਕ \'ਤੇ</string>
+    <string name="cd_call">ਯੂਜ਼ਰ ਪ੍ਰੋਫਾਈਲ</string>
+    <string name="cd_dropdown_icon">ਭਾਸ਼ਾ ਚੋਣ ਡ੍ਰੌਪਡਾਉਨ</string>
+    <string name="about_us">ਸਾਡਾ ਮਿਸ਼ਨ ਹਰ ਭਾਰਤੀ ਨੂੰ ਵਿਸ਼ਵਾਸ ਅਤੇ ਸੁਰੱਖਿਆ ਨਾਲ ਡਿਜੀਟਲ ਵਿੱਤੀ ਦੁਨੀਆ ਵਿੱਚ ਨੈਵੀਗੇਟ ਕਰਨ ਲਈ ਸ਼ਕਤੀ ਪ੍ਰਦਾਨ ਕਰਨਾ ਹੈ।\n\nਇੱਕ ਅਜਿਹੇ ਯੁੱਗ ਵਿੱਚ ਜਿੱਥੇ ਔਨਲਾਈਨ ਲੈਣ-ਦੇਣ ਅਤੇ ਸੇਵਾਵਾਂ ਰੋਜ਼ਾਨਾ ਜੀਵਨ ਦਾ ਹਿੱਸਾ ਬਣ ਰਹੀਆਂ ਹਨ, ਸਾਡਾ ਮੰਨਣਾ ਹੈ ਕਿ ਗਿਆਨ ਹੀ ਸਭ ਤੋਂ ਵਧੀਆ ਸੁਰੱਖਿਆ ਹੈ। ਅਸੀਂ ਇੱਕ ਅਜਿਹੇ ਪਲੇਟਫਾਰਮ ਦੀ ਲੋੜ ਮਹਿਸੂਸ ਕੀਤੀ ਜਿੱਥੇ ਵਿਅਕਤੀ ਨਾ ਸਿਰਫ਼ ਵਿੱਤੀ ਉਤਪਾਦਾਂ ਬਾਰੇ ਸਿੱਖ ਸਕਦੇ ਹਨ, ਸਗੋਂ ਆਪਣੇ ਆਪ ਨੂੰ ਸਪੈਮ ਅਤੇ ਸਾਈਬਰ ਧੋਖਾਧੜੀ ਦੇ ਵੱਧ ਰਹੇ ਖਤਰਿਆਂ ਤੋਂ ਵੀ ਬਚਾ ਸਕਦੇ ਹਨ। ਅਸੀਂ ਇਸ ਪਾੜੇ ਨੂੰ ਪੂਰਾ ਕਰਨ ਲਈ ਇੱਥੇ ਹਾਂ।\n\nਤ੍ਰਿਸ਼ੂਲਐਕਸ ਵਿੱਤੀ ਸਾਖਰਤਾ ਅਤੇ ਡਿਜੀਟਲ ਸੁਰੱਖਿਆ ਲਈ ਤੁਹਾਡਾ ਸਮਰਪਿਤ ਸਾਥੀ ਹੈ। ਅਸੀਂ ਗੁੰਝਲਦਾਰ ਵਿਸ਼ਿਆਂ ਨੂੰ ਸਰਲ ਬਣਾਉਣ ਲਈ ਵਚਨਬੱਧ ਹਾਂ—ਲੋਨ ਸਮਝਣ ਤੋਂ ਲੈ ਕੇ ਤੁਹਾਡੀਆਂ ਬੱਚਤਾਂ ਦੀ ਯੋਜਨਾ ਬਣਾਉਣ ਤੱਕ—ਨਾਲ ਹੀ ਤੁਹਾਨੂੰ ਔਨਲਾਈਨ ਖਤਰਿਆਂ ਦੀ ਪਛਾਣ ਕਰਨ ਅਤੇ ਰਿਪੋਰਟ ਕਰਨ ਵਿੱਚ ਮਦਦ ਕਰਨ ਲਈ ਮਜ਼ਬੂਤ ​​ਸਾਧਨ ਪ੍ਰਦਾਨ ਕਰਦੇ ਹਾਂ।\n\nਤ੍ਰਿਸ਼ੂਲਐਕਸ ਟੀਮ ਯੂਰੇਨੀਅਮ ਦੀ ਮਲਕੀਅت ਵਾਲਾ ਇੱਕ ਬ੍ਰਾਂਡ ਹੈ। ਸਾਡਾ ਪਲੇਟਫਾਰਮ ਵਿਦਿਅਕ ਅਤੇ ਜਾਣਕਾਰੀ ਦੇ ਉਦੇਸ਼ਾਂ ਲਈ ਤਿਆਰ ਕੀਤਾ ਗਿਆ ਹੈ ਤਾਂ ਜੋ ਤੁਹਾਨੂੰ ਡਿਜੀਟਲ ਦੁਨੀਆ ਵਿੱਚ ਚੁਸਤ ਅਤੇ ਸੁਰੱਖਿਅਤ ਫੈਸਲੇ ਲੈਣ ਵਿੱਚ ਮਦਦ ਮਿਲ ਸਕੇ।\n\n\n\nਕਿਸੇ ਵੀ ਸਵਾਲ ਜਾਂ ਫੀਡਬੈਕ ਲਈ, ਕਿਰਪਾ ਕਰਕੇ ਸਾਡੇ ਨਾਲ \'ਤੇ ਸੰਪਰਕ ਕਰੋ।</string>
+</resources>

@@ -3,16 +3,18 @@ package com.ur4nium.daksh19
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.widget.ImageView
 import android.widget.PopupMenu
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
+import androidx.core.os.LocaleListCompat
 import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.models.SlideModel
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.ur4nium.daksh19.databinding.ActivityDashboardAppBinding
-import android.widget.RelativeLayout
+import android.widget.ImageView
+
 class dashboard_app : AppCompatActivity() {
 
     private lateinit var binding: ActivityDashboardAppBinding
@@ -21,8 +23,6 @@ class dashboard_app : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDashboardAppBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-
 
         val imageList = ArrayList<SlideModel>()
         val db = Firebase.firestore
@@ -34,38 +34,48 @@ class dashboard_app : AppCompatActivity() {
                     Log.d("Firestore", "No images found in the collection.")
                     return@addOnSuccessListener
                 }
-                // Loop through documents and add URLs to the list
                 for (document in documents) {
                     val imageUrl = document.getString("url")
                     if (imageUrl != null) {
                         imageList.add(SlideModel(imageUrl, ScaleTypes.CENTER_CROP))
                     }
                 }
-                // Set the fetched images to the slider
                 binding.imageSlider.setImageList(imageList)
             }
             .addOnFailureListener { exception ->
                 Log.w("Firestore", "Error getting documents: ", exception)
             }
-        // --- NEW FIREBASE IMAGE SLIDER CODE ENDS HERE ---
 
-
+        // --- FIX #1: Use View Binding to get the icon ---
         val dropdownIcon = findViewById<ImageView>(R.id.dropdown_icon)
 
         dropdownIcon.setOnClickListener { view ->
             val popup = PopupMenu(this, view)
-            popup.menu.add("Good Day")
+            popup.menu.add("Hello")
             popup.menu.add("नमस्ते")
-            popup.menu.add("ਸਤ ਸ੍ਰੀ ਅਕਾਲ ")
-            popup.setOnMenuItemClickListener { item ->
-                Toast.makeText(this, "Selected: ${item.title}", Toast.LENGTH_SHORT).show()
-                true
-            }
+            popup.menu.add("ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ")
 
+            popup.setOnMenuItemClickListener { item ->
+                when (item.title.toString()) {
+                    "Hello" -> {
+                        updateLocale("en")
+                        true
+                    }
+                    "नमस्ते" -> {
+                        updateLocale("hi")
+                        true
+                    }
+                    "ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ" -> {
+                        updateLocale("pa")
+                        true
+                    }
+                    else -> false
+                }
+            }
             popup.show()
         }
 
-        // ✅ ALL YOUR EXISTING BUTTON LISTENERS ARE KEPT BELOW
+        // Your existing button listeners are all correct
         binding.customButton1.setOnClickListener {
             startActivity(Intent(this, Spam::class.java))
         }
@@ -97,13 +107,9 @@ class dashboard_app : AppCompatActivity() {
         binding.customButton8.setOnClickListener {
             Toast.makeText(this, "INVESTMENT clicked", Toast.LENGTH_SHORT).show()
         }
-// Find your Loan button
 
-        // ✅ YOUR EXISTING BOTTOM NAVIGATION CODE IS KEPT
         binding.bottomNavigation.setOnItemSelectedListener { item ->
             when (item.itemId) {
-
-
                 R.id.nav_home -> {
                     Toast.makeText(this, "Home clicked", Toast.LENGTH_SHORT).show()
                     true
@@ -118,10 +124,12 @@ class dashboard_app : AppCompatActivity() {
                 }
                 else -> false
             }
-
-
-
         }
+    } // The onCreate method ends here
 
+    // --- FIX #2: Add the missing updateLocale function ---
+    private fun updateLocale(languageCode: String) {
+        val localeList = LocaleListCompat.forLanguageTags(languageCode)
+        AppCompatDelegate.setApplicationLocales(localeList)
     }
 }

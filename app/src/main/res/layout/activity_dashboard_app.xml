@@ -14,8 +14,6 @@
         android:padding="16dp"
         android:scrollbars="none">
 
-
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -34,7 +32,7 @@
                     android:layout_marginLeft="50dp"
                     android:layout_marginEnd="2dp"
                     android:background="@drawable/circle_bg"
-                    android:contentDescription="Call"
+                    android:contentDescription="@string/cd_call"
                     android:padding="8dp"
                     android:scaleType="centerInside"
                     android:src="@drawable/profile1"
@@ -53,13 +51,13 @@
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:src="@drawable/language"
-                        android:tint="#ffff" />
+                        app:tint="#ffff" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
-                        android:text="Language"
+                        android:text="@string/language"
                         android:textColor="#ffff"
                         android:textSize="8sp"
                         android:textStyle="bold" />
@@ -70,10 +68,10 @@
                         android:layout_height="28dp"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:contentDescription="Dropdown icon"
+                        android:contentDescription="@string/cd_dropdown_icon"
                         android:padding="4dp"
                         android:src="@drawable/dropdown"
-                        android:tint="#ffff" />
+                        app:tint="#ffff" />
 
                 </LinearLayout>
             </RelativeLayout>
@@ -94,14 +92,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="20dp" />
 
-            <!-- THIS IS THE CORRECTED SECTION FOR THE TWO COLUMNS -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:baselineAligned="false">
 
-                <!-- Left Column -->
                 <LinearLayout
                     android:id="@+id/left_column_container"
                     android:layout_width="0dp"
@@ -110,8 +106,6 @@
                     android:gravity="center"
                     android:orientation="vertical">
 
-                    <!-- All buttons for the left column go here -->
-                    <!-- Corrected: Unique IDs for each button and their children -->
                     <RelativeLayout
                         android:id="@+id/customButton1"
                         android:layout_width="match_parent"
@@ -127,7 +121,7 @@
                             android:id="@+id/titleText1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="SPAM"
+                            android:text="@string/spam"
                             android:textColor="#FFFF"
                             android:textSize="14sp"
                             android:textStyle="bold" />
@@ -137,7 +131,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/titleText1"
-                            android:text="CHECK\nSPAMS"
+                            android:text="@string/check_spams_subtitle"
                             android:textColor="#F4E8E8"
                             android:textSize="8sp" />
 
@@ -150,7 +144,7 @@
                             android:padding="20dp"
                             android:scaleType="centerInside"
                             android:src="@drawable/spam"
-                            android:tint="@color/white" />
+                            app:tint="@color/white" />
 
                     </RelativeLayout>
 
@@ -173,7 +167,7 @@
                             android:id="@+id/titleText2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="CALCULATOR"
+                            android:text="@string/calculator"
                             android:layout_marginLeft="65dp"
                             android:textColor="#FFFF"
                             android:textSize="12sp"
@@ -185,7 +179,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="95dp"
                             android:layout_below="@+id/titleText2"
-                            android:text="CALCULATE\n   FINANCES"
+                            android:text="@string/calculator_subtitle"
                             android:textColor="#F4E8E8"
                             android:textSize="8sp" />
 
@@ -195,11 +189,10 @@
                             android:layout_height="76dp"
                             android:padding="25dp"
                             android:scaleType="centerInside"
-                            android:tint="@color/white"
+                            app:tint="@color/white"
                             android:src="@drawable/calculator" />
 
                     </RelativeLayout>
-
 
                     <View
                         android:layout_width="match_parent"
@@ -220,7 +213,7 @@
                             android:id="@+id/titleText_spam"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="QUIZ"
+                            android:text="@string/quiz"
                             android:textColor="#FFFF"
                             android:textSize="14sp"
                             android:textStyle="bold" />
@@ -230,7 +223,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/titleText_spam"
-                            android:text="EDUCATIONAL"
+                            android:text="@string/educational_subtitle"
                             android:textColor="#F4E8E8"
                             android:textSize="8sp" />
 
@@ -240,10 +233,9 @@
                             android:layout_height="match_parent"
                             android:layout_toEndOf="@+id/subText_spam"
                             android:scaleType="centerInside"
-                            android:tint="@color/white"
+                            app:tint="@color/white"
                             android:padding="20dp"
-                            android:src="@drawable/quiz"
-                             />
+                            android:src="@drawable/quiz" />
 
                     </RelativeLayout>
 
@@ -262,7 +254,7 @@
                             android:id="@+id/titleText4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="SIMULATION"
+                            android:text="@string/simulation"
                             android:layout_marginLeft="65dp"
                             android:textColor="#FFFF"
                             android:textSize="12sp"
@@ -274,7 +266,7 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/titleText4"
                             android:layout_marginLeft="93dp"
-                            android:text="   PRACTICE\nSCENARIOS"
+                            android:text="@string/practice_scenarios_subtitle"
                             android:textColor="#F4E8E8"
                             android:textSize="8sp" />
 
@@ -285,16 +277,11 @@
                             android:scaleType="centerInside"
                             android:padding="5dp"
                             android:src="@drawable/simulation2"
-                            android:tint="@color/white" />
+                            app:tint="@color/white" />
 
                     </RelativeLayout>
-
-
-                    <!-- ... Other buttons for the left column -->
-
                 </LinearLayout>
 
-                <!-- Right Column -->
                 <LinearLayout
                     android:id="@+id/right_column_container"
                     android:layout_width="0dp"
@@ -310,13 +297,9 @@
                         android:layout_height="wrap_content"
                         android:textColor="#000000"
                         android:textStyle="bold"
-                        android:text="The Centre of Financial Strategy"
-                        android:textSize="10dp">
+                        android:text="@string/financial_strategy_center"
+                        android:textSize="10dp" />
 
-                    </TextView>
-
-                    <!-- All buttons for the right column go here -->
-                    <!-- Corrected: Unique IDs for each button and their children -->
                     <RelativeLayout
                         android:id="@+id/customButton50"
                         android:layout_width="match_parent"
@@ -330,7 +313,7 @@
                             android:id="@+id/titleText5"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="CYBER HELP"
+                            android:text="@string/cyber_help"
                             android:textColor="#FFFF"
                             android:textSize="14sp"
                             android:textStyle="bold" />
@@ -340,7 +323,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/titleText5"
-                            android:text="ONLINE\nSUPPORT"
+                            android:text="@string/online_support_subtitle"
                             android:textColor="#F4E8E8"
                             android:textSize="8sp" />
 
@@ -353,7 +336,7 @@
                             android:padding="10dp"
                             android:scaleType="centerInside"
                             android:src="@drawable/cyber"
-                            android:tint="@color/white" />
+                            app:tint="@color/white" />
 
                     </RelativeLayout>
 
@@ -372,7 +355,7 @@
                             android:id="@+id/titleText6"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="LOAN"
+                            android:text="@string/loan"
                             android:layout_marginLeft="95dp"
                             android:textColor="#FFFF"
                             android:textSize="12sp"
@@ -386,7 +369,7 @@
                             android:layout_alignParentStart="true"
                             android:layout_marginLeft="90dp"
                             android:layout_marginTop="0dp"
-                            android:text="        LOAN\nPLANNER"
+                            android:text="@string/loan_planner_subtitle"
                             android:textColor="#F4E8E8"
                             android:textSize="8sp" />
 
@@ -397,9 +380,7 @@
                             android:padding="10dp"
                             android:scaleType="centerInside"
                             android:src="@drawable/loan3"
-                            android:tint="@color/white"
-
-                            />
+                            app:tint="@color/white" />
 
                     </RelativeLayout>
 
@@ -418,7 +399,7 @@
                             android:id="@+id/titleText7"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="BUDGET"
+                            android:text="@string/budget"
                             android:textColor="#FFFF"
                             android:textSize="14sp"
                             android:textStyle="bold" />
@@ -428,7 +409,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/titleText7"
-                            android:text="PLAN YOUR\nSAVINGS"
+                            android:text="@string/plan_your_savings_subtitle"
                             android:textColor="#F4E8E8"
                             android:textSize="8sp" />
 
@@ -441,7 +422,7 @@
                             android:padding="10dp"
                             android:scaleType="centerInside"
                             android:src="@drawable/budjet"
-                            android:tint="@color/white" />
+                            app:tint="@color/white" />
 
                     </RelativeLayout>
 
@@ -460,7 +441,7 @@
                             android:id="@+id/titleText8"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="INVESTMENT"
+                            android:text="@string/investment"
                             android:layout_marginLeft="52dp"
                             android:textColor="#FFFF"
                             android:textSize="14sp"
@@ -472,7 +453,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="85dp"
                             android:layout_below="@+id/titleText8"
-                            android:text="STRATEGIC\n    GROWTH"
+                            android:text="@string/strategic_growth_subtitle"
                             android:textColor="#F4E8E8"
                             android:textSize="8sp" />
 
@@ -483,20 +464,15 @@
                             android:padding="10dp"
                             android:scaleType="centerInside"
                             android:src="@drawable/investment"
-                            android:tint="@color/white" />
+                            app:tint="@color/white" />
 
                     </RelativeLayout>
-                    <!-- ... Other buttons for the right column -->
-
                 </LinearLayout>
-
             </LinearLayout>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="30dp" />
-
-
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -509,12 +485,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="PUNJAB AND SIND BANK AT YOUR CLICK" />
+                    android:text="@string/bank_tagline" />
             </LinearLayout>
 
-
         </LinearLayout>
-
     </ScrollView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

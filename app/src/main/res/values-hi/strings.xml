@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">daksh19</string>
+    <string name="welcome_to_my_app">मेरे ऐप में आपका स्वागत है</string>
+    <string name="title_activity_login">लॉगिन</string>
+    <string name="prompt_email">ईमेल</string>
+    <string name="prompt_password">पासवर्ड</string>
+    <string name="action_sign_in">साइन इन करें या रजिस्टर करें</string>
+    <string name="action_sign_in_short">साइन इन करें</string>
+    <string name="welcome">"स्वागत है !"</string>
+    <string name="invalid_username">यह उपयोगकर्ता नाम मान्य नहीं है</string>
+    <string name="invalid_password">पासवर्ड 5 अक्षरों से अधिक लंबा होना चाहिए</string>
+    <string name="login_failed">"लॉगिन विफल रहा"</string>
+    <string name="spam">स्पैम</string>
+    <string name="check_spams">स्पैम जांचें</string>
+    <string name="cyber_help">साइबर सहायता</string>
+    <string name="online_support">ऑनलाइन सहायता</string>
+    <string name="headlines">सुर्खियां</string>
+    <string name="latest_news">ताज़ा खबरें</string>
+    <string name="simulation">सिमुलेशन</string>
+    <string name="practice_scenarios">अभ्यास परिदृश्य</string>
+    <string name="example_text"><![CDATA[साइबर <font color=\'#FF0000\'>अपराध </font> के प्रकार]]></string>
+    <string name="example_text2"><![CDATA[कंप्यूटर नेटवर्क या डिवाइस को लक्षित करने वाले साइबर <font color=\'#FF0000\'>अपराध</font>]]></string>
+    <string name="example_text3"><![CDATA[यूपीआई और पेमेंट ऐप <font color=\'#FF0000\'>धोखाधड़ी</font>]]></string>
+    <string name="example_text4"><![CDATA[इन <font color=\'#FF0000\'>अपराधों </font> में डेटा चुराने, बाधा डालने या सिस्टम को नुकसान पहुंचाने के लिए कंप्यूटर, सर्वर या डिजिटल इंफ्रास्ट्रक्चर पर सीधे हमले शामिल हैं। इसमें विभिन्न खतरे शामिल हैं जैसे- वायरस, बग, आदि, और (DoS) डिनायल-ऑफ-सर्विस हमले]]></string>
+    <string name="example_text5"><![CDATA[डिनायल-ऑफ-सर्विस <font color=\'#FF0000\'>(DoS) </font> हमले]]></string>
+    <string-array name="tax_regimes">
+        <item>विकल्प चुनें</item>
+        <item>पुरानी व्यवस्था</item>
+        <item>नई व्यवस्था</item>
+    </string-array>
+
+    <string name="language">भाषा</string>
+    <string name="calculator">कैलकुलेटर</string>
+    <string name="quiz">क्विज़</string>
+    <string name="loan">लोन</string>
+    <string name="budget">बजट</string>
+    <string name="investment">निवेश</string>
+    <string name="check_spams_subtitle">स्पैम\nजांचें</string>
+    <string name="calculator_subtitle">वित्त\nकी गणना करें</string>
+    <string name="educational_subtitle">शैक्षणिक</string>
+    <string name="practice_scenarios_subtitle">अभ्यास\nपरिदृश्य</string>
+    <string name="online_support_subtitle">ऑनलाइन\nसहायता</string>
+    <string name="loan_planner_subtitle">लोन\nयोजनाकार</string>
+    <string name="plan_your_savings_subtitle">अपनी\nबचत की योजना बनाएं</string>
+    <string name="strategic_growth_subtitle">रणनीतिक\nविकास</string>
+    <string name="financial_strategy_center">वित्तीय रणनीति का केंद्र</string>
+    <string name="bank_tagline">पंजाब एंड सिंध बैंक आपके क्लिक पर</string>
+    <string name="cd_call">उपयोगकर्ता प्रोफ़ाइल</string>
+    <string name="cd_dropdown_icon">भाषा चयन ड्रॉपडाउन</string>
+    <string name="about_us">हमारा मिशन प्रत्येक भारतीय को आत्मविश्वास और सुरक्षा के साथ डिजिटल वित्तीय दुनिया में नेविगेट करने के लिए सशक्त बनाना है।\n\nएक ऐसे युग में जहां ऑनलाइन लेनदेन और सेवाएं दैनिक जीवन का हिस्सा बन रही हैं, हम मानते हैं कि ज्ञान ही सबसे अच्छी सुरक्षा है। हमने एक ऐसे मंच की आवश्यकता महसूस की जहां व्यक्ति न केवल वित्तीय उत्पादों के बारे में जान सकें, बल्कि खुद को स्पैम और साइबर धोखाधड़ी के बढ़ते खतरों से भी बचा सकें। हम इस अंतर को पाटने के लिए यहां हैं।\n\nत्रिशूलएक्स वित्तीय साक्षरता और डिजिटल सुरक्षा के लिए आपका समर्पित भागीदार है। हम जटिल विषयों को सरल बनाने के लिए प्रतिबद्ध हैं—लोन समझने से लेकर अपनी बचत की योजना बनाने तक—साथ ही आपको ऑनलाइन खतरों की पहचान करने और रिपोर्ट करने में मदद करने के लिए मजबूत उपकरण भी प्रदान करते हैं।\n\nत्रिशੂਲएक्स टीम यूरेनियम के स्वामित्व वाला एक ब्रांड है। हमारा मंच शैक्षिक और सूचनात्मक उद्देश्यों के लिए डिज़ाइन किया गया है ताकि आपको डिजिटल दुनिया में होशियार और सुरक्षित निर्णय लेने में मदद मिल सके।\n\n\n\nकिसी भी प्रश्न या प्रतिक्रिया के लिए, कृपया हमसे पर संपर्क करें।</string>
+</resources>

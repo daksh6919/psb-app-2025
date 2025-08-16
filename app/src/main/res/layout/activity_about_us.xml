@@ -62,7 +62,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Our mission is to empower every Indian to navigate the digital financial world with confidence and security.\n\nIn an era where online transactions and services are becoming a part of daily life, we believe that knowledge is the best protection. We saw a need for a single platform where individuals can not only learn about financial products but also shield themselves from the growing risks of spam and cyber fraud. We are here to bridge that gap.\n\nTrishulX is your dedicated partner for financial literacy and digital safety. We are committed to simplifying complex topics—from understanding loans to planning your savings—while providing robust tools to help you identify and report online threats.\n\nTrishulX is a brand owned by Team Ur4nium. Our platform is designed for educational and informational purposes to help you make smarter, safer decisions in the digital world.\n\n\n\nFor any questions or feedback, please contact us at ."
+                    android:text="@string/about_us"
                     android:textColor="#FFFF"
                     android:textSize="14dp"
                     android:textStyle="bold">

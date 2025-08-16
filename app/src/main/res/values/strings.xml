@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">daksh19</string>
-    <string name="welcome_to_my_app">welcome to my app</string>
+    <string name="welcome_to_my_app">Welcome to my app</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
@@ -10,31 +11,50 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
-    <string name="default_web_client_id">388031792857-nqlsgb5ppls9tlbnjci4p78o0f17fe1p.apps.googleusercontent.com</string>
-
+    <string name="spam">Spam</string>
+    <string name="check_spams">Check Spams</string>
+    <string name="cyber_help">Cyber Help</string>
+    <string name="online_support">Online Support</string>
+    <string name="headlines">Headlines</string>
+    <string name="latest_news">Latest News</string>
+    <string name="simulation">Simulation</string>
+    <string name="practice_scenarios">Practice Scenarios</string>
+    <string name="example_text"><![CDATA[TYPES OF CYBER <font color=\'#FF0000\'>CRIME </font>]]></string>
+    <string name="example_text2"><![CDATA[Cyber <font color=\'#FF0000\'>Crimes </font>Targeting Computer Networks or Devices.]]></string>
+    <string name="example_text3"><![CDATA[UPI & Payment App <font color=\'#FF0000\'>Frauds</font>]]></string>
+    <string name="example_text4"><![CDATA[These <font color=\'#FF0000\'>crimes </font> involve direct attacks on computers, servers, or digital infrastructure to steal data, cause disruption, or damage systems. It involves different threats like- viruses, bugs, etc, and (DoS) denial-of-service attacks]]></string>
+    <string name="example_text5"><![CDATA[Denial-of-Service <font color=\'#FF0000\'>(DoS) </font>Attacks]]></string>
     <string-array name="tax_regimes">
         <item>Choose Option</item>
         <item>Old Regime</item>
         <item>New Regime</item>
     </string-array>
-
-    <string name="spam">Spam</string>
-    <string name="check_spams">Check Spams</string>
-    <string name="cyber_help">Cyber Help</string>
-    <string name="online_support">Online Support</string>
-    <string name="cyber_help_image">cyber_help_image</string>
-    <string name="headlines">Headlines</string>
-    <string name="latest_news">Latest News</string>
-    <string name="headlines_image">headlines_image</string>
-    <string name="simulation">Simulation</string>
-    <string name="practice_scenarios">Practice Scenarios</string>
-    <string name="simulation_image">simulation_image</string>
-    <string name="example_text">TYPES OF CYBER <font color='#FF0000'>CRIME </font> </string>
-    <string name="example_text2">Cyber <font color='#FF0000'>Crimes </font>Targeting Computer Networks or Devices. </string>
-    <string name="example_text3">UPI &amp; Payment App <font color='#FF0000'>Frauds</font> </string>
-    <string name="example_text4">These  <font color='#FF0000'>crimes </font> involve direct attacks on computers, servers, or digital infrastructure to steal data, cause disruption, or damage systems. It involves different threats like- viruses, bugs, etc, and (DoS) denial-of-service attacks</string>
-    <string name="example_text5">Denial-of-Service <font color='#FF0000'>(DoS) </font>Attacks</string>
+    <string name="default_web_client_id">388031792857-nqlsgb5ppls9tlbnjci4p78o0f17fe1p.apps.googleusercontent.com</string>
+    <string name="cyber_help_image" translatable="false">cyber_help_image</string>
+    <string name="headlines_image" translatable="false">headlines_image</string>
+    <string name="simulation_image" translatable="false">simulation_image</string>
 
 
+    <string name="language">Language</string>
+    <string name="calculator">CALCULATOR</string>
+    <string name="quiz">QUIZ</string>
+    <string name="loan">LOAN</string>
+    <string name="budget">BUDGET</string>
+    <string name="investment">INVESTMENT</string>
+    <string name="check_spams_subtitle">CHECK\nSPAMS</string>
+    <string name="calculator_subtitle">CALCULATE\nFINANCES</string>
+    <string name="educational_subtitle">EDUCATIONAL</string>
+    <string name="practice_scenarios_subtitle">PRACTICE\nSCENARIOS</string>
+    <string name="online_support_subtitle">ONLINE\nSUPPORT</string>
+    <string name="loan_planner_subtitle">LOAN\nPLANNER</string>
+    <string name="plan_your_savings_subtitle">PLAN YOUR\nSAVINGS</string>
+    <string name="strategic_growth_subtitle">STRATEGIC\nGROWTH</string>
+    <string name="financial_strategy_center">The Centre of Financial Strategy</string>
+    <string name="bank_tagline">PUNJAB AND SIND BANK AT YOUR CLICK</string>
+
+    <string name="cd_call">User Profile</string>
+    <string name="cd_dropdown_icon">Language selection dropdown</string>
+    <string name="about_us">Our mission is to empower every Indian to navigate the digital financial world with confidence and security.\n\nIn an era where online transactions and services are becoming a part of daily life, we believe that knowledge is the best protection. We saw a need for a single platform where individuals can not only learn about financial products but also shield themselves from the growing risks of spam and cyber fraud. We are here to bridge that gap.\n\nTrishulX is your dedicated partner for financial literacy and digital safety. We are committed to simplifying complex topics—from understanding loans to planning your savings—while providing robust tools to help you identify and report online threats.\n\nTrishulX is a brand owned by Team Ur4nium. Our platform is designed for educational and informational purposes to help you make smarter, safer decisions in the digital world.\n\n\n\nFor any questions or feedback, please contact us at .</string>
 </resources>
+
 

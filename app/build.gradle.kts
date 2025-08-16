@@ -97,6 +97,9 @@ dependencies {
     implementation("androidx.media3:media3-ui:1.3.1")
 
 
+    implementation("androidx.appcompat:appcompat:1.6.1")   // or newer
+       // ... other dependencies
+
 
 
     // Testing
